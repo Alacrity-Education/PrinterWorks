@@ -1,1 +1,5 @@
-CANDU.kicad_prl
+# KiCad per-user state and local history
+*.kicad_prl
+.history/
+.kicad_importer
+libraries/backups/
