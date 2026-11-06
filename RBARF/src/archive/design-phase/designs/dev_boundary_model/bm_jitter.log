@@ -1,0 +1,10 @@
+free per-loop phase floor: 120/40608 = 0.296%
+  step limit +-0 ns/loop   : 6850/40608 = 16.869%
+  step limit +-5 ns/loop   : 3493/40608 = 8.602%
+  step limit +-10 ns/loop  : 2651/40608 = 6.528%
+  step limit +-20 ns/loop  : 2017/40608 = 4.967%
+  step limit +-40 ns/loop  : 1088/40608 = 2.679%
+  step limit +-80 ns/loop  : 426/40608 = 1.049%
+  step limit +-160 ns/loop : 163/40608 = 0.401%
+  step limit unbounded     : 120/40608 = 0.296%
+per-loop feasible-phase plateau width: med 235 ns, p10 5, p90 255

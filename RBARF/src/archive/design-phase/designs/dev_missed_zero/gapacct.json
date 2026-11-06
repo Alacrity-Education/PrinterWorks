@@ -1,0 +1,1368 @@
+[
+ {
+  "pattern": "zeros",
+  "rep": 0,
+  "agree": 4944,
+  "loop": 2496.66,
+  "t0": 69.0,
+  "npulse": 188,
+  "swallowed": 17,
+  "truespan": {
+   "1": 171,
+   "0": 15,
+   "2": 2
+  },
+  "n_ok": 172,
+  "span_ok": 172,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   15,
+   39,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   169,
+   171,
+   173,
+   177,
+   179,
+   191
+  ]
+ },
+ {
+  "pattern": "zeros",
+  "rep": 1,
+  "agree": 5001,
+  "loop": 2496.7999999999997,
+  "t0": 57.0,
+  "npulse": 183,
+  "swallowed": 4,
+  "truespan": {
+   "1": 172,
+   "2": 8,
+   "0": 3
+  },
+  "n_ok": 180,
+  "span_ok": 180,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   165,
+   167,
+   177,
+   179
+  ]
+ },
+ {
+  "pattern": "zeros",
+  "rep": 2,
+  "agree": 4998,
+  "loop": 2496.8250000000003,
+  "t0": 53.0,
+  "npulse": 187,
+  "swallowed": 4,
+  "truespan": {
+   "1": 178,
+   "0": 4,
+   "2": 5
+  },
+  "n_ok": 183,
+  "span_ok": 183,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   165,
+   167,
+   177,
+   179
+  ]
+ },
+ {
+  "pattern": "ones",
+  "rep": 0,
+  "agree": 5069,
+  "loop": 2497.105,
+  "t0": 279.0,
+  "npulse": 155,
+  "swallowed": 0,
+  "truespan": {
+   "1": 118,
+   "2": 37
+  },
+  "n_ok": 155,
+  "span_ok": 155,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "ones",
+  "rep": 1,
+  "agree": 5056,
+  "loop": 2496.755,
+  "t0": 312.0,
+  "npulse": 154,
+  "swallowed": 2,
+  "truespan": {
+   "1": 118,
+   "2": 36
+  },
+  "n_ok": 154,
+  "span_ok": 154,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14
+  ]
+ },
+ {
+  "pattern": "ones",
+  "rep": 2,
+  "agree": 5072,
+  "loop": 2497.105,
+  "t0": 282.0,
+  "npulse": 153,
+  "swallowed": 0,
+  "truespan": {
+   "1": 114,
+   "2": 39
+  },
+  "n_ok": 153,
+  "span_ok": 153,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "aa",
+  "rep": 0,
+  "agree": 5058,
+  "loop": 2497.1,
+  "t0": 278.0,
+  "npulse": 188,
+  "swallowed": 0,
+  "truespan": {
+   "1": 184,
+   "2": 4
+  },
+  "n_ok": 188,
+  "span_ok": 188,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "aa",
+  "rep": 1,
+  "agree": 5064,
+  "loop": 2497.1,
+  "t0": 281.0,
+  "npulse": 188,
+  "swallowed": 0,
+  "truespan": {
+   "1": 184,
+   "2": 4
+  },
+  "n_ok": 188,
+  "span_ok": 188,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "aa",
+  "rep": 2,
+  "agree": 5060,
+  "loop": 2497.015,
+  "t0": 307.0,
+  "npulse": 188,
+  "swallowed": 0,
+  "truespan": {
+   "1": 184,
+   "2": 4
+  },
+  "n_ok": 188,
+  "span_ok": 188,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "p55",
+  "rep": 0,
+  "agree": 4885,
+  "loop": 2499.12,
+  "t0": 147.0,
+  "npulse": 186,
+  "swallowed": 6,
+  "truespan": {
+   "1": 180,
+   "0": 3,
+   "2": 3
+  },
+  "n_ok": 183,
+  "span_ok": 183,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   40,
+   42,
+   44,
+   46,
+   48,
+   191
+  ]
+ },
+ {
+  "pattern": "p55",
+  "rep": 1,
+  "agree": 4876,
+  "loop": 2499.0299999999997,
+  "t0": 148.0,
+  "npulse": 185,
+  "swallowed": 6,
+  "truespan": {
+   "1": 178,
+   "0": 3,
+   "2": 4
+  },
+  "n_ok": 182,
+  "span_ok": 182,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   38,
+   40,
+   42,
+   44,
+   46,
+   191
+  ]
+ },
+ {
+  "pattern": "p55",
+  "rep": 2,
+  "agree": 4871,
+  "loop": 2499.1150000000002,
+  "t0": 145.0,
+  "npulse": 184,
+  "swallowed": 7,
+  "truespan": {
+   "1": 177,
+   "0": 3,
+   "2": 4
+  },
+  "n_ok": 181,
+  "span_ok": 181,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   14,
+   36,
+   38,
+   40,
+   42,
+   44,
+   191
+  ]
+ },
+ {
+  "pattern": "lone1",
+  "rep": 0,
+  "agree": 4935,
+  "loop": 2496.775,
+  "t0": 58.0,
+  "npulse": 185,
+  "swallowed": 19,
+  "truespan": {
+   "1": 163,
+   "0": 17,
+   "2": 5
+  },
+  "n_ok": 166,
+  "span_ok": 166,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   9,
+   11,
+   13,
+   14,
+   15,
+   17,
+   19,
+   33,
+   35,
+   36,
+   37,
+   38,
+   40,
+   41,
+   42,
+   167,
+   169,
+   175,
+   191
+  ]
+ },
+ {
+  "pattern": "lone1",
+  "rep": 1,
+  "agree": 4931,
+  "loop": 2510.56,
+  "t0": 391.0,
+  "npulse": 185,
+  "swallowed": 18,
+  "truespan": {
+   "1": 168,
+   "0": 14,
+   "2": 3
+  },
+  "n_ok": 171,
+  "span_ok": 171,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14,
+   36,
+   38,
+   43,
+   44,
+   46,
+   48,
+   50,
+   52,
+   54,
+   56,
+   57,
+   58,
+   60,
+   62,
+   81,
+   89
+  ]
+ },
+ {
+  "pattern": "lone1",
+  "rep": 2,
+  "agree": 4944,
+  "loop": 2496.565,
+  "t0": 78.0,
+  "npulse": 186,
+  "swallowed": 15,
+  "truespan": {
+   "1": 169,
+   "0": 13,
+   "2": 4
+  },
+  "n_ok": 171,
+  "span_ok": 171,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   15,
+   37,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   48,
+   49,
+   167,
+   169,
+   171,
+   175,
+   191
+  ]
+ },
+ {
+  "pattern": "msb1",
+  "rep": 0,
+  "agree": 4972,
+  "loop": 2514.1749999999997,
+  "t0": 41.0,
+  "npulse": 187,
+  "swallowed": 11,
+  "truespan": {
+   "1": 179,
+   "0": 7,
+   "2": 1
+  },
+  "n_ok": 180,
+  "span_ok": 180,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   68,
+   70,
+   74,
+   76,
+   81,
+   82,
+   84,
+   86,
+   90,
+   92,
+   94
+  ]
+ },
+ {
+  "pattern": "msb1",
+  "rep": 1,
+  "agree": 4967,
+  "loop": 2498.6,
+  "t0": -93.0,
+  "npulse": 189,
+  "swallowed": 8,
+  "truespan": {
+   "1": 178,
+   "0": 8,
+   "2": 3
+  },
+  "n_ok": 179,
+  "span_ok": 179,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   169,
+   171,
+   173,
+   175,
+   177,
+   179,
+   181,
+   191
+  ]
+ },
+ {
+  "pattern": "msb1",
+  "rep": 2,
+  "agree": 4962,
+  "loop": 2511.1800000000003,
+  "t0": 306.0,
+  "npulse": 187,
+  "swallowed": 8,
+  "truespan": {
+   "1": 182,
+   "0": 4,
+   "2": 1
+  },
+  "n_ok": 183,
+  "span_ok": 183,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   52,
+   54,
+   58,
+   60,
+   66,
+   68,
+   70,
+   74
+  ]
+ },
+ {
+  "pattern": "count",
+  "rep": 0,
+  "agree": 4905,
+  "loop": 2496.055,
+  "t0": 346.0,
+  "npulse": 178,
+  "swallowed": 20,
+  "truespan": {
+   "1": 150,
+   "0": 17,
+   "2": 11
+  },
+  "n_ok": 161,
+  "span_ok": 161,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   44,
+   46,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   55,
+   57,
+   58,
+   59,
+   61,
+   65,
+   67,
+   71,
+   73,
+   75,
+   81,
+   191
+  ]
+ },
+ {
+  "pattern": "count",
+  "rep": 1,
+  "agree": 4898,
+  "loop": 2515.2749999999996,
+  "t0": 281.0,
+  "npulse": 183,
+  "swallowed": 20,
+  "truespan": {
+   "1": 160,
+   "0": 17,
+   "2": 6
+  },
+  "n_ok": 165,
+  "span_ok": 163,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   44,
+   46,
+   48,
+   56,
+   65,
+   71,
+   80,
+   88,
+   90,
+   92,
+   96,
+   98,
+   102,
+   154,
+   177,
+   179,
+   180,
+   181,
+   182,
+   183
+  ]
+ },
+ {
+  "pattern": "count",
+  "rep": 2,
+  "agree": 4910,
+  "loop": 2514.905,
+  "t0": 300.0,
+  "npulse": 183,
+  "swallowed": 21,
+  "truespan": {
+   "1": 157,
+   "0": 19,
+   "2": 7
+  },
+  "n_ok": 163,
+  "span_ok": 162,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   38,
+   40,
+   42,
+   48,
+   50,
+   52,
+   56,
+   65,
+   71,
+   73,
+   80,
+   82,
+   88,
+   90,
+   96,
+   177,
+   179,
+   180,
+   181,
+   182,
+   183
+  ]
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 0,
+  "agree": 4953,
+  "loop": 2498.3050000000003,
+  "t0": -88.0,
+  "npulse": 189,
+  "swallowed": 11,
+  "truespan": {
+   "1": 173,
+   "0": 12,
+   "2": 4
+  },
+  "n_ok": 173,
+  "span_ok": 173,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   9,
+   11,
+   12,
+   13,
+   14,
+   15,
+   17,
+   171,
+   177,
+   179,
+   191
+  ]
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 1,
+  "agree": 4997,
+  "loop": 2496.7999999999997,
+  "t0": 57.0,
+  "npulse": 185,
+  "swallowed": 3,
+  "truespan": {
+   "1": 175,
+   "2": 7,
+   "0": 3
+  },
+  "n_ok": 182,
+  "span_ok": 182,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   165,
+   167,
+   177
+  ]
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 2,
+  "agree": 4948,
+  "loop": 2498.3050000000003,
+  "t0": -88.0,
+  "npulse": 188,
+  "swallowed": 11,
+  "truespan": {
+   "1": 171,
+   "0": 12,
+   "2": 5
+  },
+  "n_ok": 172,
+  "span_ok": 172,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   9,
+   11,
+   12,
+   13,
+   14,
+   15,
+   17,
+   171,
+   177,
+   179,
+   191
+  ]
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 0,
+  "agree": 5057,
+  "loop": 2497.53,
+  "t0": 292.0,
+  "npulse": 158,
+  "swallowed": 0,
+  "truespan": {
+   "1": 124,
+   "2": 34
+  },
+  "n_ok": 158,
+  "span_ok": 158,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 1,
+  "agree": 5060,
+  "loop": 2499.425,
+  "t0": 71.0,
+  "npulse": 152,
+  "swallowed": 0,
+  "truespan": {
+   "1": 112,
+   "2": 40
+  },
+  "n_ok": 152,
+  "span_ok": 152,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 2,
+  "agree": 5047,
+  "loop": 2496.6949999999997,
+  "t0": 316.0,
+  "npulse": 156,
+  "swallowed": 3,
+  "truespan": {
+   "1": 123,
+   "2": 33
+  },
+  "n_ok": 156,
+  "span_ok": 156,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14,
+   181
+  ]
+ },
+ {
+  "pattern": "blocks",
+  "rep": 0,
+  "agree": 5052,
+  "loop": 2495.74,
+  "t0": 382.0,
+  "npulse": 178,
+  "swallowed": 1,
+  "truespan": {
+   "1": 165,
+   "2": 13
+  },
+  "n_ok": 178,
+  "span_ok": 178,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   119
+  ]
+ },
+ {
+  "pattern": "blocks",
+  "rep": 1,
+  "agree": 5039,
+  "loop": 2496.225,
+  "t0": 364.0,
+  "npulse": 177,
+  "swallowed": 2,
+  "truespan": {
+   "1": 164,
+   "2": 13
+  },
+  "n_ok": 177,
+  "span_ok": 177,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   133,
+   181
+  ]
+ },
+ {
+  "pattern": "blocks",
+  "rep": 2,
+  "agree": 5031,
+  "loop": 2496.1800000000003,
+  "t0": 365.0,
+  "npulse": 174,
+  "swallowed": 2,
+  "truespan": {
+   "1": 158,
+   "2": 16
+  },
+  "n_ok": 174,
+  "span_ok": 174,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   99,
+   117
+  ]
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 0,
+  "agree": 5050,
+  "loop": 2496.19,
+  "t0": 385.0,
+  "npulse": 179,
+  "swallowed": 1,
+  "truespan": {
+   "1": 167,
+   "2": 12
+  },
+  "n_ok": 179,
+  "span_ok": 179,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   159
+  ]
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 1,
+  "agree": 5062,
+  "loop": 2496.275,
+  "t0": 386.0,
+  "npulse": 187,
+  "swallowed": 1,
+  "truespan": {
+   "1": 183,
+   "2": 4
+  },
+  "n_ok": 187,
+  "span_ok": 187,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   181
+  ]
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 2,
+  "agree": 5031,
+  "loop": 2496.395,
+  "t0": 320.0,
+  "npulse": 175,
+  "swallowed": 1,
+  "truespan": {
+   "1": 159,
+   "2": 16
+  },
+  "n_ok": 175,
+  "span_ok": 175,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   143
+  ]
+ },
+ {
+  "pattern": "sparse",
+  "rep": 0,
+  "agree": 4916,
+  "loop": 2499.0,
+  "t0": 153.0,
+  "npulse": 184,
+  "swallowed": 11,
+  "truespan": {
+   "1": 177,
+   "0": 5,
+   "2": 2
+  },
+  "n_ok": 179,
+  "span_ok": 179,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   44,
+   46,
+   48,
+   49,
+   50,
+   52,
+   54,
+   69,
+   105,
+   141,
+   191
+  ]
+ },
+ {
+  "pattern": "sparse",
+  "rep": 1,
+  "agree": 4920,
+  "loop": 2499.09,
+  "t0": 150.0,
+  "npulse": 184,
+  "swallowed": 10,
+  "truespan": {
+   "1": 176,
+   "0": 5,
+   "2": 3
+  },
+  "n_ok": 179,
+  "span_ok": 179,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   44,
+   46,
+   48,
+   49,
+   50,
+   52,
+   54,
+   113,
+   179,
+   191
+  ]
+ },
+ {
+  "pattern": "sparse",
+  "rep": 2,
+  "agree": 4906,
+  "loop": 2499.0699999999997,
+  "t0": 149.0,
+  "npulse": 186,
+  "swallowed": 9,
+  "truespan": {
+   "1": 179,
+   "0": 5,
+   "2": 2
+  },
+  "n_ok": 181,
+  "span_ok": 181,
+  "dup": 1,
+  "mono": false,
+  "swal_bits": [
+   38,
+   40,
+   42,
+   44,
+   45,
+   46,
+   50,
+   55,
+   191
+  ]
+ },
+ {
+  "pattern": "dense",
+  "rep": 0,
+  "agree": 5051,
+  "loop": 2496.6949999999997,
+  "t0": 316.0,
+  "npulse": 163,
+  "swallowed": 2,
+  "truespan": {
+   "1": 136,
+   "2": 27
+  },
+  "n_ok": 163,
+  "span_ok": 163,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14
+  ]
+ },
+ {
+  "pattern": "dense",
+  "rep": 1,
+  "agree": 5060,
+  "loop": 2496.5150000000003,
+  "t0": 309.0,
+  "npulse": 162,
+  "swallowed": 0,
+  "truespan": {
+   "1": 132,
+   "2": 30
+  },
+  "n_ok": 162,
+  "span_ok": 162,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "dense",
+  "rep": 2,
+  "agree": 5064,
+  "loop": 2496.82,
+  "t0": 304.0,
+  "npulse": 167,
+  "swallowed": 0,
+  "truespan": {
+   "1": 142,
+   "2": 25
+  },
+  "n_ok": 167,
+  "span_ok": 167,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "runs",
+  "rep": 0,
+  "agree": 5052,
+  "loop": 2496.775,
+  "t0": 286.0,
+  "npulse": 158,
+  "swallowed": 0,
+  "truespan": {
+   "1": 124,
+   "2": 34
+  },
+  "n_ok": 158,
+  "span_ok": 158,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "runs",
+  "rep": 1,
+  "agree": 5054,
+  "loop": 2496.605,
+  "t0": 284.0,
+  "npulse": 157,
+  "swallowed": 0,
+  "truespan": {
+   "1": 122,
+   "2": 35
+  },
+  "n_ok": 157,
+  "span_ok": 157,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "runs",
+  "rep": 2,
+  "agree": 5057,
+  "loop": 2496.6949999999997,
+  "t0": 316.0,
+  "npulse": 158,
+  "swallowed": 0,
+  "truespan": {
+   "1": 124,
+   "2": 34
+  },
+  "n_ok": 158,
+  "span_ok": 158,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "edges",
+  "rep": 0,
+  "agree": 4941,
+  "loop": 2510.585,
+  "t0": 382.0,
+  "npulse": 186,
+  "swallowed": 17,
+  "truespan": {
+   "1": 173,
+   "0": 12,
+   "2": 1
+  },
+  "n_ok": 174,
+  "span_ok": 174,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   38,
+   42,
+   44,
+   46,
+   52,
+   54,
+   57,
+   58,
+   60,
+   62,
+   64,
+   73,
+   75,
+   89,
+   91,
+   93,
+   168
+  ]
+ },
+ {
+  "pattern": "edges",
+  "rep": 1,
+  "agree": 4937,
+  "loop": 2510.565,
+  "t0": 380.0,
+  "npulse": 184,
+  "swallowed": 25,
+  "truespan": {
+   "1": 161,
+   "0": 20,
+   "2": 3
+  },
+  "n_ok": 164,
+  "span_ok": 164,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14,
+   34,
+   36,
+   38,
+   43,
+   44,
+   45,
+   46,
+   48,
+   50,
+   52,
+   54,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   64,
+   73,
+   75,
+   89,
+   91,
+   93
+  ]
+ },
+ {
+  "pattern": "edges",
+  "rep": 2,
+  "agree": 4940,
+  "loop": 2496.565,
+  "t0": 78.0,
+  "npulse": 189,
+  "swallowed": 20,
+  "truespan": {
+   "1": 170,
+   "0": 18,
+   "2": 1
+  },
+  "n_ok": 170,
+  "span_ok": 170,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   15,
+   37,
+   43,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   167,
+   169,
+   171,
+   173,
+   177,
+   179,
+   181,
+   191
+  ]
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 0,
+  "agree": 5055,
+  "loop": 2495.96,
+  "t0": 389.0,
+  "npulse": 175,
+  "swallowed": 0,
+  "truespan": {
+   "1": 158,
+   "2": 17
+  },
+  "n_ok": 175,
+  "span_ok": 175,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 1,
+  "agree": 5058,
+  "loop": 2498.2349999999997,
+  "t0": 169.0,
+  "npulse": 171,
+  "swallowed": 0,
+  "truespan": {
+   "1": 150,
+   "2": 21
+  },
+  "n_ok": 171,
+  "span_ok": 171,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 2,
+  "agree": 5052,
+  "loop": 2496.605,
+  "t0": 284.0,
+  "npulse": 166,
+  "swallowed": 0,
+  "truespan": {
+   "1": 140,
+   "2": 26
+  },
+  "n_ok": 166,
+  "span_ok": 166,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 0,
+  "agree": 5058,
+  "loop": 2498.515,
+  "t0": 392.0,
+  "npulse": 190,
+  "swallowed": 2,
+  "truespan": {
+   "1": 190
+  },
+  "n_ok": 190,
+  "span_ok": 190,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   12,
+   14
+  ]
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 1,
+  "agree": 5039,
+  "loop": 2495.64,
+  "t0": 387.0,
+  "npulse": 172,
+  "swallowed": 1,
+  "truespan": {
+   "1": 153,
+   "2": 19
+  },
+  "n_ok": 172,
+  "span_ok": 172,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   14
+  ]
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 2,
+  "agree": 5056,
+  "loop": 2498.265,
+  "t0": 166.0,
+  "npulse": 169,
+  "swallowed": 0,
+  "truespan": {
+   "1": 146,
+   "2": 23
+  },
+  "n_ok": 169,
+  "span_ok": 169,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 0,
+  "agree": 5068,
+  "loop": 2499.31,
+  "t0": 399.0,
+  "npulse": 179,
+  "swallowed": 14,
+  "truespan": {
+   "1": 174,
+   "0": 3,
+   "2": 2
+  },
+  "n_ok": 175,
+  "span_ok": 175,
+  "dup": 2,
+  "mono": false,
+  "swal_bits": [
+   10,
+   12,
+   14,
+   34,
+   36,
+   42,
+   44,
+   48,
+   56,
+   178,
+   180,
+   182,
+   183,
+   191
+  ]
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 1,
+  "agree": 5047,
+  "loop": 2498.5249999999996,
+  "t0": 141.0,
+  "npulse": 162,
+  "swallowed": 0,
+  "truespan": {
+   "1": 132,
+   "2": 30
+  },
+  "n_ok": 162,
+  "span_ok": 162,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": []
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 2,
+  "agree": 5062,
+  "loop": 2501.2050000000004,
+  "t0": 266.0,
+  "npulse": 191,
+  "swallowed": 1,
+  "truespan": {
+   "1": 191
+  },
+  "n_ok": 191,
+  "span_ok": 191,
+  "dup": 0,
+  "mono": true,
+  "swal_bits": [
+   182
+  ]
+ }
+]

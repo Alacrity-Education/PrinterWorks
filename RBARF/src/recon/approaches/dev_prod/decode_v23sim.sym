@@ -1,0 +1,41 @@
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  1 _g_K                                                           000000 GR
+  7 _g_NB                                                          000000 GR
+  7 _g_NBmHT                                                       00000E GR
+  7 _g_ND8                                                         000012 GR
+  7 _g_PPB                                                         000016 GR
+  7 _g_PPE                                                         000018 GR
+  7 _g_PPHI                                                        000010 GR
+  7 _g_TIEE                                                        000014 GR
+  7 _g_TRB                                                         00001A GR
+  7 _g_Wu11                                                        00000A GR
+  1 _g_tau                                                         000002 GR
+  7 _g_yend                                                        000002 GR
+  7 _g_ymid                                                        000006 GR
+  1 _ov                                                            000004 GR
+
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 2
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size     84   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size     1C   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size      0   flags    0
+   A CABS                                       size      0   flags    8
+

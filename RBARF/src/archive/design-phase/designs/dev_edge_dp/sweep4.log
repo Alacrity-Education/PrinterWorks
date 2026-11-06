@@ -1,0 +1,7 @@
+kg +-0.005 /5e-4         EXACT 29/54 biterr  35/6912 = 0.00506 (32s)
+kg +-0.005 /2.5e-4       EXACT 30/54 biterr  33/6912 = 0.00477 (63s)
+kg +-0.008 /2.5e-4       EXACT 30/54 biterr  33/6912 = 0.00477 (100s)
+kg fine + dstep6.25      EXACT 31/54 biterr  27/6912 = 0.00391 (87s)
+kg fine + dlo/hi 500     EXACT 30/54 biterr  33/6912 = 0.00477 (56s)
+kg fine, no rise         EXACT 30/54 biterr  30/6912 = 0.00434 (62s)
+kg fine, flat we=25      EXACT 30/54 biterr  39/6912 = 0.00564 (63s)

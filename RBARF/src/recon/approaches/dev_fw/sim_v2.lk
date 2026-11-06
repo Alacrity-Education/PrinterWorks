@@ -1,0 +1,14 @@
+-muwx
+-i /home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.ihx
+-b HOME = 0x8068
+-b DATA = 0x0100
+-k /usr/bin/../share/sdcc/lib/stm8
+-k /usr/share/sdcc/lib/stm8
+-l stm8
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/decode_11_c4_48.rel
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2_11_c4_48.rel
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/decode_asm.rel
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/vectors_sim.rel
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/cap_data.rel
+
+-e

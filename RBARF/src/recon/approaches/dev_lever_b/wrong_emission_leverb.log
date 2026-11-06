@@ -1,0 +1,30 @@
+arm phases (ns): ['70', '123', '177', '230', '284', '337', '391', '444', '498', '551', '605', '658']
+133380 decodes at the SHIPPED constants
+ND     set         decodes   emitted   correct   WRONG    wrong% 95% upper
+16     ALL           70200     43584     43577       7   0.0161%  <= 0.0302%
+16     envelope      29160     10934     10931       3   0.0274%  <= 0.0709%
+16     fast          21960     15565     15563       2   0.0128%  <= 0.0404%
+16     plateau       19080     17085     17083       2   0.0117%  <= 0.0368%
+48     ALL           63180     21597     21595       2   0.0093%  <= 0.0291%
+48     envelope      26244      5184      5182       2   0.0386%  <= 0.1214%
+48     fast          19764      1875      1875       0   0.0000%  <= 0.1596%
+48     plateau       17172     14538     14538       0   0.0000%  <= 0.0206%
+BOTH   ALL          133380     65181     65172       9   0.0138%  <= 0.0241%
+
+chase-repaired emissions: 8933 of 65181 (13.7 %)
+  trials  over emissions: p50 0  p90 2  p99 37  max 65
+  comps   over emissions: p50 1  p90 3  p99 45  max 129
+  n_refs  over emissions: p50 1  p90 1  p99 3  max 9
+  comps over CHASED frames: p50 12 p90 58 max 131
+
+WRONG EMISSIONS:
+  ND=48 envelope colors eps=+7.4000 t0=604.5 trials=0 comps=1 refs=3
+  ND=48 envelope seq_pause eps=+6.4000 t0=230.4 trials=0 comps=1 refs=3
+  ND=16 plateau ones eps=-1.0500 t0=658.0 trials=4 comps=5 refs=1
+  ND=16 plateau dense eps=-1.0500 t0=658.0 trials=4 comps=5 refs=1
+  ND=16 fast val_vprime eps=+2.4000 t0=604.5 trials=40 comps=41 refs=1
+  ND=16 fast val_vprime eps=+2.4000 t0=658.0 trials=40 comps=41 refs=1
+  ND=16 envelope val_vprime eps=+2.4000 t0=604.5 trials=40 comps=41 refs=1
+  ND=16 envelope val_vprime eps=+2.4000 t0=658.0 trials=40 comps=41 refs=1
+  ND=16 envelope val_v5a eps=-2.8000 t0=658.0 trials=30 comps=59 refs=1
+wrote recon/approaches/dev_lever_b/wrong_emission_leverb.jsonl.gz

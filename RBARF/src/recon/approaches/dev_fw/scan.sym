@@ -1,0 +1,46 @@
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.=  002710 L   |     .__.ABS.=  000000 G   |     .__.CPU.=  000000 L
+    .__.H$L.=  000001 L   |   4 _cap_cap   009FA1 GR  |   4 _cap_loo   009FAF GR
+  1 _scan_ca   000000 GR  |   1 _scan_fa   000008 GR  |   1 _scan_fb   00000A GR
+  2 _scan_in   000000 GR  |   1 _scan_le   000002 GR  |   2 _scan_ne   000029 GR
+  1 _scan_ra   000004 GR  |   1 _scan_rb   000006 GR  |   1 _scan_sf   00000C GR
+  2 done_e     00004E R   |   2 eh_t       000267 R   |   2 el_t       000124 R
+  2 end_high   000367 R   |   2 end_low_   000361 R   |   2 fall0      00026A R
+  2 fall1      000283 R   |   2 fall2      00029C R   |   2 fall3      0002B5 R
+  2 fall4      0002CE R   |   2 fall5      0002E7 R   |   2 fall6      000300 R
+  2 fall7      000319 R   |   2 fall_com   000332 R   |   2 fast_hig   0001E6 R
+  2 fast_low   00005F R   |   2 fetch_hi   0001EB R   |   2 fetch_lo   000074 R
+  2 ft0        00024F R   |   2 ft1        000252 R   |   2 ft2        000255 R
+  2 ft3        000258 R   |   2 ft4        00025B R   |   2 ft5        00025E R
+  2 ft6        000261 R   |   2 ft7        000264 R   |   2 hi0        000216 R
+  2 hi1        00021C R   |   2 hi2        000222 R   |   2 hi3        000228 R
+  2 hi4        00022E R   |   2 hi5        000234 R   |   2 hi6        000240 R
+  2 hi7        000246 R   |   2 jtab       00003C R   |   2 latch_en   00011E R
+  2 low0       00009D R   |   2 low1       0000A9 R   |   2 low2       0000B5 R
+  2 low3       0000C1 R   |   2 low4       0000CD R   |   2 low5       0000D9 R
+  2 low6       0000EB R   |   2 low7       0000F7 R   |   2 resume6    000050 R
+  2 rise0      000127 R   |   2 rise1      000142 R   |   2 rise2      000159 R
+  2 rise3      000170 R   |   2 rise4      000187 R   |   2 rise5      00019E R
+  2 rise6      0001B5 R   |   2 rise7      0001CC R   |   2 rt0        000106 R
+  2 rt1        000109 R   |   2 rt2        00010C R   |   2 rt3        00010F R
+  2 rt4        000112 R   |   2 rt5        000115 R   |   2 rt6        000118 R
+  2 rt7        00011B R   |   1 s_latch    000015 R   |   1 s_left     00000F R
+  1 s_oct      000013 R   |   1 s_ptr      00000D R   |   1 s_res      000014 R
+  1 s_t        000011 R   |   1 s_tail     000016 R   |   2 tail_hig   000352 R
+  2 tail_low   000343 R   |   2 th_high    0001E3 R   |   2 tl_low     00005C R
+
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 2
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE      size      0   flags    0
+   1 DATA       size     17   flags    0
+   2 CODE       size    384   flags    0
+   3 CAPLOOP    size      0   flags    8
+   4 CAPLOOP0   size     50   flags    8
+

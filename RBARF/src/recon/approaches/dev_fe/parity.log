@@ -1,0 +1,9 @@
+captures_v21.json (CHK_LEN=3)    54/  54 bit-identical
+captures_v21_val.json (CHK_LEN=3)   36/  36 bit-identical
+captures_v22.json (CHK_LEN=4)    54/  54 bit-identical
+captures_v22_val.json (CHK_LEN=4)   36/  36 bit-identical
+captures_trim.json (legacy v2.0)   96/  96 bit-identical
+fuzz_v23 ND=16 (v2.3)           124/ 124 bit-identical
+fuzz_v23 ND=48 (v2.3)           149/ 149 bit-identical
+HOST PARITY (decode.c vs embedded_v2.py): PASS
+EXIT 0

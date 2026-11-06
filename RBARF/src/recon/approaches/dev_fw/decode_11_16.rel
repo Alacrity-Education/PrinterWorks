@@ -1,0 +1,85 @@
+XH3
+H B areas F global symbols
+M decode
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 98 flags 0 addr 0
+S _ov Def000018
+S _dec_info Def000000
+S _g_tau Def000016
+S _g_K Def000014
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 19 flags 0 addr 0
+S _g_NBm32 Def00000E
+S _g_Wu11 Def00000A
+S _g_NPP Def000016
+S _g_yend Def000002
+S _g_PPHI Def000010
+S _g_ymid Def000006
+S _g_ND8 Def000014
+S _g_NB Def000000
+S _g_ND Def000012
+S _g_CHK Def000018
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 0 flags 0 addr 0
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 01
+T 00 00 14
+R 00 00 00 01
+T 00 00 14
+R 00 00 00 01
+T 00 00 16
+R 00 00 00 01
+T 00 00 16
+R 00 00 00 01
+T 00 00 18
+R 00 00 00 01
+T 00 00 18
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 07
+T 00 00 00 00 D8
+R 00 00 00 07
+T 00 00 02
+R 00 00 00 07
+T 00 00 02 00 01 B2 A4
+R 00 00 00 07
+T 00 00 06
+R 00 00 00 07
+T 00 00 06 00 00 DA 00
+R 00 00 00 07
+T 00 00 0A
+R 00 00 00 07
+T 00 00 0A 0D 79 A0 00
+R 00 00 00 07
+T 00 00 0E
+R 00 00 00 07
+T 00 00 0E 00 B8
+R 00 00 00 07
+T 00 00 10
+R 00 00 00 07
+T 00 00 10 00 B8
+R 00 00 00 07
+T 00 00 12
+R 00 00 00 07
+T 00 00 12 00 10
+R 00 00 00 07
+T 00 00 14
+R 00 00 00 07
+T 00 00 14 00 80
+R 00 00 00 07
+T 00 00 16
+R 00 00 00 07
+T 00 00 16 00 13
+R 00 00 00 07
+T 00 00 18
+R 00 00 00 07
+T 00 00 18 03
+R 00 00 00 07

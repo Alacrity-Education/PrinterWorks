@@ -1,0 +1,57 @@
+zeros_0        t0= 442.5 k=62.0556 loop= 2482.2 d=[ 0.  0.  0.  1.  0.  0. -1.  2.] h1=730 h0=395 anch= 178 era= 15 errdec= 16 err= 16
+zeros_1        t0= 126.0 k=62.4649 loop= 2498.6 d=[ 0. -2.  2.  1.  2.  1.  0.  0.] h1=750 h0=375 anch= 197 era=  0 errdec= 86 err= 86
+zeros_2        t0= 232.0 k=62.4412 loop= 2497.6 d=[ 0. -2.  0.  0.  0.  0.  0.  0.] h1=730 h0=395 anch= 198 era=  0 errdec=122 err=122
+ones_0         t0= 344.0 k=62.4187 loop= 2496.7 d=[ 0.  0. -1.  0. -1.  0.  0.  0.] h1=750 h0=375 anch= 224 era=  0 errdec=  0 err=  0
+ones_1         t0= 426.0 k=62.3800 loop= 2495.2 d=[0. 0. 0. 1. 0. 0. 0. 0.] h1=750 h0=375 anch= 221 era=  0 errdec=  2 err=  2
+ones_2         t0= 352.0 k=62.4080 loop= 2496.3 d=[ 0.  0. -1.  0. -1.  0.  0.  0.] h1=750 h0=395 anch= 231 era=  0 errdec=  0 err=  0
+aa_0           t0= 342.0 k=62.4227 loop= 2496.9 d=[ 0.  0. -2.  0. -1.  0. -1. -2.] h1=690 h0=375 anch= 216 era=  0 errdec=  0 err=  0
+aa_1           t0= 378.0 k=62.4015 loop= 2496.1 d=[ 0.  0.  0.  0.  0.  0.  0. -2.] h1=750 h0=395 anch= 223 era=  0 errdec=  0 err=  0
+aa_2           t0= 386.0 k=62.4040 loop= 2496.2 d=[0. 0. 0. 0. 0. 1. 0. 0.] h1=750 h0=415 anch= 222 era=  0 errdec=  0 err=  0
+p55_0          t0= 378.0 k=62.4200 loop= 2496.8 d=[ 0.   0.   2.   0.   0.   0.  -1.5  0. ] h1=730 h0=375 anch= 194 era=  1 errdec=114 err=114
+p55_1          t0= 380.0 k=62.3920 loop= 2495.7 d=[0. 0. 0. 1. 0. 0. 0. 1.] h1=750 h0=375 anch= 195 era=  0 errdec=117 err=117
+p55_2          t0= 422.0 k=62.3813 loop= 2495.2 d=[0. 1. 0. 1. 0. 0. 0. 1.] h1=750 h0=375 anch= 187 era=  0 errdec=118 err=118
+lone1_0        t0= 422.0 k=62.3800 loop= 2495.2 d=[ 0.   0.   0.   1.   0.   0.  -0.5  1. ] h1=750 h0=375 anch= 183 era=  0 errdec= 92 err= 92
+lone1_1        t0= 407.0 k=62.7600 loop= 2510.4 d=[ 0. -2.  0. -2.  0.  0.  0. -2.] h1=750 h0=375 anch= 207 era= 31 errdec=  9 err=  9
+lone1_2        t0= 420.0 k=62.0237 loop= 2480.9 d=[ 0.    0.   -1.    1.25  2.    0.    0.    0.  ] h1=650 h0=375 anch= 192 era= 29 errdec= 28 err= 33
+msb1_0         t0= 432.0 k=62.0585 loop= 2482.3 d=[ 0.    0.   -2.    1.   -0.25  0.   -1.5   2.  ] h1=770 h0=375 anch= 177 era= 12 errdec= 28 err= 28
+msb1_1         t0= 510.4 k=64.2068 loop= 2568.3 d=[ 0.    1.25  2.    2.   -2.    0.    0.    1.  ] h1=750 h0=375 anch= 128 era= 10 errdec= 48 err= 49
+msb1_2         t0= 307.5 k=62.7606 loop= 2510.4 d=[ 0.   0.   0.5  0.   0.   1.  -2.   1. ] h1=770 h0=435 anch= 207 era= 16 errdec=  9 err= 13
+count_0        t0= 398.0 k=62.0305 loop= 2481.2 d=[0. 0. 1. 2. 1. 0. 0. 0.] h1=750 h0=375 anch= 193 era=  9 errdec= 34 err= 38
+count_1        t0= 392.0 k=62.0372 loop= 2481.5 d=[0.   0.25 0.25 2.   1.   0.   0.   2.  ] h1=730 h0=375 anch= 191 era= 10 errdec= 37 err= 40
+count_2        t0= 372.0 k=62.4222 loop= 2496.9 d=[ 0.   0.   2.   0.   0.   0.5 -1.5 -0.5] h1=730 h0=375 anch= 196 era=  0 errdec= 78 err= 78
+impulse_hi_0   t0= 292.0 k=63.8960 loop= 2555.8 d=[ 0.  0.  0.  1. -1.  0.  1.  0.] h1=750 h0=375 anch= 150 era= 15 errdec= 24 err= 25
+impulse_hi_1   t0= 256.0 k=62.4280 loop= 2497.1 d=[0. 0. 0. 1. 0. 1. 0. 0.] h1=750 h0=375 anch= 201 era=  0 errdec= 82 err= 82
+impulse_hi_2   t0= 292.0 k=63.8960 loop= 2555.8 d=[ 0.  0.  0.  1. -1.  0.  1.  0.] h1=750 h0=375 anch= 150 era= 15 errdec= 28 err= 29
+impulse_lo_0   t0= 378.0 k=62.4015 loop= 2496.1 d=[ 0.  0.  0.  0.  0.  0.  0. -2.] h1=750 h0=395 anch= 225 era=  0 errdec= 16 err= 16
+impulse_lo_1   t0= 254.2 k=62.4347 loop= 2497.4 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=395 anch= 216 era=  0 errdec=  4 err=  4
+impulse_lo_2   t0= 416.5 k=62.3910 loop= 2495.6 d=[0. 0. 0. 0. 0. 0. 1. 0.] h1=750 h0=375 anch= 221 era=  8 errdec=  3 err= 11
+blocks_0       t0= 378.0 k=62.4012 loop= 2496.0 d=[ 0.  0.  0.  0.  0.  0.  0. -2.] h1=750 h0=395 anch= 225 era=  0 errdec= 13 err= 13
+blocks_1       t0= 349.0 k=62.4095 loop= 2496.4 d=[ 0.  0. -1.  1. -1.  0.  0.  0.] h1=750 h0=395 anch= 222 era=  0 errdec= 13 err= 13
+blocks_2       t0= 349.0 k=62.4095 loop= 2496.4 d=[ 0.  0. -1.  1. -1.  0.  0.  0.] h1=750 h0=395 anch= 228 era=  0 errdec= 11 err= 11
+nibbles_0      t0= 382.0 k=62.4000 loop= 2496.0 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=395 anch= 225 era=  0 errdec=  8 err=  8
+nibbles_1      t0= 392.0 k=62.4034 loop= 2496.1 d=[0. 0. 0. 0. 0. 1. 0. 0.] h1=750 h0=415 anch= 226 era=  0 errdec=  9 err=  9
+nibbles_2      t0= 378.0 k=62.4065 loop= 2496.3 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=415 anch= 220 era=  0 errdec=  7 err=  7
+sparse_0       t0= 392.0 k=62.0372 loop= 2481.5 d=[0.   0.25 0.25 2.   1.   0.   0.   0.  ] h1=730 h0=375 anch= 189 era= 12 errdec= 43 err= 48
+sparse_1       t0= 420.0 k=62.0610 loop= 2482.4 d=[ 0.  0.  0.  1.  0.  0. -1.  2.] h1=750 h0=395 anch= 192 era= 13 errdec= 38 err= 45
+sparse_2       t0= 385.0 k=62.3917 loop= 2495.7 d=[0.  0.  0.  0.5 0.  0.  0.  1. ] h1=750 h0=375 anch= 193 era=  0 errdec= 69 err= 69
+dense_0        t0= 426.0 k=62.3886 loop= 2495.5 d=[0. 0. 0. 1. 0. 0. 1. 0.] h1=750 h0=375 anch= 221 era=  9 errdec=  0 err=  5
+dense_1        t0= 378.0 k=62.4065 loop= 2496.3 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=415 anch= 220 era=  0 errdec=  0 err=  0
+dense_2        t0= 378.0 k=62.4012 loop= 2496.0 d=[ 0.  0.  0.  0.  0.  0.  0. -2.] h1=750 h0=395 anch= 219 era=  0 errdec=  3 err=  3
+runs_0         t0= 350.0 k=62.4132 loop= 2496.5 d=[ 0.  0. -1.  1. -1.  0.  0.  0.] h1=750 h0=415 anch= 218 era=  0 errdec=  1 err=  1
+runs_1         t0= 342.1 k=62.4212 loop= 2496.8 d=[ 0.   0.   0.   1.  -1.   0.5  0.   0. ] h1=810 h0=435 anch= 218 era=  0 errdec=  4 err=  4
+runs_2         t0= 382.0 k=62.4000 loop= 2496.0 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=395 anch= 219 era=  0 errdec=  3 err=  3
+edges_0        t0= 381.8 k=62.4000 loop= 2496.0 d=[0.  0.  0.  0.  0.  0.5 0.  2. ] h1=750 h0=375 anch= 179 era=  0 errdec= 87 err= 87
+edges_1        t0= 399.9 k=62.7579 loop= 2510.3 d=[ 0. -2.  0. -1.  0.  0.  0. -2.] h1=710 h0=375 anch= 209 era= 34 errdec=  5 err=  9
+edges_2        t0= 279.0 k=62.7877 loop= 2511.5 d=[ 0.   -1.   -0.25  0.    0.    0.    1.5  -0.5 ] h1=750 h0=455 anch= 217 era= 27 errdec= 10 err= 13
+rnd1_0         t0= 392.0 k=62.4034 loop= 2496.1 d=[0. 0. 0. 0. 0. 1. 0. 0.] h1=750 h0=415 anch= 228 era=  0 errdec=  2 err=  2
+rnd1_1         t0= 348.0 k=62.4092 loop= 2496.4 d=[ 0.   0.  -1.5  0.  -1.   0.   0.   0. ] h1=750 h0=395 anch= 229 era=  0 errdec=  1 err=  1
+rnd1_2         t0= 347.0 k=62.4095 loop= 2496.4 d=[ 0.   -1.   -1.    1.   -1.    0.    0.25 -0.5 ] h1=750 h0=415 anch= 223 era=  0 errdec=  1 err=  1
+rnd2_0         t0= 496.0 k=62.4360 loop= 2497.4 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=375 anch= 220 era=  0 errdec= 13 err= 13
+rnd2_1         t0= 418.0 k=62.3919 loop= 2495.7 d=[ 0.   0.5  0.   1.   0.   0.  -0.5  0. ] h1=750 h0=375 anch= 218 era=  0 errdec=  5 err=  5
+rnd2_2         t0= 349.0 k=62.4095 loop= 2496.4 d=[ 0.  0. -1.  1. -1.  0.  0.  0.] h1=750 h0=395 anch= 228 era=  0 errdec=  0 err=  0
+rnd3_0         t0= 487.0 k=62.4360 loop= 2497.4 d=[0. 0. 0. 0. 0. 2. 2. 0.] h1=750 h0=375 anch= 192 era=  0 errdec= 16 err= 16
+rnd3_1         t0= 254.5 k=62.4350 loop= 2497.4 d=[ 0.   0.  -1.5  0.   0.   0.   0.   0. ] h1=750 h0=395 anch= 214 era=  0 errdec=  5 err=  5
+rnd3_2         t0= 378.0 k=62.4720 loop= 2498.9 d=[0. 0. 0. 0. 0. 0. 0. 0.] h1=750 h0=375 anch= 230 era=  0 errdec=  9 err=  9
+
+TOTAL erasures 3.85%  BER(decidable) 22.134%  BER(all) 22.02%  impossible/cap 42.69  exact 7/54
+erasure run lengths: {1: 256, 2: 1, 3: 1, 5: 1}

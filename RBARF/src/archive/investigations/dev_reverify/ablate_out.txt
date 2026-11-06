@@ -1,0 +1,35 @@
+--- baseline ---
+baseline (as shipped)                        all 53/54   holdout 18/18   miss=['rnd2_0']
+
+--- knife-bit byte-period vote ---
+vote DISABLED (KNIFE_PERIOD_MIN=2.0)         all 47/54   holdout 17/18   miss=['blocks_0', 'nibbles_1', 'p55_0', 'rnd2_0', 'runs_2', 'sparse_0', 'zeros_0']
+vote UNGATED (KNIFE_PERIOD_MIN=0.0)          all 49/54   holdout 18/18   miss=['blocks_0', 'nibbles_1', 'rnd2_0', 'rnd2_1', 'rnd3_0']
+
+--- periodicity gate margin sweep ---
+KNIFE_PERIOD_MIN=0.9                         all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_PERIOD_MIN=0.95                        all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_PERIOD_MIN=0.97                        all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_PERIOD_MIN=0.99                        all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_PERIOD_MIN=0.995                       all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_PERIOD_MIN=1.0                         all 53/54   holdout 18/18   miss=['rnd2_0']
+
+--- TIE_NATS plateau ---
+TIE_NATS=0.0                                 all 53/54   holdout 18/18   miss=['rnd2_0']
+TIE_NATS=0.05                                all 53/54   holdout 18/18   miss=['rnd2_0']
+TIE_NATS=0.1                                 all 53/54   holdout 18/18   miss=['rnd2_0']
+TIE_NATS=0.15                                all 53/54   holdout 18/18   miss=['rnd2_0']
+TIE_NATS=0.2                                 all 50/54   holdout 17/18   miss=['rnd1_0', 'rnd2_0', 'rnd2_1', 'rnd3_2']
+
+--- KNIFE_LLR sweep ---
+KNIFE_LLR=0.5                                all 52/54   holdout 18/18   miss=['blocks_0', 'rnd2_0']
+KNIFE_LLR=0.7                                all 52/54   holdout 18/18   miss=['blocks_0', 'rnd2_0']
+KNIFE_LLR=0.9                                all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_LLR=1.1                                all 53/54   holdout 18/18   miss=['rnd2_0']
+KNIFE_LLR=1.3                                all 53/54   holdout 18/18   miss=['rnd2_0']
+
+--- psi clamp hits on the 54 winners ---
+    total psi_clamped across 54 winners = 0
+
+--- clean-capture gate stats (refusal-gate calibration) ---
+    max over 54 clean captures: {'violations': 0, 'infeasible': 0, 'label_err': 2, 'cover0': 0, 'knife_open': 10}
+    gates: {'VIOL': 0, 'INFEAS': 4, 'LABERR': 6, 'COVER': 32, 'TRUNC_KNIFE_LLR': 2.0}

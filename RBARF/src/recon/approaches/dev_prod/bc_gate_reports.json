@@ -1,0 +1,59 @@
+{
+ "sent": 24,
+ "decodes": 18,
+ "resets": 6,
+ "rst_hist": {
+  "04": 6
+ },
+ "crumb_hist": {
+  "20": 6
+ },
+ "reports": [
+  {
+   "boot": "cold",
+   "line": "R:00 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "blink",
+   "sent": 4,
+   "decodes_since": 3,
+   "line": "R:04 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "fade",
+   "sent": 5,
+   "decodes_since": 3,
+   "line": "R:04 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "seq_plain",
+   "sent": 6,
+   "decodes_since": 3,
+   "line": "R:04 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "seq_pause",
+   "sent": 7,
+   "decodes_since": 3,
+   "line": "R:04 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "full",
+   "sent": 13,
+   "decodes_since": 8,
+   "line": "R:04 C:20 S:00 M:1"
+  },
+  {
+   "boot": "reset",
+   "after_frame": "blink",
+   "sent": 24,
+   "decodes_since": 18,
+   "line": "R:04 C:20 S:00 M:1"
+  }
+ ]
+}

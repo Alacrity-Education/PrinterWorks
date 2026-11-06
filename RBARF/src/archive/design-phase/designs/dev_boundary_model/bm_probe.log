@@ -1,0 +1,21 @@
+== (A) samples with bit=1, phase in [600,725), read LOW ==
+  per slot  low/total: {0: '0/3', 1: '2/294', 2: '2/700', 3: '5/78', 4: '6/14', 5: '0/16', 6: '7/329', 7: '257/713'}
+  worst captures: [('rnd3_1', 15), ('rnd2_1', 13), ('rnd2_2', 13), ('p55_0', 11), ('nibbles_2', 11), ('dense_2', 11), ('blocks_1', 10), ('blocks_0', 9)]
+
+== (C) tau tied to G/40 with a global intra-loop stretch kappa ==
+  kappa=1.000 tau=kappa*G/40: 2470 mismatched samples
+  kappa=1.002 tau=kappa*G/40: 2302 mismatched samples
+  kappa=1.004 tau=kappa*G/40: 1993 mismatched samples
+  kappa=1.005 tau=kappa*G/40: 1980 mismatched samples
+  kappa=1.006 tau=kappa*G/40: 1934 mismatched samples
+  kappa=1.008 tau=kappa*G/40: 1956 mismatched samples
+  kappa=1.010 tau=kappa*G/40: 1990 mismatched samples
+
+== (B) interval-constraint rising-edge track ==
+  interval track |err|: med-of-med 6.9  med-of-max 129.3  worst 620.8 ns
+  loops with |err|>60 ns: med 32 of 94, max 64
+    worst impulse_hi_0   med   3.6 max  620.8 n>60 38
+    worst impulse_hi_2   med  23.5 max  618.0 n>60 39
+    worst lone1_2        med  38.5 max  601.0 n>60 45
+    worst edges_0        med 122.0 max  600.0 n>60 64
+    worst lone1_1        med   7.5 max  598.5 n>60 37

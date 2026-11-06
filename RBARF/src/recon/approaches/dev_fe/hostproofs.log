@@ -1,0 +1,120 @@
+===== fuzz_v23 --report
+== fuzz_v23 ND=16 : 124 cases ==
+class        cases   emitted  correct    WRONG
+chk_damage      24        15       15        0
+drift            8         2        2        0
+eps_wide        17        10       10        0
+malform          7         3        3        0
+mk_damage       24         7        7        0
+weakbits        24        17       17        0
+zerorun         20        13       13        0
+TOTAL          124        67       67        0   -> wrong/emission = 0.0000 %
+causes: {'ok': 67, 'refuse_infeasible': 22, 'refuse_chase': 11, 'refuse_nocand': 10, 'refuse_admit': 9, 'refuse_labelerr': 4, 'refuse_marker': 1}
+== fuzz_v23 ND=48 : 149 cases ==
+class        cases   emitted  correct    WRONG
+chk_damage      24        10       10        0
+drift            8         0        0        0
+eps_wide        17         5        5        0
+malform          7         2        2        0
+mk_damage       24         4        4        0
+weakbits        24         4        4        0
+zerorun         45        21       21        0
+TOTAL          149        46       46        0   -> wrong/emission = 0.0000 %
+causes: {'ok': 46, 'refuse_chase': 30, 'refuse_admit': 28, 'refuse_infeasible': 23, 'refuse_nocand': 13, 'refuse_labelerr': 9}
+
+BOTH GEOMETRIES: 273 cases, 113 emitted, 0 WRONG -> 0.0000 % of emissions
+FUZZ EXIT 0
+===== ucsim_v23 --nd 48
+  eps-0.080/kl_fade_masked                             refuse_infeasible trials= 0 comps=  0 ticks=4141357 OK
+  eps-0.060/kl_preset_draw                             refuse_admit     trials= 0 comps=  1 ticks=4191769 OK
+  eps-0.025/kl_preset_rain                             refuse_labelerr  trials= 0 comps=  0 ticks=4437680 OK
+  eps-0.020/kl_preset_rain_rev                         chase            trials= 1 comps=  2 ticks=4394266 OK
+  eps-0.010/preset_rainR                               direct           trials= 0 comps=  1 ticks=4364913 OK
+  eps+0.005/kl_preset_draw_rev                         refuse_chase     trials=55 comps= 56 ticks=4811722 OK
+  malform tr8 ch0/full                                 refuse_nocand    trials= 0 comps=  1 ticks=4262942 OK
+  chk[all 6 check bytes damaged] eps+0.002/full        refuse_chase     trials= 7 comps= 72 ticks=4204064 OK
+  zr[kl_preset_rain] eps+0.0060                        refuse_chase     trials=55 comps= 56 ticks=4792732 OK
+  chk[BOTH positions SPLIT] eps+0.002/kl_static_red    refuse_chase     trials= 5 comps= 54 ticks=4409596 OK
+  weak eps+0.0020 t0=650/kl_static_eight_colors        refuse_chase     trials=28 comps= 29 ticks=4443662 OK
+  weak eps+0.0040 t0=470/kl_rnd_colors1                refuse_chase     trials=22 comps= 23 ticks=4551307 OK
+  zr[sparse] eps+0.0020                                refuse_chase     trials=21 comps= 22 ticks=4529146 OK
+  weak eps+0.0020 t0=470/kl_preset_spin                chase            trials=17 comps= 18 ticks=4537920 OK
+  zr[kl_preset_draw_rev] eps+0.0025                    refuse_chase     trials=15 comps= 16 ticks=4531690 OK
+  mk[trl 4] eps+0.002/seq_plain                        refuse_chase     trials=11 comps= 12 ticks=4472096 OK
+  weak eps+0.0050 t0=650/kl_preset_draw                refuse_chase     trials=11 comps= 12 ticks=4483826 OK
+  zr[all_zero] eps+0.0020                              refuse_chase     trials=10 comps= 11 ticks=4460899 OK
+  zr[kl_all_zero_data] eps+0.0020                      refuse_chase     trials=10 comps= 11 ticks=4460899 OK
+  zr[kl_preset_rain] eps+0.0025                        refuse_chase     trials=10 comps= 11 ticks=4453823 OK
+  zr[kl_preset_rain_rev] eps+0.0025                    chase            trials=10 comps= 11 ticks=4492305 OK
+  mk[hdr 2] eps+0.002/fade                             refuse_chase     trials= 8 comps=  9 ticks=4463275 OK
+  weak eps+0.0030 t0=470/seq_pause                     refuse_chase     trials= 8 comps=  9 ticks=4466625 OK
+  chk[HI position SPLIT (all 3 differ)] eps+0.002/kl_g refuse_chase     trials= 2 comps=  9 ticks=4406026 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=48): 24/24 bit-identical
+decode ticks: min 4141357  p50 4460899  max 4811722   (@16 MHz: 258.8 / 278.8 / 300.7 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=72 trials=7 -> 4204064 ticks (262.8 ms)
+stray ucsim processes at exit: 0
+UCSIM EXIT 0 (--nd 48)
+===== ucsim_v23 --nd 16
+  eps-0.080/ones                                       refuse_admit     trials= 0 comps=  1 ticks=2053640 OK
+  eps-0.060/val_v5a                                    refuse_infeasible trials= 0 comps=  0 ticks=2032260 OK
+  eps-0.040/runs                                       refuse_chase     trials=31 comps= 34 ticks=2208266 OK
+  eps-0.025/msb1                                       direct           trials= 0 comps=  1 ticks=2129279 OK
+  malform tr0 ch8/val_vprime                           refuse_marker    trials= 0 comps=  0 ticks=1922878 OK
+  mk[last byte all] eps-0.011/edges                    refuse_labelerr  trials= 0 comps=  0 ticks=2086693 OK
+  mk[trl 4] eps+0.002/blocks                           chase            trials= 1 comps=  2 ticks=2070551 OK
+  chk[HI position SPLIT (all 3 differ)] eps-0.011/msb1 refuse_nocand    trials= 0 comps=  3 ticks=2102941 OK
+  zr[ff_then_zero] eps+0.0060                          refuse_chase     trials=45 comps= 46 ticks=2219165 OK
+  weak eps-0.0450 t0=650/runs                          refuse_chase     trials=38 comps= 41 ticks=2207445 OK
+  chk[BOTH positions SPLIT] eps-0.011/val_vrnd8        refuse_chase     trials= 3 comps= 36 ticks=2088761 OK
+  drift-0.004 eps-0.011/val_vrnd6                      refuse_chase     trials= 9 comps= 10 ticks=2081695 OK
+  chk[BOTH positions SPLIT] eps-0.002/msb1             refuse_nocand    trials= 0 comps=  9 ticks=2098070 OK
+  chk[BOTH positions SPLIT] eps+0.002/val_va5          refuse_nocand    trials= 0 comps=  9 ticks=2006896 OK
+  chk[all 6 check bytes damaged] eps-0.011/val_vchecke refuse_nocand    trials= 0 comps=  9 ticks=2056765 OK
+  chk[all 6 check bytes damaged] eps-0.002/zeros       refuse_nocand    trials= 0 comps=  9 ticks=2085661 OK
+  chk[all 6 check bytes damaged] eps+0.002/ones        refuse_nocand    trials= 0 comps=  9 ticks=1925524 OK
+  zr[all_zero] eps+0.0020                              refuse_chase     trials= 6 comps=  7 ticks=2121889 OK
+  drift-0.002 eps-0.011/val_vwalk1                     refuse_chase     trials= 6 comps=  7 ticks=2128631 OK
+  zr[all_zero] eps+0.0025                              refuse_chase     trials= 5 comps=  6 ticks=2126517 OK
+  zr[zero_then_ff] eps+0.0025                          refuse_chase     trials= 4 comps=  5 ticks=2070661 OK
+  mk[hdr 2] eps+0.002/impulse_hi                       refuse_chase     trials= 3 comps=  4 ticks=2080371 OK
+  zr[ff_then_zero] eps+0.0020                          refuse_chase     trials= 3 comps=  4 ticks=2035250 OK
+  eps+0.040/val_v5a                                    refuse_admit     trials= 0 comps=  3 ticks=2141266 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=16): 24/24 bit-identical
+decode ticks: min 1922878  p50 2086693  max 2219165   (@16 MHz: 120.2 / 130.4 / 138.7 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=46 trials=45 -> 2219165 ticks (138.7 ms)
+stray ucsim processes at exit: 0
+UCSIM EXIT 0 (--nd 16)
+===== ucsim_v23 --nd 48 --b0 C0
+  eps-0.080/kl_fade_masked                             refuse_infeasible trials= 0 comps=  0 ticks=4141357 OK
+  eps-0.060/kl_preset_draw                             refuse_admit     trials= 0 comps=  1 ticks=4191769 OK
+  eps-0.025/kl_preset_rain                             refuse_labelerr  trials= 0 comps=  0 ticks=4437680 OK
+  eps-0.020/kl_preset_rain_rev                         chase            trials= 1 comps=  2 ticks=4394266 OK
+  eps-0.010/preset_rainR                               direct           trials= 0 comps=  1 ticks=4364913 OK
+  eps+0.005/kl_preset_draw_rev                         refuse_chase     trials=55 comps= 56 ticks=4811722 OK
+  malform tr8 ch0/full                                 refuse_nocand    trials= 0 comps=  1 ticks=4262942 OK
+  chk[all 6 check bytes damaged] eps+0.002/full        refuse_chase     trials= 7 comps= 72 ticks=4204064 OK
+  zr[kl_preset_rain] eps+0.0060                        refuse_chase     trials=55 comps= 56 ticks=4792732 OK
+  chk[BOTH positions SPLIT] eps+0.002/kl_static_red    refuse_chase     trials= 5 comps= 54 ticks=4409596 OK
+  weak eps+0.0020 t0=650/kl_static_eight_colors        refuse_chase     trials=28 comps= 29 ticks=4443662 OK
+  weak eps+0.0040 t0=470/kl_rnd_colors1                refuse_chase     trials=22 comps= 23 ticks=4551307 OK
+  zr[sparse] eps+0.0020                                refuse_chase     trials=21 comps= 22 ticks=4529146 OK
+  weak eps+0.0020 t0=470/kl_preset_spin                chase            trials=17 comps= 18 ticks=4537920 OK
+  zr[kl_preset_draw_rev] eps+0.0025                    refuse_chase     trials=15 comps= 16 ticks=4531690 OK
+  mk[trl 4] eps+0.002/seq_plain                        refuse_chase     trials=11 comps= 12 ticks=4472096 OK
+  weak eps+0.0050 t0=650/kl_preset_draw                refuse_chase     trials=11 comps= 12 ticks=4483826 OK
+  zr[all_zero] eps+0.0020                              refuse_chase     trials=10 comps= 11 ticks=4460899 OK
+  zr[kl_all_zero_data] eps+0.0020                      refuse_chase     trials=10 comps= 11 ticks=4460899 OK
+  zr[kl_preset_rain] eps+0.0025                        refuse_chase     trials=10 comps= 11 ticks=4453823 OK
+  zr[kl_preset_rain_rev] eps+0.0025                    chase            trials=10 comps= 11 ticks=4492305 OK
+  mk[hdr 2] eps+0.002/fade                             refuse_chase     trials= 8 comps=  9 ticks=4463275 OK
+  weak eps+0.0030 t0=470/seq_pause                     refuse_chase     trials= 8 comps=  9 ticks=4466625 OK
+  chk[HI position SPLIT (all 3 differ)] eps+0.002/kl_g refuse_chase     trials= 2 comps=  9 ticks=4406026 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=48, capture byte0 bits7..6 = 0xC0): 24/24 bit-identical
+decode ticks: min 4141357  p50 4460899  max 4811722   (@16 MHz: 258.8 / 278.8 / 300.7 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=72 trials=7 -> 4204064 ticks (262.8 ms)
+stray ucsim processes at exit: 0
+UCSIM EXIT 0 (--nd 48 --b0 C0)
+ALL DONE

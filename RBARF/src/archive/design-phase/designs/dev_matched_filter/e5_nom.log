@@ -1,0 +1,60 @@
+zeros_0        hdr: dt0=  +308.0 dk=-0.2350 end_err=   -585.0ns | joint: dt0=  +160.0 dk=+0.3850 end_err= +1623.0ns | biterr=  3   
+zeros_1        hdr: dt0=   +11.0 dk=+0.0600 end_err=   +239.0ns | joint: dt0=   +23.0 dk=+0.0600 end_err=  +251.0ns | biterr= 63   
+zeros_2        hdr: dt0=   +50.1 dk=-0.1406 end_err=   -484.2ns | joint: dt0=   +26.1 dk=+0.0594 end_err=  +251.8ns | biterr= 64   
+ones_0         hdr: dt0=   +10.0 dk=-0.0300 end_err=   -104.0ns | joint: dt0=    -5.0 dk=+0.0092 end_err=   +30.0ns | biterr=  0 OK
+ones_1         hdr: dt0=   +74.0 dk=+0.0600 end_err=   +302.0ns | joint: dt0=  +116.0 dk=-0.0400 end_err=   -36.0ns | biterr=  2   
+ones_2         hdr: dt0=    -5.0 dk=+0.0100 end_err=    +33.0ns | joint: dt0=    +1.0 dk=-0.0025 end_err=    -8.5ns | biterr=  2   
+aa_0           hdr: dt0=    +2.0 dk=-0.0350 end_err=   -131.0ns | joint: dt0=   +18.0 dk=+0.0050 end_err=   +37.0ns | biterr=  0 OK
+aa_1           hdr: dt0=  +114.0 dk=-0.2750 end_err=   -931.0ns | joint: dt0=    +6.2 dk=-0.0166 end_err=   -56.7ns | biterr=  0 OK
+aa_2           hdr: dt0=   +78.0 dk=+0.0100 end_err=   +116.0ns | joint: dt0=   +80.0 dk=-0.0269 end_err=   -22.1ns | biterr=  0 OK
+p55_0          hdr: dt0=  +254.0 dk=-0.2550 end_err=   -715.0ns | joint: dt0=  +160.0 dk=+0.3050 end_err= +1319.0ns | biterr= 58   
+p55_1          hdr: dt0=  +250.2 dk=-0.0550 end_err=    +41.3ns | joint: dt0=  +170.2 dk=+0.3019 end_err= +1317.4ns | biterr= 59   
+p55_2          hdr: dt0=  +266.0 dk=-0.0500 end_err=    +76.0ns | joint: dt0=  +166.0 dk=+0.3069 end_err= +1332.1ns | biterr= 59   
+lone1_0        hdr: dt0=  +343.0 dk=+0.0200 end_err=   +419.0ns | joint: dt0=  +271.0 dk=+0.3631 end_err= +1650.9ns | biterr= 11   
+lone1_1        hdr: dt0=    -6.0 dk=-0.2844 end_err=  -1086.6ns | joint: dt0=   -52.0 dk=+0.0156 end_err=    +7.4ns | biterr= 11   
+lone1_2        hdr: dt0=  +314.0 dk=-0.2400 end_err=   -598.0ns | joint: dt0=  +202.0 dk=+0.3800 end_err= +1646.0ns | biterr= 13   
+msb1_0         hdr: dt0=  +254.0 dk=-0.4700 end_err=  -1532.0ns | joint: dt0=   +38.0 dk=-0.0116 end_err=    -5.9ns | biterr= 12   
+msb1_1         hdr: dt0=  -214.0 dk=+0.8050 end_err=  +2845.0ns | joint: dt0=   -70.0 dk=+0.4466 end_err= +1626.9ns | biterr= 31   
+msb1_2         hdr: dt0=  +122.0 dk=-0.3550 end_err=  -1227.0ns | joint: dt0=   +46.0 dk=-0.0150 end_err=   -11.0ns | biterr= 17   
+count_0        hdr: dt0=  +130.0 dk=-0.0400 end_err=    -22.0ns | joint: dt0=   +42.0 dk=+0.3600 end_err= +1410.0ns | biterr= 21   
+count_1        hdr: dt0=    +3.0 dk=-0.4450 end_err=  -1688.0ns | joint: dt0=   -79.0 dk=-0.0541 end_err=  -284.4ns | biterr= 23   
+count_2        hdr: dt0=   +82.0 dk=-0.4348 end_err=  -1570.4ns | joint: dt0=    +2.0 dk=-0.0780 end_err=  -294.3ns | biterr= 21   
+impulse_hi_0   hdr: dt0=  +270.0 dk=+1.9150 end_err=  +7547.0ns | joint: dt0=  +534.0 dk=+0.2750 end_err= +1579.0ns | biterr= 14   
+impulse_hi_1   hdr: dt0=  +211.0 dk=-0.2400 end_err=   -701.0ns | joint: dt0=  +197.0 dk=+0.0138 end_err=  +249.3ns | biterr= 87   
+impulse_hi_2   hdr: dt0=  +270.0 dk=+1.9150 end_err=  +7547.0ns | joint: dt0=  +534.0 dk=+0.2750 end_err= +1579.0ns | biterr= 13   
+impulse_lo_0   hdr: dt0=   +94.0 dk=-0.2000 end_err=   -666.0ns | joint: dt0=   -10.0 dk=+0.0031 end_err=    +1.9ns | biterr=  3   
+impulse_lo_1   hdr: dt0=  +198.0 dk=-0.3075 end_err=   -970.5ns | joint: dt0=  +184.0 dk=-0.0537 end_err=   -20.2ns | biterr=  4   
+impulse_lo_2   hdr: dt0=   +98.0 dk=+0.0100 end_err=   +136.0ns | joint: dt0=  +111.0 dk=-0.0300 end_err=    -3.0ns | biterr=  3   
+blocks_0       hdr: dt0=   +18.0 dk=-0.2247 end_err=   -835.8ns | joint: dt0=   -83.0 dk=+0.0216 end_err=    -1.1ns | biterr= 13   
+blocks_1       hdr: dt0=   -68.0 dk=-0.0098 end_err=   -105.4ns | joint: dt0=   -83.0 dk=+0.0302 end_err=   +31.6ns | biterr= 12   
+blocks_2       hdr: dt0=   +10.0 dk=-0.0300 end_err=   -104.0ns | joint: dt0=   -22.0 dk=+0.0100 end_err=   +16.0ns | biterr= 11   
+nibbles_0      hdr: dt0=    -4.0 dk=+0.0350 end_err=   +129.0ns | joint: dt0=    -2.0 dk=-0.0050 end_err=   -21.0ns | biterr=  8   
+nibbles_1      hdr: dt0=    -8.0 dk=+0.0550 end_err=   +201.0ns | joint: dt0=    -2.0 dk=+0.0025 end_err=    +7.5ns | biterr=  9   
+nibbles_2      hdr: dt0=   +74.0 dk=-0.2450 end_err=   -857.0ns | joint: dt0=   -33.5 dk=+0.0119 end_err=   +11.6ns | biterr= 11   
+sparse_0       hdr: dt0=  +134.5 dk=-0.0450 end_err=    -36.5ns | joint: dt0=   +52.5 dk=+0.3459 end_err= +1367.1ns | biterr= 27   
+sparse_1       hdr: dt0=  +146.5 dk=-0.0850 end_err=   -176.5ns | joint: dt0=   +30.5 dk=+0.3519 end_err= +1367.6ns | biterr= 27   
+sparse_2       hdr: dt0=  +250.2 dk=-0.0550 end_err=    +41.3ns | joint: dt0=  +170.2 dk=+0.3019 end_err= +1317.4ns | biterr= 31   
+dense_0        hdr: dt0=   +70.0 dk=+0.0600 end_err=   +298.0ns | joint: dt0=  +106.5 dk=-0.0231 end_err=   +18.6ns | biterr=  0 OK
+dense_1        hdr: dt0=   +86.0 dk=-0.2500 end_err=   -864.0ns | joint: dt0=   -21.5 dk=+0.0069 end_err=    +4.6ns | biterr=  1   
+dense_2        hdr: dt0=   +78.1 dk=-0.1750 end_err=   -586.9ns | joint: dt0=   -25.9 dk=+0.0250 end_err=   +69.1ns | biterr=  1   
+runs_0         hdr: dt0=    -8.0 dk=+0.0200 end_err=    +68.0ns | joint: dt0=    +0.0 dk=+0.0000 end_err=    +0.0ns | biterr=  5   
+runs_1         hdr: dt0=    +6.0 dk=-0.0206 end_err=    -72.4ns | joint: dt0=    +2.0 dk=-0.0006 end_err=    -0.4ns | biterr=  4   
+runs_2         hdr: dt0=   +66.0 dk=+0.0200 end_err=   +142.0ns | joint: dt0=   +68.0 dk=-0.0200 end_err=    -8.0ns | biterr=  3   
+edges_0        hdr: dt0=   +66.0 dk=-0.3400 end_err=  -1226.0ns | joint: dt0=   -10.0 dk=+0.0000 end_err=   -10.0ns | biterr= 10   
+edges_1        hdr: dt0=    +4.0 dk=-0.2850 end_err=  -1079.0ns | joint: dt0=   -52.0 dk=+0.0150 end_err=    +5.0ns | biterr= 10   
+edges_2        hdr: dt0=  +308.0 dk=-0.2350 end_err=   -585.0ns | joint: dt0=  +172.0 dk=+0.3850 end_err= +1635.0ns | biterr= 14   
+rnd1_0         hdr: dt0=    -8.0 dk=+0.0600 end_err=   +220.0ns | joint: dt0=    +0.0 dk=-0.0016 end_err=    -5.9ns | biterr=  3   
+rnd1_1         hdr: dt0=  +102.0 dk=-0.0600 end_err=   -126.0ns | joint: dt0=  +100.0 dk=-0.0262 end_err=    +0.3ns | biterr=  1   
+rnd1_2         hdr: dt0=    +6.0 dk=-0.0206 end_err=    -72.4ns | joint: dt0=    +2.0 dk=-0.0006 end_err=    -0.4ns | biterr=  1   
+rnd2_0         hdr: dt0=    -2.0 dk=+0.0050 end_err=    +17.0ns | joint: dt0=    -2.0 dk=+0.0050 end_err=   +17.0ns | biterr=  7   
+rnd2_1         hdr: dt0=    +9.0 dk=+0.0500 end_err=   +199.0ns | joint: dt0=   +35.0 dk=-0.0100 end_err=    -3.0ns | biterr=  6   
+rnd2_2         hdr: dt0=  +133.0 dk=-0.0700 end_err=   -133.0ns | joint: dt0=  +118.0 dk=-0.0300 end_err=    +4.0ns | biterr=  0 OK
+rnd3_0         hdr: dt0=    +2.0 dk=-0.0150 end_err=    -55.0ns | joint: dt0=   +14.0 dk=-0.0342 end_err=  -116.0ns | biterr= 13   
+rnd3_1         hdr: dt0=  +190.0 dk=-0.3550 end_err=  -1159.0ns | joint: dt0=  +186.0 dk=-0.0550 end_err=   -23.0ns | biterr=  3   
+rnd3_2         hdr: dt0=  +130.0 dk=-0.0750 end_err=   -155.0ns | joint: dt0=   +54.5 dk=-0.0150 end_err=    -2.5ns | biterr=  9   
+
+header-only end-of-frame placement error (ns): mean|.|=775.1 max|.|=7547.0
+joint end-of-frame placement error (ns): mean|.|=420.7 max|.|=1650.9
+payload BER 834/6912 = 12.066%
+exact frames 6/54
+zero-margin (undecidable) cells 932/6912

@@ -1,0 +1,137 @@
+[ 1/96] trim 0 aa     rep 0: eps_span -1.108%  eps_align -1.0575%  (agree 98.652%, phase 341 ns, pulses 187, merged 5, swallowed 0)
+[ 2/96] trim 1 aa     rep 0: eps_span -2.192%  eps_align -2.1922%  (agree 99.020%, phase 329 ns, pulses 178, merged 12, swallowed 2)
+[ 3/96] trim 2 aa     rep 0: eps_span -3.329%  eps_align -3.2792%  (agree 99.632%, phase 350 ns, pulses 182, merged 5, swallowed 5)
+[ 4/96] trim 3 aa     rep 0: eps_span -4.296%  eps_align -4.3463%  (agree 94.608%, phase 310 ns, pulses 184, merged 4, swallowed 4)
+[ 5/96] trim 4 aa     rep 0: eps_span +3.754%  eps_align +3.7041%  (agree 97.672%, phase 348 ns, pulses 191, merged 1, swallowed 0)
+[ 6/96] trim 5 aa     rep 0: eps_span +2.578%  eps_align +2.4529%  (agree 99.510%, phase 430 ns, pulses 191, merged 1, swallowed 0)
+[ 7/96] trim 6 aa     rep 0: eps_span +1.297%  eps_align +1.2956%  (agree 98.039%, phase 447 ns, pulses 189, merged 2, swallowed 1)
+[ 8/96] trim 7 aa     rep 0: eps_span +0.199%  eps_align +0.0494%  (agree 99.265%, phase 318 ns, pulses 187, merged 3, swallowed 2)
+[ 9/96] trim 0 zeros  rep 0: eps_span -1.121%  eps_align -1.0706%  (agree 99.755%, phase 439 ns, pulses 187, merged 1, swallowed 4)
+[10/96] trim 1 zeros  rep 0: eps_span -2.218%  eps_align -2.2121%  (agree 99.877%, phase 363 ns, pulses 186, merged 3, swallowed 3)
+[11/96] trim 2 zeros  rep 0: eps_span -3.316%  eps_align -3.2787%  (agree 100.000%, phase 482 ns, pulses 181, merged 4, swallowed 7)
+[12/96] trim 3 zeros  rep 0: eps_span -4.375%  eps_align -4.4247%  (agree 95.466%, phase 390 ns, pulses 179, merged 3, swallowed 10)
+[13/96] trim 4 zeros  rep 0: eps_span +3.728%  eps_align +3.7315%  (agree 97.917%, phase 457 ns, pulses 191, merged 1, swallowed 0)
+[14/96] trim 5 zeros  rep 0: eps_span +2.552%  eps_align +2.5018%  (agree 100.000%, phase 440 ns, pulses 191, merged 1, swallowed 0)
+[15/96] trim 6 zeros  rep 0: eps_span +1.271%  eps_align +1.2710%  (agree 97.426%, phase 388 ns, pulses 192, merged 0, swallowed 0)
+[16/96] trim 7 zeros  rep 0: eps_span +0.173%  eps_align +0.0482%  (agree 99.632%, phase 460 ns, pulses 189, merged 3, swallowed 0)
+[17/96] trim 0 ones   rep 0: eps_span -0.898%  eps_align -1.0625%  (agree 98.897%, phase 264 ns, pulses 149, merged 43, swallowed 0)
+[18/96] trim 1 ones   rep 0: eps_span -2.245%  eps_align -2.2945%  (agree 98.897%, phase 370 ns, pulses 181, merged 9, swallowed 2)
+[19/96] trim 2 ones   rep 0: eps_span -3.316%  eps_align -3.2662%  (agree 99.755%, phase 340 ns, pulses 187, merged 6, swallowed -1)
+[20/96] trim 3 ones   rep 0: eps_span -4.401%  eps_align -4.3759%  (agree 100.000%, phase 432 ns, pulses 186, merged 9, swallowed -3)
+[21/96] trim 4 ones   rep 0: eps_span +3.833%  eps_align +3.7357%  (agree 98.775%, phase 261 ns, pulses 164, merged 28, swallowed 0)
+[22/96] trim 5 ones   rep 0: eps_span +2.552%  eps_align +2.5018%  (agree 94.485%, phase 360 ns, pulses 182, merged 10, swallowed 0)
+[23/96] trim 6 ones   rep 0: eps_span +1.376%  eps_align +1.2771%  (agree 99.387%, phase 430 ns, pulses 179, merged 13, swallowed 0)
+[24/96] trim 7 ones   rep 0: eps_span +0.147%  eps_align -0.0529%  (agree 98.775%, phase 454 ns, pulses 124, merged 68, swallowed 0)
+[25/96] trim 0 rnd1   rep 0: eps_span -1.186%  eps_align -1.0797%  (agree 99.142%, phase 478 ns, pulses 172, merged 17, swallowed 3)
+[26/96] trim 1 rnd1   rep 0: eps_span -2.245%  eps_align -2.3945%  (agree 98.652%, phase 410 ns, pulses 181, merged 9, swallowed 2)
+[27/96] trim 2 rnd1   rep 0: eps_span -3.303%  eps_align -3.3031%  (agree 96.078%, phase 380 ns, pulses 181, merged 6, swallowed 5)
+[28/96] trim 3 rnd1   rep 0: eps_span -4.283%  eps_align -4.3645%  (agree 99.265%, phase 298 ns, pulses 183, merged 2, swallowed 7)
+[29/96] trim 4 rnd1   rep 0: eps_span +3.728%  eps_align +3.7264%  (agree 99.510%, phase 474 ns, pulses 192, merged 0, swallowed 0)
+[30/96] trim 5 rnd1   rep 0: eps_span +2.552%  eps_align +2.5018%  (agree 100.000%, phase 450 ns, pulses 187, merged 5, swallowed 0)
+[31/96] trim 6 rnd1   rep 0: eps_span +1.219%  eps_align +1.2695%  (agree 99.142%, phase 320 ns, pulses 182, merged 10, swallowed 0)
+[32/96] trim 7 rnd1   rep 0: eps_span +0.147%  eps_align -0.0029%  (agree 98.775%, phase 380 ns, pulses 163, merged 29, swallowed 0)
+[33/96] trim 0 rnd2   rep 0: eps_span -1.003%  eps_align -1.1280%  (agree 96.936%, phase 440 ns, pulses 173, merged 16, swallowed 3)
+[34/96] trim 1 rnd2   rep 0: eps_span -2.192%  eps_align -2.3422%  (agree 99.020%, phase 260 ns, pulses 179, merged 12, swallowed 1)
+[35/96] trim 2 rnd2   rep 0: eps_span -3.329%  eps_align -3.2355%  (agree 93.995%, phase 492 ns, pulses 181, merged 7, swallowed 4)
+[36/96] trim 3 rnd2   rep 0: eps_span -4.427%  eps_align -4.3801%  (agree 99.877%, phase 460 ns, pulses 177, merged 3, swallowed 12)
+[37/96] trim 4 rnd2   rep 0: eps_span +3.754%  eps_align +3.7072%  (agree 99.510%, phase 387 ns, pulses 190, merged 2, swallowed 0)
+[38/96] trim 5 rnd2   rep 0: eps_span +2.552%  eps_align +2.5018%  (agree 100.000%, phase 488 ns, pulses 192, merged 0, swallowed 0)
+[39/96] trim 6 rnd2   rep 0: eps_span +1.193%  eps_align +1.3426%  (agree 97.672%, phase 440 ns, pulses 189, merged 3, swallowed 0)
+[40/96] trim 7 rnd2   rep 0: eps_span +0.252%  eps_align +0.0017%  (agree 98.897%, phase 200 ns, pulses 161, merged 31, swallowed 0)
+[41/96] trim 0 edges  rep 0: eps_span -1.147%  eps_align -0.9530%  (agree 97.059%, phase 502 ns, pulses 189, merged 3, swallowed 0)
+[42/96] trim 1 edges  rep 0: eps_span -2.245%  eps_align -2.2179%  (agree 98.652%, phase 364 ns, pulses 185, merged 3, swallowed 4)
+[43/96] trim 2 edges  rep 0: eps_span -3.368%  eps_align -3.2966%  (agree 99.020%, phase 485 ns, pulses 180, merged 5, swallowed 7)
+[44/96] trim 3 edges  rep 0: eps_span -4.414%  eps_align -4.4639%  (agree 94.485%, phase 356 ns, pulses 178, merged 2, swallowed 12)
+[45/96] trim 4 edges  rep 0: eps_span +3.702%  eps_align +3.8018%  (agree 93.137%, phase 480 ns, pulses 191, merged 1, swallowed 0)
+[46/96] trim 5 edges  rep 0: eps_span +2.578%  eps_align +2.5029%  (agree 99.632%, phase 330 ns, pulses 191, merged 1, swallowed 0)
+[47/96] trim 6 edges  rep 0: eps_span +1.245%  eps_align +1.2465%  (agree 99.020%, phase 390 ns, pulses 192, merged 0, swallowed 0)
+[48/96] trim 7 edges  rep 0: eps_span +0.173%  eps_align +0.0482%  (agree 99.877%, phase 408 ns, pulses 189, merged 3, swallowed 0)
+[49/96] trim 0 aa     rep 1: eps_span -1.186%  eps_align -1.0867%  (agree 99.387%, phase 472 ns, pulses 185, merged 6, swallowed 1)
+[50/96] trim 1 aa     rep 1: eps_span -2.218%  eps_align -2.2184%  (agree 98.897%, phase 300 ns, pulses 180, merged 11, swallowed 1)
+[51/96] trim 2 aa     rep 1: eps_span -3.172%  eps_align -3.3142%  (agree 98.039%, phase 326 ns, pulses 184, merged 3, swallowed 5)
+[52/96] trim 3 aa     rep 1: eps_span -4.322%  eps_align -4.3100%  (agree 92.647%, phase 275 ns, pulses 181, merged 8, swallowed 3)
+[53/96] trim 4 aa     rep 1: eps_span +3.702%  eps_align +3.8143%  (agree 97.917%, phase 438 ns, pulses 191, merged 1, swallowed 0)
+[54/96] trim 5 aa     rep 1: eps_span +2.552%  eps_align +2.4518%  (agree 99.877%, phase 400 ns, pulses 192, merged 0, swallowed 0)
+[55/96] trim 6 aa     rep 1: eps_span +1.193%  eps_align +1.2551%  (agree 98.652%, phase 422 ns, pulses 187, merged 1, swallowed 4)
+[56/96] trim 7 aa     rep 1: eps_span +0.121%  eps_align +0.0647%  (agree 99.387%, phase 498 ns, pulses 188, merged 4, swallowed 0)
+[57/96] trim 0 zeros  rep 1: eps_span -1.147%  eps_align -1.0967%  (agree 99.020%, phase 446 ns, pulses 188, merged 1, swallowed 3)
+[58/96] trim 1 zeros  rep 1: eps_span -2.192%  eps_align -2.1672%  (agree 98.897%, phase 329 ns, pulses 185, merged 5, swallowed 2)
+[59/96] trim 2 zeros  rep 1: eps_span -3.342%  eps_align -3.2860%  (agree 99.877%, phase 496 ns, pulses 183, merged 1, swallowed 8)
+[60/96] trim 3 zeros  rep 1: eps_span -4.414%  eps_align -4.4499%  (agree 92.279%, phase 568 ns, pulses 181, merged 1, swallowed 10)
+[61/96] trim 4 zeros  rep 1: eps_span +3.754%  eps_align +3.7041%  (agree 96.446%, phase 380 ns, pulses 191, merged 1, swallowed 0)
+[62/96] trim 5 zeros  rep 1: eps_span +2.578%  eps_align +2.5029%  (agree 100.000%, phase 400 ns, pulses 192, merged 0, swallowed 0)
+[63/96] trim 6 zeros  rep 1: eps_span +1.402%  eps_align +1.2048%  (agree 97.426%, phase 311 ns, pulses 191, merged 1, swallowed 0)
+[64/96] trim 7 zeros  rep 1: eps_span +0.173%  eps_align +0.0232%  (agree 99.755%, phase 390 ns, pulses 189, merged 3, swallowed 0)
+[65/96] trim 0 ones   rep 1: eps_span -1.108%  eps_align -1.1013%  (agree 97.304%, phase 318 ns, pulses 150, merged 42, swallowed 0)
+[66/96] trim 1 ones   rep 1: eps_span -2.245%  eps_align -2.3445%  (agree 98.652%, phase 430 ns, pulses 180, merged 9, swallowed 3)
+[67/96] trim 2 ones   rep 1: eps_span -3.316%  eps_align -3.2537%  (agree 95.711%, phase 474 ns, pulses 187, merged 5, swallowed 0)
+[68/96] trim 3 ones   rep 1: eps_span -4.375%  eps_align -4.3810%  (agree 100.000%, phase 390 ns, pulses 185, merged 12, swallowed -5)
+[69/96] trim 4 ones   rep 1: eps_span +3.754%  eps_align +3.7041%  (agree 98.407%, phase 330 ns, pulses 166, merged 26, swallowed 0)
+[70/96] trim 5 ones   rep 1: eps_span +2.604%  eps_align +2.5041%  (agree 98.897%, phase 296 ns, pulses 160, merged 32, swallowed 0)
+[71/96] trim 6 ones   rep 1: eps_span +1.193%  eps_align +1.2457%  (agree 98.652%, phase 461 ns, pulses 162, merged 30, swallowed 0)
+[72/96] trim 7 ones   rep 1: eps_span +0.199%  eps_align +0.0056%  (agree 98.039%, phase 382 ns, pulses 132, merged 60, swallowed 0)
+[73/96] trim 0 rnd1   rep 1: eps_span -1.160%  eps_align -1.0598%  (agree 99.387%, phase 473 ns, pulses 169, merged 21, swallowed 2)
+[74/96] trim 1 rnd1   rep 1: eps_span -2.245%  eps_align -2.1953%  (agree 99.877%, phase 402 ns, pulses 182, merged 9, swallowed 1)
+[75/96] trim 2 rnd1   rep 1: eps_span -3.277%  eps_align -3.2770%  (agree 98.652%, phase 350 ns, pulses 183, merged 5, swallowed 4)
+[76/96] trim 3 rnd1   rep 1: eps_span -4.309%  eps_align -4.3844%  (agree 99.877%, phase 292 ns, pulses 180, merged 7, swallowed 5)
+[77/96] trim 4 rnd1   rep 1: eps_span +3.754%  eps_align +3.7541%  (agree 98.407%, phase 290 ns, pulses 191, merged 1, swallowed 0)
+[78/96] trim 5 rnd1   rep 1: eps_span +2.526%  eps_align +2.4756%  (agree 100.000%, phase 454 ns, pulses 188, merged 4, swallowed 0)
+[79/96] trim 6 rnd1   rep 1: eps_span +1.193%  eps_align +1.2926%  (agree 98.407%, phase 486 ns, pulses 184, merged 8, swallowed 0)
+[80/96] trim 7 rnd1   rep 1: eps_span +0.016%  eps_align +0.0664%  (agree 99.265%, phase 429 ns, pulses 163, merged 29, swallowed 0)
+[81/96] trim 0 rnd2   rep 1: eps_span -1.003%  eps_align -1.0530%  (agree 97.426%, phase 448 ns, pulses 173, merged 16, swallowed 3)
+[82/96] trim 1 rnd2   rep 1: eps_span -2.218%  eps_align -2.2184%  (agree 98.284%, phase 390 ns, pulses 182, merged 8, swallowed 2)
+[83/96] trim 2 rnd2   rep 1: eps_span -3.251%  eps_align -3.3008%  (agree 97.794%, phase 370 ns, pulses 179, merged 6, swallowed 7)
+[84/96] trim 3 rnd2   rep 1: eps_span -4.322%  eps_align -4.3725%  (agree 99.142%, phase 493 ns, pulses 178, merged 4, swallowed 10)
+[85/96] trim 4 rnd2   rep 1: eps_span +3.754%  eps_align +3.7072%  (agree 98.529%, phase 360 ns, pulses 191, merged 1, swallowed 0)
+[86/96] trim 5 rnd2   rep 1: eps_span +2.552%  eps_align +2.5018%  (agree 100.000%, phase 440 ns, pulses 191, merged 1, swallowed 0)
+[87/96] trim 6 rnd2   rep 1: eps_span +1.193%  eps_align +1.2911%  (agree 98.652%, phase 468 ns, pulses 188, merged 4, swallowed 0)
+[88/96] trim 7 rnd2   rep 1: eps_span +0.173%  eps_align -0.0018%  (agree 98.775%, phase 400 ns, pulses 160, merged 32, swallowed 0)
+[89/96] trim 0 edges  rep 1: eps_span -1.147%  eps_align -1.1155%  (agree 98.407%, phase 442 ns, pulses 183, merged 3, swallowed 6)
+[90/96] trim 1 edges  rep 1: eps_span -2.192%  eps_align -2.1735%  (agree 98.897%, phase 294 ns, pulses 184, merged 8, swallowed 0)
+[91/96] trim 2 edges  rep 1: eps_span -3.277%  eps_align -3.2770%  (agree 98.652%, phase 340 ns, pulses 181, merged 4, swallowed 7)
+[92/96] trim 3 edges  rep 1: eps_span -4.362%  eps_align -4.3617%  (agree 98.162%, phase 393 ns, pulses 177, merged 7, swallowed 8)
+[93/96] trim 4 edges  rep 1: eps_span +3.806%  eps_align +3.7095%  (agree 97.059%, phase 414 ns, pulses 191, merged 1, swallowed 0)
+[94/96] trim 5 edges  rep 1: eps_span +2.578%  eps_align +2.5029%  (agree 100.000%, phase 420 ns, pulses 192, merged 0, swallowed 0)
+[95/96] trim 6 edges  rep 1: eps_span +1.193%  eps_align +1.2926%  (agree 99.387%, phase 470 ns, pulses 192, merged 0, swallowed 0)
+[96/96] trim 7 edges  rep 1: eps_span +0.016%  eps_align +0.0164%  (agree 98.775%, phase 440 ns, pulses 191, merged 1, swallowed 0)
+
+=== trim -> eps (align method, pooled over all patterns) ===
+trim 0: eps -1.0720%  sd 0.0426%  range [-1.1280, -0.9530]%  |align-span| 0.085%
+trim 1: eps -2.2476%  sd 0.0729%  range [-2.3945, -2.1672]%  |align-span| 0.048%
+trim 2: eps -3.2806%  sd 0.0211%  range [-3.3142, -3.2355]%  |align-span| 0.051%
+trim 3: eps -4.3846%  sd 0.0412%  range [-4.4639, -4.3100]%  |align-span| 0.040%
+trim 4: eps +3.7334%  sd 0.0368%  range [+3.7041, +3.8143]%  |align-span| 0.055%
+trim 5: eps +2.4918%  sd 0.0191%  range [+2.4518, +2.5041]%  |align-span| 0.071%
+trim 6: eps +1.2737%  sd 0.0328%  range [+1.2048, +1.3426]%  |align-span| 0.076%
+trim 7: eps +0.0222%  sd 0.0335%  range [-0.0529, +0.0664]%  |align-span| 0.135%
+
+=== per-pattern eps means ===
+trim         aa    edges     ones     rnd1     rnd2    zeros
+   0    -1.072%  -1.034%  -1.082%  -1.070%  -1.090%  -1.084%
+   1    -2.205%  -2.196%  -2.320%  -2.295%  -2.280%  -2.190%
+   2    -3.297%  -3.287%  -3.260%  -3.290%  -3.268%  -3.282%
+   3    -4.328%  -4.413%  -4.378%  -4.374%  -4.376%  -4.437%
+   4    +3.759%  +3.756%  +3.720%  +3.740%  +3.707%  +3.718%
+   5    +2.452%  +2.503%  +2.503%  +2.489%  +2.502%  +2.502%
+   6    +1.275%  +1.270%  +1.261%  +1.281%  +1.317%  +1.238%
+   7    +0.057%  +0.032%  -0.024%  +0.032%  -0.000%  +0.036%
+
+=== steps between adjacent codes (align, pooled) ===
+0 -> 1: -1.1756%
+1 -> 2: -1.0331%
+2 -> 3: -1.1039%
+3 -> 4: +8.1179%
+4 -> 5: -1.2415%
+5 -> 6: -1.2181%
+6 -> 7: -1.2515%
+
+=== sampling behavior per trim (mean over captures) ===
+trim   pulses  merged  swallowed  merged(ones)  swallowed(zeros)
+   0    175.4    14.5        2.1          42.5               3.5
+   1    181.9     8.2        1.9           9.0               2.5
+   2    182.4     4.8        4.8           5.5               7.5
+   3    180.8     5.2        6.1          10.5              10.0
+   4    186.7     5.3        0.0          27.0               0.0
+   5    187.4     4.6        0.0          21.0               0.0
+   6    185.6     6.0        0.4          21.5               0.0
+   7    169.7    22.2        0.2          64.0               0.0

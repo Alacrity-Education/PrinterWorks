@@ -1,0 +1,178 @@
+; cap_arm.s -- production-only armed-capture entry (see the block
+; comment below).  Lives in its OWN module so the bench build
+; (rbarf_v21), whose CODE runs past 0x9F52, never links it: sdld does
+; not check REL/ABS overlaps, so linking this into a build whose REL
+; areas cross 0x9F52 corrupts flash silently -- the Makefile prod guard
+; checks it.  Branches fall into scan.s's pinned _cap_loop (ABS 0x9FAF).
+
+    .module cap_arm
+    .globl _cap_arm
+    .globl _cap_loop
+
+; ---------------------------------------------------------------------------
+; ROOT-CAUSE FIX 1 (PROD_CLOSURE.md SS7.4): the edge-detect polls below
+; are BTJT branches into caploop.s's pinned sampling loop (ABS area
+; CAPLOOP), which is a DIFFERENT ABS area from this one.  Written as the
+; obvious `btjt 0x500B,#3,_cap_loop`, sdas defers the 1-byte PC-relative rel
+; operand to an sdld "F1" relocation -- and sdld MIS-RELOCATES it: when two
+; of these consecutive btjt PCR relocations pack into one .rel T-record,
+; the FIRST of the pair is computed two bytes short.  The 3rd of the four
+; identical polls linked to rel 0x1D (-> 0x9FAD) instead of 0x1F (-> 0x9FAF)
+; while the other three were correct.  0x9FAD is mid-instruction (inside the
+; wait_high btjf), so whenever the WS2812 rising edge happened to be caught
+; on the 3rd poll (a frame-arrival-phase race, ~1 in 6 captures) the CPU
+; branched into the middle of an instruction and took an ILLEGAL-OPCODE
+; RESET (RST_SR ILLOPF 0x04).  That -- not the decoder -- is the "reset
+; every ~6 decodes".  Bench-localised by a reset-surviving stage breadcrumb
+; (all faults at the capture stage, never in decode) and by disassembling
+; the linked image.
+;
+; The fix emits each BTJT as raw bytes with the rel computed ENTIRELY at
+; assembly time from same-area quantities (see BTJT_CL below): no F1
+; relocation is generated, so sdld never touches the offset and cannot
+; corrupt it.  guard_prod.py additionally disassembles every poll in the
+; linked image and fails the build unless each one lands exactly on the
+; documented loop entry AND on an instruction boundary there.
+;
+; ---------------------------------------------------------------------------
+; ROOT-CAUSE FIX 2 -- THE TRIGGER-PHASE CLIFF (ARM_INVESTIGATION.md SS3).
+; The v2.3 production arm delivered 79.9 % against the capture firmware's
+; 97.8 % on the same decoder, and 53 % of the refusals were `R3
+; infeasible` on COMPLETE bursts with a perfect clock lock.  Measured
+; cause: the fitted arm trigger phase t0 (rising edge -> first sample).
+; The 8 sample slots of the pinned 40-cycle loop sit at
+; [0, 250, 562.5, 812.5, 1062.5, 1312.5, 1687.5, 2000] ns and the loop
+; period is exactly 2 WS2812 bits, so the comb is phase-locked to bit
+; PAIRS.  Slot 2 leaves the first bit period when
+;     t0 >= BIT_NS - SLOT_OFFSET[2]/(1+eps)  =  681 ns at eps = -1.07 %,
+; and at that instant the comb re-partitions across EVERY bit pair in the
+; frame: the segment stream's hinge costs all shift off their boundaries
+; and 459 of 461 segments go infeasible at once.  Swept on the host with
+; t0 as the only variable (dev_arm/t0_sweep.py, shipped decoder):
+; t0 <= 680 ns -> 0 R3 over 10 payloads; 690 ns -> first R3; >= 720 ns ->
+; 100 % R3 at every payload out to 1300 ns.  No decoder change recovers
+; it (GATE_INFEAS relaxed 20x recovers 0 of 280 cases) -- the information
+; is never sampled.  The old arm measured t0 = 288..862 ns (p50 472) with
+; 9.7 % of captures above the cliff; capture.ihx's blocking entry, which
+; scores 97.8 %, measures 89..628 ns with 0 of 54 above it.
+;
+; Two zero-flash changes bring the tail back under the cliff:
+;
+;  (a) ENTER THE LOOP AT _cap_loop+1 (CL_R0), not _cap_loop.  The byte at
+;      _cap_loop is the loop-top `rlc a` (0x49) that deposits the PREVIOUS
+;      iteration's BS1 sample from C.  On the FIRST iteration there is no
+;      previous iteration: byte 0 bits 7..6 of the capture are documented
+;      garbage (cap_code.s) and no consumer reads them -- decode.c's
+;      scanner takes loop i's slots 6,7 from byte i+1, so byte 0 bits 7..6
+;      are unreachable, and the old arm already left C-junk there.
+;      Skipping it costs one cycle less of t0 AND lands the branch on
+;      0x9FB0, the first byte of a 32-bit flash word, instead of 0x9FAF,
+;      the LAST byte of one: a taken branch to 0x9FAF fetches the word
+;      0x9FAC..0x9FAF for a single 1-byte instruction and then stalls
+;      again for the R0 poll, which is where the old arm's ~2 cycles of
+;      fixed excess over the fall-through entry came from.  Slot 0 IS the
+;      R0 poll, so the fitted slot offsets, W_CY[] branch costs and the
+;      40-cycle period are all untouched: only t0 moves.
+;
+;  (b) RETIME THE POLL COMB.  The four polls are 2 cy apart and the loop
+;      counter used to sit after the last of them, so the wrap gap was
+;      2 (btjt) + 1 (dec) + 2 (jrne) = 5 cy: an edge landing there waited
+;      up to 5 cy.  Moving `dec a` BETWEEN polls 3 and 4 splits that into
+;      gaps of 2, 2, 3, 4 cy -- same instructions, same 11-cy period, same
+;      59 bytes, one cycle less worst-case latency.  `dec` does not touch
+;      C (the polls' flag) and BTJT does not touch Z (the counter's), so
+;      the interleave is flag-safe; caploop.s depends on the same property.
+;
+; CAPLOOP itself is NOT touched: it stays byte-identical to the SS15.0
+; ledger (md5 273e269f... / 9ddd0227...) and _cap_loop stays pinned at
+; 0x9FAF, guard-asserted exactly.
+;
+; ---------------------------------------------------------------------------
+; FIX 3 -- THE IDLE GATE (ARM_INVESTIGATION.md SS4, SS6 fix #3).  The old
+; wait-low phase accepted a SINGLE low sample as "line idle", so an arm
+; window that opened in the middle of a burst (the 5.56 %-duty render hole)
+; triggered on the next MID-FRAME rising edge and captured a head-chopped
+; partial burst: all 16 measured R1 refusals, plus 2 R3 and 1 R2, were
+; chopped bursts of 11..476 bits of 479, and no chopped burst has ever
+; decoded.  The gate below requires the line to read low for IDLE_N
+; consecutive 5-cycle polls = 40 cy = 2.5 us, i.e. 2 full bit periods and
+; ~2.9x the longest low inside a frame (T0L ~ 873 ns), before the edge
+; window opens.  It recovers no frame -- a half-gone frame cannot be
+; un-lost -- but it turns a doomed capture plus its decode window into a
+; clean no-report.  Cost: 1 byte, and a 2.5-us blind slot per arm entry
+; (0.2 % of the 1.2-ms arm cycle) in which an arriving edge is missed
+; instead of being captured chopped: the same lost frame either way.
+;
+; CL_ENT is pinned by caploop.s's .org and guard-enforced EXACTLY (not just
+; mod 16); CAPARM_ORG must equal this area's .org.
+CL_ENT     = 0x9FAF                  ; == _cap_loop  (guard-asserted exact)
+CL_R0      = 0x9FB0                  ; == _cap_loop+1, the R0 poll: THE
+                                     ; entry (see FIX 2a); guard-asserted
+CAPARM_ORG = 0x9F65                  ; == this area's .org (below)
+IDLE_N     = 8                       ; low polls required: 8 x 5 cy = 2.5 us
+
+; BTJT_R0: `btjt 0x500B, #3, CL_R0` with the rel resolved locally.
+;   0x72,0x06 = BTJT #3 ; 0x50,0x0B = longmem 0x500B ; then the signed rel.
+;   rel = CL_R0 - (PC after this 5-byte insn).  (. - _cap_arm) is a pure
+;   in-area offset (constant), so the whole expression reduces to an
+;   absolute constant at assembly time -- no relocation record.
+.macro BTJT_R0
+    .db 0x72, 0x06, 0x50, 0x0B
+    .db (CL_R0 - (CAPARM_ORG + (. - _cap_arm) + 1))
+.endm
+
+    .area DATA
+s_arm:      .ds 1       ; _cap_arm outer timeout counter
+
+; ======================================================================
+; _cap_arm -- production armed capture: wait (bounded) for the line to be
+; IDLE, then (bounded) for a rising edge on PC3, then fall into the SAME
+; pinned sampling loop at its R0 poll (CL_R0).
+; Entry: X = capture buffer, Y = loop count (288 production).
+; Return: A = 1 captured, A = 0 no frame / line busy in this window.
+; Preserves X and Y for the sampling loop; clobbers A and C.
+;
+; Trigger-phase discipline (the reason this code is shaped this way):
+; see FIX 2 above.  The poll comb runs at 2 cy with gaps 2/2/3/4 cy and
+; enters the loop through a taken btjt onto the word-aligned R0 poll.
+; Interrupts are masked per 176-us burst (sim..rim), so the TIM4 millis
+; tick is never lost while armed; a burst that flows into a capture
+; (~720 us at 288 loops) can swallow at most one 1-ms tick per captured
+; frame.
+;
+; Timeout: idle gate 8 x ~5 cy per try x 8 tries (~5 us, then the caller
+; re-arms), edge wait 7 x 176 us = 1.23 ms, then A=0 so the caller can run
+; its render.
+; ======================================================================
+    .area CAPARM (ABS)
+    .org CAPARM_ORG
+_cap_arm:
+    mov     s_arm, #8               ; busy-line retry budget
+00060$:                             ; ---- idle gate: IDLE_N lows ----
+    ld      a, #IDLE_N
+00061$:
+    btjt    0x500B, #3, 00065$      ; HIGH -> line busy (mid-burst)
+    dec     a                       ; 5 cy per low poll
+    jrne    00061$
+                                    ; ---- line idle: open the window ----
+    mov     s_arm, #7               ; edge window: 7 x 176 us = 1.23 ms
+00063$:
+    sim                             ; mask one 176-us poll burst
+    clr     a
+00064$:
+    BTJT_R0                         ; poll 1   gap to poll 2: 2 cy
+    BTJT_R0                         ; poll 2   gap to poll 3: 2 cy
+    BTJT_R0                         ; poll 3   gap to poll 4: 3 cy
+    dec     a                       ; counter INSIDE the comb (FIX 2b)
+    BTJT_R0                         ; poll 4   gap to poll 1: 4 cy
+    jrne    00064$                  ; 256 x 11 cy = 176 us
+    rim                             ; pending TIM4 tick delivers here
+    dec     s_arm
+    jrne    00063$
+    clr     a                       ; no frame in the window
+    ret
+00065$:                             ; line busy: retry the idle gate
+    dec     s_arm
+    jrne    00060$
+    clr     a                       ; still busy: let the caller re-arm
+    ret

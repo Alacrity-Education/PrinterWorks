@@ -1,0 +1,1832 @@
+{
+ "tag": "A16_T192_r1",
+ "ihx": "build/rbarf_prod_verbose_A16_T192.ihx",
+ "passes": 3,
+ "seed": 20260908,
+ "gap_s": 0.5,
+ "resets": 0,
+ "suite": [
+  {
+   "family": "main-ext",
+   "name": "zeros",
+   "data": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "main-ext",
+   "name": "ones",
+   "data": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  {
+   "family": "main-ext",
+   "name": "aa",
+   "data": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  {
+   "family": "main-ext",
+   "name": "p55",
+   "data": "555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555"
+  },
+  {
+   "family": "main-ext",
+   "name": "lone1",
+   "data": "010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101"
+  },
+  {
+   "family": "main-ext",
+   "name": "msb1",
+   "data": "808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080"
+  },
+  {
+   "family": "main-ext",
+   "name": "count",
+   "data": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f"
+  },
+  {
+   "family": "main-ext",
+   "name": "impulse_hi",
+   "data": "000000000000000000000000000000000000000000ff0000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "main-ext",
+   "name": "impulse_lo",
+   "data": "ffffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  {
+   "family": "main-ext",
+   "name": "blocks",
+   "data": "00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff"
+  },
+  {
+   "family": "main-ext",
+   "name": "nibbles",
+   "data": "0ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff0"
+  },
+  {
+   "family": "main-ext",
+   "name": "sparse",
+   "data": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+  },
+  {
+   "family": "main-ext",
+   "name": "dense",
+   "data": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+  },
+  {
+   "family": "main-ext",
+   "name": "runs",
+   "data": "7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe7ffe"
+  },
+  {
+   "family": "main-ext",
+   "name": "edges",
+   "data": "018001800180018001800180018001800180018001800180018001800180018001800180018001800180018001800180"
+  },
+  {
+   "family": "main-ext",
+   "name": "rnd1",
+   "data": "c67e816b4bfbe2fb54f6bddf7c1ce18701bf31de56720f4767668759aa883c59ea56137bd285a1d83c54552f37ae655b"
+  },
+  {
+   "family": "main-ext",
+   "name": "rnd2",
+   "data": "8c21ff72edd718d94e139513dc1b63fc9306f6bf9ce506e06db00a059ff275878e34b3bcb32be202c0a1518c8023b9ec"
+  },
+  {
+   "family": "main-ext",
+   "name": "rnd3",
+   "data": "53c37d788eb44db7482f6d463d19e570244cbba0e358fc7874fa8cb1955cafb5321253fe93d1232c45ed4ce9c9990d7d"
+  },
+  {
+   "family": "val-ext",
+   "name": "vrnd4",
+   "data": "85d86bac9896f7a619122ddf400bf515ae80e1a715eeb13ba746a21240b07b265202550994ff2d7c6a502bd21342af03"
+  },
+  {
+   "family": "val-ext",
+   "name": "vrnd5",
+   "data": "2ba85dd360c037d9f5bc3d12830002d016287eedbb9f79cece00b31a002fd43a2a361691d5e1b478851a1200ca02a967"
+  },
+  {
+   "family": "val-ext",
+   "name": "vrnd6",
+   "data": "d17750fa28eb770cd2664d46c6f60e8b7dcf1b32614f4160f4b9c323c0ae2d4f036ad81916c43c75a1e4f82f80c1a3cb"
+  },
+  {
+   "family": "val-ext",
+   "name": "vrnd7",
+   "data": "038c3e2e32cd22fba2490ddfc9e81e2f0703423994e5f6232706d9846b01f9bf235bda2417f245c5c646d718ca6b4551"
+  },
+  {
+   "family": "val-ext",
+   "name": "vrnd8",
+   "data": "68b61996469377d9430f8c12d0cc3f771c6b8f48f91260aa8e9f0546c2a991a1633bdd391a4f59650f0c94ea5cbf895c"
+  },
+  {
+   "family": "val-ext",
+   "name": "vgray",
+   "data": "00010302060705040c0d0f0e0a0b090818191b1a1e1f1d1c141517161213111030313332363735343c3d3f3e3a3b3938"
+  },
+  {
+   "family": "val-ext",
+   "name": "vwalk1",
+   "data": "010204081020408001020408102040800102040810204080010204081020408001020408102040800102040810204080"
+  },
+  {
+   "family": "val-ext",
+   "name": "vwalkz",
+   "data": "fefdfbf7efdfbf7ffefdfbf7efdfbf7ffefdfbf7efdfbf7ffefdfbf7efdfbf7ffefdfbf7efdfbf7ffefdfbf7efdfbf7f"
+  },
+  {
+   "family": "val-ext",
+   "name": "vprime",
+   "data": "020305070b0d1113171d1f25292b2f353b3d4347494f53596165676b6d717f83898b95979da3a7adb3b5bfc1c5c7d3df"
+  },
+  {
+   "family": "val-ext",
+   "name": "v5a",
+   "data": "5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a"
+  },
+  {
+   "family": "val-ext",
+   "name": "va5",
+   "data": "a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5"
+  },
+  {
+   "family": "val-ext",
+   "name": "vchecker",
+   "data": "33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc"
+  },
+  {
+   "family": "prod",
+   "name": "colors",
+   "data": "400000004000000040404000004040400040202020100804000000000000000000000000000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "full",
+   "data": "ffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "blink",
+   "data": "4000000040000000404040000040404000402020201008040114a5000030303000000000000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "fade",
+   "data": "400000004000000040404000004040400040202020100804022800000000000000000000000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "seq_plain",
+   "data": "400000004000000040404000004040400040202020100804031e000200020001234567ff000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "seq_pause",
+   "data": "4000000040000000404040000040404000402020201008040328000004000c0881183fff000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "preset_spin",
+   "data": "400000004000000040404000004040400040202020100804031e0000000801015762ff00000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "preset_rainR",
+   "data": "4000000040000000404040000040404000402020201008040332000000000226751043ff000000000000000000000002"
+  },
+  {
+   "family": "prod",
+   "name": "rnd",
+   "data": "3b96a1c15059b2659224ca04f0179fe3a6ec4a3e5be6c618fa7a28c350ba9c2f6a8523f2ac700e1bb1733ab6e653091f"
+  },
+  {
+   "family": "klipper",
+   "name": "static_red",
+   "data": "00ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "static_eight_colors",
+   "data": "00ff00ff00000000ffffff0000ffffff00ffffffff404040000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "blink_500ms",
+   "data": "00ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00010a000000ff000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "fade_masked",
+   "data": "00ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00021481ff00000000ff000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "sequence_pause",
+   "data": "ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff031e000201030501587f0000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "all_ff_base",
+   "data": "ffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "gamma_on",
+   "data": "ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000022800000000000000000000000000000000000000000001"
+  },
+  {
+   "family": "klipper",
+   "name": "rnd_colors1",
+   "data": "9cbfe91432821b066599834f3b3c1a7872d256c128e2b428000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "rnd_colors2",
+   "data": "84fa1ddffb5f7bb15d186814c300f2f713d0599d626f1dcb000000000000000000000000000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_spin",
+   "data": "40404040404040404040404040404040404040404040404003140000000001015762ff00000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_spin_rev",
+   "data": "40404040404040404040404040404040404040404040404003140000000001267510ff00000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_rain",
+   "data": "4040404040404040404040404040404040404040404040400314000000000134015762ff000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_rain_rev",
+   "data": "4040404040404040404040404040404040404040404040400314000000000126751043ff000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_draw",
+   "data": "4040404040404040404040404040404040404040404040400314000000000101234567ff000000000000000000000000"
+  },
+  {
+   "family": "klipper",
+   "name": "preset_draw_rev",
+   "data": "4040404040404040404040404040404040404040404040400314000000000176543210ff000000000000000000000000"
+  },
+  {
+   "family": "demo",
+   "name": "rainbow",
+   "data": "00f0336af000d1f000f05c3de500cc9100f04d6bf03df0c4000000000000000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "sunset",
+   "data": "d0f08aa4f05c7af0454ef05034e6622aa05b2a5c5b1b2b4a000000000000000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "deepsea",
+   "data": "1e0a4a35126e521b99792ab8a83fc9d063d8e89be0f0d6f0000000000000000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "police",
+   "data": "00f0182200f000f0182200f000f0182200f000f0182200f0010800000000000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "breathe",
+   "data": "b0f000b0f000b0f000b0f000b0f000b0f000b0f000b0f000023c00071400000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "duotone",
+   "data": "f000d0f000d0f000d0f000d0f000d0f000d0f000d0f000d002280000f0a8000000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "halfmast",
+   "data": "e500f0e500f0e500f0e500f0e500f0e500f0e500f0e500f00224aa0800142df000000000000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "spin",
+   "data": "f000f0f000f0f000f0f000f0f000f0f000f0f000f0f000f003120010001801015762ff00000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "spin_rev",
+   "data": "c4f000c4f000c4f000c4f000c4f000c4f000c4f000c4f00003120008140001267510ff00000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "rain",
+   "data": "f0d8f0f0d8f0f0d8f0f0d8f0f0d8f0f0d8f0f0d8f0f0d8f00318000a001e0234015762ff000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "matrix",
+   "data": "d05c7cd05c7cd05c7cd05c7cd05c7cd05c7cd05c7cd05c7c03140016080c0126751043ff000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "draw",
+   "data": "6af0006af0006af0006af0006af0006af0006af0006af000031c000410000001234567ff000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "undraw",
+   "data": "55a8f055a8f055a8f055a8f055a8f055a8f055a8f055a8f0031c00000a180276543210ff000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "bounce",
+   "data": "5af0725af0725af0725af0725af0725af0725af0725af072032400081a120101234567654321ff000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "twinsweep",
+   "data": "f000a3f000a3f000a3f000a3f000a3f000a3f000a3f000a30312001400100408284868ff000000000000000000000001"
+  },
+  {
+   "family": "demo",
+   "name": "quadwave",
+   "data": "0a2b001a5c002e8a004ec2007af01aa6f04dd1f099f0f0db031600020a00080246ff0000000000000000000000000001"
+  }
+ ],
+ "results": [
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "preset_rainR",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "ones",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "matrix",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "static_eight_colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vrnd4",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "deepsea",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vchecker",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vrnd7",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "impulse_lo",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "static_red",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "rnd1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9D"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vrnd5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vrnd6",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_rain_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "blink_500ms",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "fade_masked",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9D"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "seq_plain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "count",
+   "verdict": "PASS",
+   "detail": "chase eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "seq_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "va5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vrnd8",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "nibbles",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "rainbow",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "sequence_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "fade",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_draw_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "draw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_rain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "blocks",
+   "verdict": "PASS",
+   "detail": "chase eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vgray",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_draw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "breathe",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "rain",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "p55",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "spin_rev",
+   "verdict": "PASS",
+   "detail": "chase eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "police",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "halfmast",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "quadwave",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "rnd_colors1",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "lone1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "rnd_colors2",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "aa",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "msb1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9D"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vwalkz",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "rnd3",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_spin_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "bounce",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "sunset",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "edges",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "dense",
+   "verdict": "REFUSE",
+   "detail": "R3 eps=xFF74"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "rnd",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "v5a",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vprime",
+   "verdict": "PASS",
+   "detail": "chase eps=xFF9F"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "runs",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "blink",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "impulse_hi",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "sparse",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "zeros",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "undraw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "all_ff_base",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA5"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "duotone",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 1,
+   "family": "demo",
+   "name": "twinsweep",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 1,
+   "family": "main-ext",
+   "name": "rnd2",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "klipper",
+   "name": "gamma_on",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 1,
+   "family": "val-ext",
+   "name": "vwalk1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 1,
+   "family": "prod",
+   "name": "full",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_rain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "preset_rainR",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "police",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "matrix",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "blocks",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "nibbles",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "spin_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "seq_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "rnd1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vprime",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "rain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vwalk1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "rnd",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vrnd6",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "dense",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vrnd7",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "deepsea",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "seq_plain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vrnd4",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "edges",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "undraw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "zeros",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vchecker",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "p55",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "sparse",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "bounce",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "fade",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_rain_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "rnd_colors1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "count",
+   "verdict": "PASS",
+   "detail": "chase eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "rnd3",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "draw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "gamma_on",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "ones",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_spin_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "aa",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9E"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "halfmast",
+   "verdict": "PASS",
+   "detail": "direct eps=xFF9F"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "sequence_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "blink",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "va5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "impulse_lo",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vrnd5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA0"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "all_ff_base",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "sunset",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "fade_masked",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "breathe",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "duotone",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "quadwave",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "twinsweep",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "rnd_colors2",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "v5a",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA1"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_draw_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "static_red",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vrnd8",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "static_eight_colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA4"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "impulse_hi",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "runs",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA2"
+  },
+  {
+   "pass": 2,
+   "family": "prod",
+   "name": "full",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "preset_draw",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA6"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "msb1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vgray",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFA3"
+  },
+  {
+   "pass": 2,
+   "family": "demo",
+   "name": "rainbow",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "lone1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 2,
+   "family": "klipper",
+   "name": "blink_500ms",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 2,
+   "family": "main-ext",
+   "name": "rnd2",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 2,
+   "family": "val-ext",
+   "name": "vwalkz",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_rain_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "draw",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vrnd4",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vchecker",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "zeros",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "halfmast",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vwalk1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "edges",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "v5a",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vrnd8",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_draw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "gamma_on",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vrnd7",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "dense",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_draw_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "va5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "twinsweep",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "msb1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "rnd2",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "blink",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "quadwave",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "preset_spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "static_red",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "deepsea",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA6"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "all_ff_base",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFAB"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "duotone",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "rnd",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "full",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "nibbles",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA5"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "blocks",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "undraw",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "fade",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_rain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "sunset",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFAB"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "ones",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "blink_500ms",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "p55",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "preset_rainR",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "rnd3",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vrnd6",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "aa",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "police",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAC"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vwalkz",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "runs",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "rain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAC"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "preset_spin_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "seq_plain",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "matrix",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFAC"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "impulse_lo",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "static_eight_colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAE"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "spin_rev",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAD"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "count",
+   "verdict": "PASS",
+   "detail": "chase eps=xFFA7"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "colors",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "lone1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "sequence_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAC"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "rainbow",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vrnd5",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "impulse_hi",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAB"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "bounce",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAC"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "rnd1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "rnd_colors2",
+   "verdict": "REFUSE",
+   "detail": "R8 eps=xFFAB"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "spin",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "demo",
+   "name": "breathe",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "main-ext",
+   "name": "sparse",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vgray",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA8"
+  },
+  {
+   "pass": 3,
+   "family": "prod",
+   "name": "seq_pause",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "val-ext",
+   "name": "vprime",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFA9"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "rnd_colors1",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAA"
+  },
+  {
+   "pass": 3,
+   "family": "klipper",
+   "name": "fade_masked",
+   "verdict": "PASS",
+   "detail": "direct eps=xFFAB"
+  }
+ ]
+}

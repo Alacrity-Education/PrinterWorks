@@ -1,0 +1,55 @@
+
+=== rnd1_0 (5118 samples) ===
+    unperturbed                            OK  byte-acc 100.0%  c67e816b4bfbe2fb54f6bddf7c1ce187
+    drop first 2 loops (keep iter index)   BREAK byte-acc   0.0%
+    drop first 2 loops (renumber i-2)      BREAK byte-acc   0.0%
+    drop first 1 loop (keep iter index)    BREAK byte-acc   0.0%
+    drop first 5 loops (keep iter index)   BREAK byte-acc   0.0%
+    flip 3 isolated samples [181, 450, 752] (lvl [1, 1, 1]) OK  byte-acc 100.0%  c67e816b4bfbe2fb54f6bddf7c1ce187
+      flip only idx 181 (it=22 slot=5 1->0) OK  byte-acc 100.0%  c67e816b4bfbe2fb54f6bddf7c1ce187
+      flip only idx 450 (it=56 slot=2 1->0) OK  byte-acc 100.0%  c67e816b4bfbe2fb54f6bddf7c1ce187
+      flip only idx 752 (it=94 slot=0 1->0) OK  byte-acc 100.0%  c67e816b4bfbe2fb54f6bddf7c1ce187
+
+=== ones_0 (5118 samples) ===
+    unperturbed                            OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+    drop first 2 loops (keep iter index)   OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+    drop first 2 loops (renumber i-2)      OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+    drop first 1 loop (keep iter index)    OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+    drop first 5 loops (keep iter index)   OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+    flip 3 isolated samples [145, 303, 543] (lvl [1, 1, 1]) OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+      flip only idx 145 (it=18 slot=1 1->0) OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+      flip only idx 303 (it=37 slot=7 1->0) OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+      flip only idx 543 (it=67 slot=7 1->0) OK  byte-acc 100.0%  ffffffffffffffffffffffffffffffff
+
+=== zeros_1 (5118 samples) ===
+    unperturbed                            OK  byte-acc 100.0%  00000000000000000000000000000000
+    drop first 2 loops (keep iter index)   OK  byte-acc 100.0%  00000000000000000000000000000000
+    drop first 2 loops (renumber i-2)      OK  byte-acc 100.0%  00000000000000000000000000000000
+    drop first 1 loop (keep iter index)    OK  byte-acc 100.0%  00000000000000000000000000000000
+    drop first 5 loops (keep iter index)   OK  byte-acc 100.0%  00000000000000000000000000000000
+    flip 3 isolated samples [116, 340, 717] (lvl [0, 0, 0]) OK  byte-acc 100.0%  00000000000000000000000000000000
+      flip only idx 116 (it=14 slot=4 0->1) OK  byte-acc 100.0%  00000000000000000000000000000000
+      flip only idx 340 (it=42 slot=4 0->1) OK  byte-acc 100.0%  00000000000000000000000000000000
+      flip only idx 717 (it=89 slot=5 0->1) OK  byte-acc 100.0%  00000000000000000000000000000000
+
+=== aa_2 (5118 samples) ===
+    unperturbed                            OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    drop first 2 loops (keep iter index)   OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    drop first 2 loops (renumber i-2)      OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    drop first 1 loop (keep iter index)    OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    drop first 5 loops (keep iter index)   OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    flip 3 isolated samples [185, 489, 790] (lvl [1, 1, 0]) OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      flip only idx 185 (it=23 slot=1 1->0) OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      flip only idx 489 (it=61 slot=1 1->0) OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      flip only idx 790 (it=98 slot=6 0->1) OK  byte-acc 100.0%  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+=== dense_1 (5118 samples) ===
+    unperturbed                            OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    drop first 2 loops (keep iter index)   OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    drop first 2 loops (renumber i-2)      OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    drop first 1 loop (keep iter index)    OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    drop first 5 loops (keep iter index)   OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    flip 3 isolated samples [169, 345, 615] (lvl [1, 1, 1]) OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      flip only idx 169 (it=21 slot=1 1->0) OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      flip only idx 345 (it=43 slot=1 1->0) OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      flip only idx 615 (it=76 slot=7 1->0) OK  byte-acc 100.0%  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee

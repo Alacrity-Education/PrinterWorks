@@ -1,0 +1,283 @@
+ASxxxx Linker V05.50.4-SDLD,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           
+     00000000  l_CABS                          
+     00000000  l_CAPARM                        
+     00000000  l_CAPLOOP                       
+     00000000  l_DABS                          
+     00000000  l_DZP                           
+     00000000  l_INITIALIZED                   
+     00000000  l_INITIALIZER                   
+     00000000  l_VECT                          
+     00000000  l_VGAP                          
+     00000000  l__CODE                         
+     00000000  s_CABS                          
+     00000000  s_CAPARM                        
+     00000000  s_CAPARM0                       
+     00000000  s_CAPLOOP                       
+     00000000  s_CAPLOOP0                      
+     00000000  s_DABS                          
+     00000000  s_DZP                           
+     00000000  s_DZP0                          
+     00000000  s_VECT                          
+     00000000  s_VECT0                         
+     00000000  s_VECT1                         
+     00000000  s_VGAP                          
+     00000000  s_VGAP1                         
+     00000000  s__CODE                         
+     00000001  l_SSEG                          
+     00000003  l_GSFINAL                       
+     00000004  l_VECT0                         
+     00000004  l_VECT1                         
+     00000007  l_HOME                          
+     00000023  l_GSINIT                        
+     0000003C  l_CAPARM0                       
+     00000050  l_CAPLOOP0                      
+     0000005C  l_VGAP1                         
+     000000EE  l_DZP0                          
+     000000F0  s_DATA                          
+     0000012B  l_CONST                         
+     00000289  l_DATA                          
+     00000379  s_INITIALIZED                   
+     00000379  s_SSEG                          
+     00001D86  l_CODE                          
+     00008068  s_HOME                          
+     0000806F  s_GSINIT                        
+     00008092  s_GSFINAL                       
+     00008095  s_CONST                         
+     000081C0  s_CODE                          
+     000081C0  s_INITIALIZER                   
+
+ASxxxx Linker V05.50.4-SDLD,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DATA                                000000F0    00000289 =         649. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     000000F0  _capture_buf                       rbarf_arm
+     00000210  _ws2812_in_buf                     rbarf_arm
+     00000252  _dec_info                          decode
+     00000269  _g_K                               decode
+     0000026B  _g_tau                             decode
+     0000026D  _ov                                decode
+     000002ED  _d_costs                           decode_asm
+     0000032D  _v_cand_t                          decode_asm
+     00000343  _v_cand_m                          decode_asm
+     0000034E  _v_chkconf                         decode_asm
+     0000035D  _ws2812_out_buf                    ws2812_out
+     00000377  _ms_counter                        tick
+ASxxxx Linker V05.50.4-SDLD,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000379    00000001 =           1. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00008068    00000007 =           7. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000806F    00000023 =          35. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00008092    00000003 =           3. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               00008095    0000012B =         299. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     000080A4  _g_NB                              decode
+     000080A6  _g_yend                            decode
+     000080AA  _g_ymid                            decode
+     000080AE  _g_Wu11                            decode
+     000080B2  _g_NBmHT                           decode
+     000080B4  _g_PPHI                            decode
+     000080B6  _g_ND8                             decode
+     000080B8  _g_TIEE                            decode
+     000080BA  _g_PPB                             decode
+     000080BC  _g_PPE                             decode
+     000080BE  _g_TRB                             decode
+
+ASxxxx Linker V05.50.4-SDLD,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000081C0    00001D86 =        7558. bytes (REL,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00008253  _main                              rbarf_arm
+     000083C6  _ss_init                           decode_asm
+     00008420  _ss_next                           decode_asm
+     000085B1  _refine                            decode_asm
+     000087F7  _seed                              decode_asm
+     0000887B  _dec_eps_centi                     decode_asm
+     000088B1  _set_gap56                         decode_asm
+     000088D0  _known_bit                         decode_asm
+     000088F5  _a_bounds_sg                       decode_asm
+     00008B59  _decide_pass                       decode_asm
+     00009196  _calibrate                         decode_asm
+     00009305  _scan_init                         decode_asm
+     00009321  _scan_next                         decode_asm
+     000097E0  _ws_decode_ex                      decode_asm
+     00009DBF  _anim_render                       anim
+     00009E95  _ws2812_out_init                   ws2812_out
+     00009EA6  _ws2812_out_send                   ws2812_out
+     00009EFD  _tim4_upd_isr                      tick
+     00009F09  _millis                            tick
+     00009F0F  __mulint                           
+     00009F2C  ___sdcc_external_startup           _startup
+     00009F2E  __modsint                          
+
+ASxxxx Linker V05.50.4-SDLD,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DZP0                                00000000    000000EE =         238. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     0000005D  _g_sg                              decode_asm
+     00000066  _dq_amin                           decode_asm
+     00000068  _dq_amax                           decode_asm
+     0000009D  _d_infeas                          decode_asm
+     0000009F  _d_laberr                          decode_asm
+     000000A1  _d_nseg                            decode_asm
+     000000A3  _v_ncand                           decode_asm
+     000000A4  _v_nweak                           decode_asm
+     000000A6  _v_ntied                           decode_asm
+     000000A9  _scan_cap                          decode_asm
+     000000AB  _scan_len                          decode_asm
+     000000AD  _scan_ra                           decode_asm
+     000000AF  _scan_rb                           decode_asm
+     000000B1  _scan_fa                           decode_asm
+     000000B3  _scan_fb                           decode_asm
+     000000B5  _scan_sfa                          decode_asm
+
+ASxxxx Linker V05.50.4-SDLD,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+VGAP1                               00000000    0000005C =          92. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00008004  sot                                decode_asm
+
+ASxxxx Linker V05.50.4-SDLD,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CAPLOOP0                            00000000    00000050 =          80. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00009FA1  _cap_capture                       caploop
+     00009FAF  _cap_loop                          caploop
+
+ASxxxx Linker V05.50.4-SDLD,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CAPARM0                             00000000    0000003C =          60. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+     00009F63  _cap_arm                           cap_arm
+
+ASxxxx Linker V05.50.4-SDLD,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+VECT0                               00000000    00000004 =           4. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+VECT1                               00000000    00000004 =           4. bytes (ABS,CON)
+
+         Value  Global                             Global Defined In Module
+         -----  --------------------------------   ------------------------
+ASxxxx Linker V05.50.4-SDLD,  page 15.
+
+Files Linked                              [ module(s) ]
+
+/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_arm/rbarf_arm_main.rel
+                                          [ rbarf_arm ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/decode_prod.rel
+                                          [ decode ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/decode_asm.rel
+                                          [ decode_asm ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/caploop.rel
+                                          [ caploop ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/cap_arm.rel
+                                          [ cap_arm ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/anim.rel
+                                          [ anim ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/ws2812_out.rel
+                                          [ ws2812_out ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/tick.rel
+                                          [ tick ]
+/home/alex.lucaci/Projects/RBARF/new-implementation/build/vectors_prod.rel
+                                          [ vecprod ]
+
+
+Libraries Linked                          [ object file ]
+
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _mulint.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _startup.rel ]
+/usr/bin/../share/sdcc/lib/stm8/stm8.lib  [ _modsint.rel ]
+
+ASxxxx Linker V05.50.4-SDLD,  page 16.
+
+User Base Address Definitions
+
+HOME = 0x8068
+DATA = 0x00f0
+
+

@@ -1,0 +1,17 @@
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.=  002710 L   |     .__.ABS.=  000000 G   |     .__.CPU.=  000000 L
+    .__.H$L.=  000001 L   |     s_GSINIT   ****** GX
+
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 2
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE      size      0   flags    0
+   1 VECT       size      0   flags    8
+   2 VECT0      size      4   flags    8
+

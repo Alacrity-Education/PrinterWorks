@@ -1,0 +1,42 @@
+
+### anim.c variants, --opt-code-size
+variant                                        CODE  CONST  total   saved
+baseline (all modes + gamma)                   2827   1052   3879       0
+no gamma LUT                                   2768     28   2796    1083
+no built-in spin/rain/draw (04-09)             2615   1024   3639     240
+no sequence at all (03-09)                      907   1024   1931    1948
+no blink (01)                                  2747   1052   3799      80
+no fade (02)                                   2696   1052   3748     131
+no blink + no fade                             2416   1052   3468     411
+no gamma + no built-in seq                     2557      0   2557    1322
+no gamma + no sequence                          853      0    853    3026
+no gamma + no built-in seq + no blink          2438      0   2438    1441
+fade only (+ none)                              732      0    732    3147
+blink only (+ none)                             567      0    567    3312
+none only (bare passthrough)                    334      0    334    3545
+
+### other app modules, --opt-code-size
+ws2812_out       CODE   106  CONST     0  HOME   0  GSINIT   0  GSFINAL  0  -> flash   106  ram   26
+main             CODE   162  CONST     0  HOME   7  GSINIT  35  GSFINAL  3  -> flash   207  ram    3
+tick             CODE    51  CONST     0  HOME   0  GSINIT   0  GSFINAL  0  -> flash    51  ram    2
+
+### anim.c variants, old flags (no --opt-code-size)
+variant                                        CODE  CONST  total   saved
+baseline (all modes + gamma)                   2882   1052   3934       0
+no gamma LUT                                   2824     28   2852    1082
+no built-in spin/rain/draw (04-09)             2632   1024   3656     278
+no sequence at all (03-09)                      917   1024   1941    1993
+no blink (01)                                  2757   1052   3809     125
+no fade (02)                                   2714   1052   3766     168
+no blink + no fade                             2482   1052   3534     400
+no gamma + no built-in seq                     2576      0   2576    1358
+no gamma + no sequence                          863      0    863    3071
+no gamma + no built-in seq + no blink          2450      0   2450    1484
+fade only (+ none)                              734      0    734    3200
+blink only (+ none)                             575      0    575    3359
+none only (bare passthrough)                    338      0    338    3596
+
+### other app modules, old flags (no --opt-code-size)
+ws2812_out       CODE   106  CONST     0  HOME   0  GSINIT   0  GSFINAL  0  -> flash   106  ram   26
+main             CODE   163  CONST     0  HOME   7  GSINIT  35  GSFINAL  3  -> flash   208  ram    3
+tick             CODE    51  CONST     0  HOME   0  GSINIT   0  GSFINAL  0  -> flash    51  ram    2

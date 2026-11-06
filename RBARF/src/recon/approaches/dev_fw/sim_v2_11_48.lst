@@ -1,0 +1,124 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ISO C Compiler
+                                      3 ; Version 4.6.0 #16555 (Linux)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module sim_v2
+                                      6 	
+                                      7 ;--------------------------------------------------------
+                                      8 ; Public variables in this module
+                                      9 ;--------------------------------------------------------
+                                     10 	.globl _main
+                                     11 	.globl _sim_done
+                                     12 	.globl _ws_decode_ex
+                                     13 	.globl _g_out
+                                     14 	.globl _g_status
+                                     15 ;--------------------------------------------------------
+                                     16 ; ram data
+                                     17 ;--------------------------------------------------------
+                                     18 	.area DATA
+      000000                         19 _g_status::
+      000000                         20 	.ds 1
+      000001                         21 _g_out::
+      000001                         22 	.ds 48
+                                     23 ;--------------------------------------------------------
+                                     24 ; ram data
+                                     25 ;--------------------------------------------------------
+                                     26 	.area INITIALIZED
+                                     27 ;--------------------------------------------------------
+                                     28 ; Stack segment in internal ram
+                                     29 ;--------------------------------------------------------
+                                     30 	.area SSEG
+      000000                         31 __start__stack:
+      000000                         32 	.ds	1
+                                     33 
+                                     34 ;--------------------------------------------------------
+                                     35 ; absolute external ram data
+                                     36 ;--------------------------------------------------------
+                                     37 	.area DABS (ABS)
+                                     38 
+                                     39 ; default segment ordering for linker
+                                     40 	.area HOME
+                                     41 	.area GSINIT
+                                     42 	.area GSFINAL
+                                     43 	.area CONST
+                                     44 	.area INITIALIZER
+                                     45 	.area CODE
+                                     46 
+                                     47 ;--------------------------------------------------------
+                                     48 ; interrupt vector
+                                     49 ;--------------------------------------------------------
+                                     50 	.area HOME
+      000000                         51 __interrupt_vect:
+      000000 82v00u00u00             52 	int s_GSINIT ; reset
+                                     53 ;--------------------------------------------------------
+                                     54 ; global & static initialisations
+                                     55 ;--------------------------------------------------------
+                                     56 	.area HOME
+                                     57 	.area GSINIT
+                                     58 	.area GSFINAL
+                                     59 	.area GSINIT
+      000000 CDr00r00         [ 4]   60 	call	___sdcc_external_startup
+      000003 4D               [ 1]   61 	tnz	a
+      000004 27 03            [ 1]   62 	jreq	__sdcc_init_data
+      000006 CCr00r04         [ 2]   63 	jp	__sdcc_program_startup
+      000009                         64 __sdcc_init_data:
+                                     65 ; stm8_genXINIT() start
+      000009 AEr00r00         [ 2]   66 	ldw x, #l_DATA
+      00000C 27 07            [ 1]   67 	jreq	00002$
+      00000E                         68 00001$:
+      00000E 72 4FuFFuFF      [ 1]   69 	clr (s_DATA - 1, x)
+      000012 5A               [ 2]   70 	decw x
+      000013 26 F9            [ 1]   71 	jrne	00001$
+      000015                         72 00002$:
+      000015 AEr00r00         [ 2]   73 	ldw	x, #l_INITIALIZER
+      000018 27 09            [ 1]   74 	jreq	00004$
+      00001A                         75 00003$:
+      00001A D6uFFuFF         [ 1]   76 	ld	a, (s_INITIALIZER - 1, x)
+      00001D D7uFFuFF         [ 1]   77 	ld	(s_INITIALIZED - 1, x), a
+      000020 5A               [ 2]   78 	decw	x
+      000021 26 F7            [ 1]   79 	jrne	00003$
+      000023                         80 00004$:
+                                     81 ; stm8_genXINIT() end
+                                     82 	.area GSFINAL
+      000000 CCr00r04         [ 2]   83 	jp	__sdcc_program_startup
+                                     84 ;--------------------------------------------------------
+                                     85 ; Home
+                                     86 ;--------------------------------------------------------
+                                     87 	.area HOME
+                                     88 	.area HOME
+      000004                         89 __sdcc_program_startup:
+      000004 CCr00r04         [ 2]   90 	jp	_main
+                                     91 ;	return from main will return to caller
+                                     92 ;--------------------------------------------------------
+                                     93 ; code
+                                     94 ;--------------------------------------------------------
+                                     95 	.area CODE
+                                     96 ;	/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.c: 23: void sim_done(void) { __asm__("halt"); for (;;) ; }
+                                     97 ;	-----------------------------------------
+                                     98 ;	 function sim_done
+                                     99 ;	-----------------------------------------
+      000000                        100 _sim_done:
+      000000 8E               [10]  101 	halt
+      000001                        102 00103$:
+      000001 20 FE            [ 2]  103 	jra	00103$
+      000003 81               [ 4]  104 	ret
+                                    105 ;	/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.c: 25: void main(void)
+                                    106 ;	-----------------------------------------
+                                    107 ;	 function main
+                                    108 ;	-----------------------------------------
+      000004                        109 _main:
+                                    110 ;	/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.c: 27: g_status = ws_decode_ex(CAP, CAP_LEN, g_out);
+      000004 CEu00u00         [ 2]  111 	ldw	x, _CAP_LEN+0
+      000007 4Br01            [ 1]  112 	push	#<(_g_out+0)
+      000009 4Bs00            [ 1]  113 	push	#((_g_out+0) >> 8)
+      00000B 89               [ 2]  114 	pushw	x
+      00000C AEr00r00         [ 2]  115 	ldw	x, #(_CAP+0)
+      00000F CDr00r00         [ 4]  116 	call	_ws_decode_ex
+      000012 C7u00u00         [ 1]  117 	ld	_g_status+0, a
+                                    118 ;	/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.c: 28: sim_done();
+                                    119 ;	/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_fw/sim_v2.c: 29: }
+      000015 CCr00r00         [ 2]  120 	jp	_sim_done
+                                    121 	.area CODE
+                                    122 	.area CONST
+                                    123 	.area INITIALIZER
+                                    124 	.area CABS (ABS)

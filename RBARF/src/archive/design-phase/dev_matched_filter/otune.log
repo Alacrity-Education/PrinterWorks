@@ -1,0 +1,4 @@
+start biterr=37 exact=20 O=[128.5, 365.5, 663.5, 858.0, 1215.0, 1467.5, 1830.5, 2040.0] T0=320.0 T1=680.0
+  -> biterr=34 exact=19 idx=0 d=-12.0
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown: {'/mp-z2k8x41z', '/mp-hak88hrj', '/mp-7lra74_4', '/mp-b2o3xq33', '/mp-q439q5ml'}
+  warnings.warn(

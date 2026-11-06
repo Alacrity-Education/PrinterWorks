@@ -1,0 +1,109 @@
+; cap_arm.s -- production-only armed-capture entry (see the block
+; comment below).  Lives in its OWN module so the bench build
+; (rbarf_v21), whose CODE runs past 0x9F52, never links it: sdld does
+; not check REL/ABS overlaps, so linking this into a build whose REL
+; areas cross 0x9F52 corrupts flash silently -- the Makefile prod guard
+; checks it.  Branches fall into scan.s's pinned _cap_loop (ABS 0x9FAF).
+
+    .module cap_arm
+    .globl _cap_arm
+    .globl _cap_loop
+
+; ---------------------------------------------------------------------------
+; ROOT-CAUSE FIX (PROD_CLOSURE.md SS7.4): the four edge-detect polls below
+; are BTJT branches into caploop.s's pinned sampling loop _cap_loop (ABS
+; 0x9FAF), which lives in a DIFFERENT ABS area (CAPLOOP).  Written as the
+; obvious `btjt 0x500B,#3,_cap_loop`, sdas defers the 1-byte PC-relative rel
+; operand to an sdld "F1" relocation -- and sdld MIS-RELOCATES it: when two
+; of these consecutive btjt PCR relocations pack into one .rel T-record,
+; the FIRST of the pair is computed two bytes short.  The 3rd of the four
+; identical polls linked to rel 0x1D (-> 0x9FAD) instead of 0x1F (-> 0x9FAF)
+; while the other three were correct.  0x9FAD is mid-instruction (inside the
+; wait_high btjf), so whenever the WS2812 rising edge happened to be caught
+; on the 3rd poll (a frame-arrival-phase race, ~1 in 6 captures) the CPU
+; branched into the middle of an instruction and took an ILLEGAL-OPCODE
+; RESET (RST_SR ILLOPF 0x04).  That -- not the decoder -- is the "reset
+; every ~6 decodes".  Bench-localised by a reset-surviving stage breadcrumb
+; (all faults at the capture stage, never in decode) and by disassembling
+; the linked image.
+;
+; The fix emits each BTJT as raw bytes with the rel computed ENTIRELY at
+; assembly time from same-area quantities (see BTJT_CL below): no F1
+; relocation is generated, so sdld never touches the offset and cannot
+; corrupt it.  The emitted bytes are byte-identical to a correctly-linked
+; `btjt 0x500B,#3,_cap_loop`, so cadence, cycle count and every address are
+; unchanged -- the calibrated capture timing is preserved exactly.
+;
+; _cap_loop is pinned at CL_ENT (0x9FAF) by caploop.s's .org and is now
+; guard-enforced EXACTLY (not just mod 16); CAPARM_ORG must equal this
+; area's .org.  guard_prod.py additionally disassembles the four polls in
+; the linked image and fails the build unless every one targets _cap_loop.
+CL_ENT     = 0x9FAF                  ; == _cap_loop (guard-asserted exact)
+CAPARM_ORG = 0x9F66                  ; == this area's .org (below)
+
+; BTJT_CL: `btjt 0x500B, #3, _cap_loop` with the rel resolved locally.
+;   0x72,0x06 = BTJT #3 ; 0x50,0x0B = longmem 0x500B ; then the signed rel.
+;   rel = CL_ENT - (PC after this 5-byte insn).  (. - _cap_arm) is a pure
+;   in-area offset (constant), so the whole expression reduces to an
+;   absolute constant at assembly time -- no relocation record.
+.macro BTJT_CL
+    .db 0x72, 0x06, 0x50, 0x0B
+    .db (CL_ENT - (CAPARM_ORG + (. - _cap_arm) + 1))
+.endm
+
+    .area DATA
+s_arm:      .ds 1       ; _cap_arm outer timeout counter
+
+; ======================================================================
+; _cap_arm -- production armed capture: wait (bounded) for a rising edge
+; on PC3, then fall into the SAME pinned sampling loop (_cap_loop below).
+; Entry: X = capture buffer, Y = loop count (288 production).
+; Return: A = 1 captured, A = 0 timeout (no frame in the window).
+;
+; Trigger-phase discipline (the reason this code is shaped this way):
+; the fitted model's t0 (edge -> first sample) was measured 254..501 ns
+; behind _cap_capture's 3-cy btjf poll.  This arm loop polls at 2 cy
+; (btjt not taken), with a 5-cy slot once per 256 polls (inner counter)
+; and a 10-cy slot once per 304 us (outer counter + rim/sim window), and
+; enters the loop via a taken btjt (3 cy vs the original's 2-cy btjf
+; fall-through).  Worst common-case t0 grows by ~3 cy (~190 ns), keeping
+; the first FF pulse (T1H_eff 752 ns) inside the first sample at nominal
+; trim.  Interrupts are masked per 304-us burst (sim..rim), so the TIM4
+; millis tick is never lost while armed; a burst that flows into a
+; capture (~720 us at 288 loops) can swallow at most one 1-ms tick per
+; captured frame.
+;
+; Timeout: wait-low phase ~0.4 ms (stuck-high guard), edge wait
+; 4 x 304 us = 1.2 ms, then A=0 so the caller can run its 100 Hz render.
+; ======================================================================
+    .area CAPARM (ABS)
+    .org CAPARM_ORG
+_cap_arm:
+    mov     s_arm, #2
+    clr     a
+00060$:                             ; wait for idle low (coarse, ~5 cy)
+    btjf    0x500B, #3, 00062$
+    dec     a
+    jrne    00060$
+    dec     s_arm
+    jrne    00060$
+    clr     a                       ; line stuck high: give up
+    ret
+00062$:
+    mov     s_arm, #7               ; edge window: 7 x 176 us = 1.2 ms
+00063$:
+    sim                             ; mask one 176-us poll burst
+    clr     a
+00064$:
+    BTJT_CL                         ; 4 polls, 2 cy apart; a taken btjt
+    BTJT_CL                         ; drops straight into the pinned
+    BTJT_CL                         ; sampling loop with C = 1 (the bit
+    BTJT_CL                         ; just read) like the original exit
+    dec     a
+    jrne    00064$
+    rim                             ; pending TIM4 tick delivers here
+    dec     s_arm
+    jrne    00063$
+    clr     a                       ; no frame in the window
+    ret
+

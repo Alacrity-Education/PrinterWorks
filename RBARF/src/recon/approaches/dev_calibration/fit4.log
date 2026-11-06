@@ -1,0 +1,10 @@
+init loss=1065424 count=80.928% [32s]
+p0 r0: loss=1039834 count=80.549%
+   g=[np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(375.0), np.float64(312.5), np.float64(562.5)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=725.00 h0=425.00
+p0 r1: loss=1039834 count=80.549%
+   g=[np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(375.0), np.float64(312.5), np.float64(562.5)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=725.00 h0=425.00
+p1 r0: loss=1039834 count=80.549%
+   g=[np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(250.0), np.float64(375.0), np.float64(312.5), np.float64(562.5)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=725.00 h0=425.00

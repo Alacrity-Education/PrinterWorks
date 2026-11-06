@@ -1,0 +1,51 @@
+=================== ND=48  default 11/131 ===================
+  zr[kl_preset_rain] eps+0.0025                        refuse_chase     trials=28 comps= 29 ticks=4556161 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=48): 24/24 bit-identical
+decode ticks: min 4108487  p50 4563628  max 4804401   (@16 MHz: 256.8 / 285.2 / 300.3 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=131 trials=50 -> 4620713 ticks (288.8 ms)
+stray ucsim processes at exit: 0
+=================== ND=16  default 11/131 ===================
+  zr[all_zero] eps+0.0025                              refuse_chase     trials= 5 comps=  6 ticks=2112190 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=16): 24/24 bit-identical
+decode ticks: min 1907809  p50 2098974  max 2286393   (@16 MHz: 119.2 / 131.2 / 142.9 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=72 trials=7 -> 2098974 ticks (131.2 ms)
+stray ucsim processes at exit: 0
+=================== ND=48  --amax 14 --tmax 131 ===================
+  File "/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_prod/ucsim_v23.py", line 204, in read
+    out = self.cmd("dump 0x%x 0x%x" % (addr, addr + n - 1), 0.25)
+  File "/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_prod/ucsim_v23.py", line 174, in cmd
+    self.s.sendall((c + "\n").encode())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+=================== ND=16  --amax 14 --tmax 131 ===================
+  File "/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_prod/ucsim_v23.py", line 204, in read
+    out = self.cmd("dump 0x%x 0x%x" % (addr, addr + n - 1), 0.25)
+  File "/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_prod/ucsim_v23.py", line 174, in cmd
+    self.s.sendall((c + "\n").encode())
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+=================== ND=48  --amax 16 --tmax 192 ===================
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/alex.lucaci/Projects/RBARF/new-implementation/recon/approaches/dev_prod/ucsim_v23.py", line 295, in main
+    status = sim.read(sym["_g_status"], 1)[0]
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+=================== ND=16  --amax 16 --tmax 192 ===================
+    weak eps-0.0450 t0=650/runs [('cause', 'refuse_lock', 'refuse_chase'), ('trials', 0, 59), ('comps', 0, 64), ('n_refs', 0, 1), ('n_weak', 0, 9)]
+    weak eps+0.0080 t0=470/zeros [('cause', 'refuse_lock', 'refuse_chase'), ('trials', 0, 31), ('comps', 0, 32), ('n_refs', 0, 1), ('n_weak', 0, 16)]
+    drift-0.002 eps-0.011/val_vwalk1 [('cause', 'refuse_lock', 'refuse_chase'), ('trials', 0, 31), ('comps', 0, 32), ('n_refs', 0, 1), ('n_weak', 0, 6)]
+decode ticks: min 198618  p50 214297  max 2433766   (@16 MHz: 12.4 / 13.4 / 152.1 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=123 trials=122 -> 2433766 ticks (152.1 ms)
+stray ucsim processes at exit: 0
+=================== ND=48 --b0 C0  A16/T192 ===================
+  zr[kl_preset_draw_rev] eps+0.0025                    refuse_chase     trials=38 comps= 39 ticks=4688812 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=48, capture byte0 bits7..6 = 0xC0, A_MAX=16 T_MAX=192): 24/24 bit-identical
+decode ticks: min 4108607  p50 4656313  max 5228707   (@16 MHz: 256.8 / 291.0 / 326.8 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=192 trials=21 -> 4332929 ticks (270.8 ms)
+stray ucsim processes at exit: 0
+strays: 0
+0

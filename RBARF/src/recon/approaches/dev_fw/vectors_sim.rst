@@ -1,0 +1,18 @@
+                                      1 ; vectors_sim.s -- reset vector for the ASMDEC ucsim harness image.
+                                      2 ;
+                                      3 ; decode_asm.s relocates helpers into the vector-table gap (area VGAP,
+                                      4 ; ABS 0x8004..0x8063), so the harness must link with --code-loc 0x8068
+                                      5 ; exactly like the production image -- sdld does NOT check REL/ABS
+                                      6 ; overlaps, and linking without it puts SDCC's GSINIT at 0x8004 where
+                                      7 ; the VGAP bytes clobber it (found 2026-09-06: every ASMDEC sim ran the
+                                      8 ; mediv/udiv32 bytes as its own startup, escaped to the zero page, and
+                                      9 ; trashed RAM for the rest of the 45 s window -- reads then mismatched).
+                                     10 ; With --code-loc 0x8068 SDCC's own vector table sits at 0x8068 and the
+                                     11 ; real 0x8000 reset slot would be empty: this module supplies it.
+                                     12     .module vecsim
+                                     13 
+                                     14     .globl s_GSINIT
+                                     15 
+                                     16     .area VECT (ABS)
+      008000                         17     .org 0x8000
+      008000 82 00 80 6F             18     int s_GSINIT            ; RESET -> runtime init (only vector the sim uses)

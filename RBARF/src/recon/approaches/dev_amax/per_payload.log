@@ -1,0 +1,35 @@
+TOTAL  A11T131  A14T131  A16T192
+  A11  T131   delivered 15801  wrong  0  refused   999
+  A14  T131   delivered 15808  wrong  0  refused   992
+  A16  T192   delivered 15810  wrong  0  refused   990
+
+PER PAYLOAD (only those that move; /240 captures each)
+  demo      deepsea              165  167  167   +2  +2
+  demo      undraw               202  203  203   +1  +1
+  klipper   all_ff_base          211  212  212   +1  +1
+  main-ext  aa                   223  224  224   +1  +1
+  main-ext  dense                224  225  225   +1  +1
+  main-ext  rnd3                 215  216  216   +1  +1
+  prod      full                 223  222  223   -1  +0
+  val-ext   vchecker             228  228  229   +0  +1
+  val-ext   vrnd7                228  229  229   +1  +1
+
+EVERY CAPTURE WHOSE VERDICT MOVES (baseline -> point)
+  A14 T131  demo      deepsea              eps-1.20% t0=458ns  REFUSED  (R7) -> DELIVERED(chase) trials=29 comps=30
+  A14 T131  demo      deepsea              eps-1.20% t0=483ns  REFUSED  (R7) -> DELIVERED(chase) trials=3 comps=4
+  A14 T131  demo      undraw               eps-1.05% t0=470ns  REFUSED  (R7) -> DELIVERED(chase) trials=19 comps=20
+  A14 T131  klipper   all_ff_base          eps-0.90% t0= 70ns  REFUSED  (R8) -> DELIVERED(chase) trials=98 comps=123
+  A14 T131  main-ext  aa                   eps-1.05% t0=508ns  REFUSED  (R7) -> DELIVERED(chase) trials=1 comps=2
+  A14 T131  main-ext  dense                eps-1.20% t0=545ns  REFUSED  (R7) -> DELIVERED(chase) trials=1 comps=2
+  A14 T131  main-ext  rnd3                 eps-1.20% t0=433ns  REFUSED  (R7) -> DELIVERED(chase) trials=6 comps=7
+  A14 T131  prod      full                 eps-0.80% t0=458ns  DELIVERED(chase) -> REFUSED  (R8) trials=65 comps=131
+  A14 T131  val-ext   vrnd7                eps-1.05% t0=658ns  REFUSED  (R7) -> DELIVERED(chase) trials=18 comps=33
+  A16 T192  demo      deepsea              eps-1.20% t0=458ns  REFUSED  (R7) -> DELIVERED(chase) trials=29 comps=30
+  A16 T192  demo      deepsea              eps-1.20% t0=483ns  REFUSED  (R7) -> DELIVERED(chase) trials=3 comps=4
+  A16 T192  demo      undraw               eps-1.05% t0=470ns  REFUSED  (R7) -> DELIVERED(chase) trials=20 comps=21
+  A16 T192  klipper   all_ff_base          eps-0.90% t0= 70ns  REFUSED  (R8) -> DELIVERED(chase) trials=124 comps=155
+  A16 T192  main-ext  aa                   eps-1.05% t0=508ns  REFUSED  (R7) -> DELIVERED(chase) trials=1 comps=2
+  A16 T192  main-ext  dense                eps-1.20% t0=545ns  REFUSED  (R7) -> DELIVERED(chase) trials=1 comps=2
+  A16 T192  main-ext  rnd3                 eps-1.20% t0=433ns  REFUSED  (R7) -> DELIVERED(chase) trials=6 comps=7
+  A16 T192  val-ext   vchecker             eps-1.20% t0=633ns  REFUSED  (R8) -> DELIVERED(chase) trials=54 comps=55
+  A16 T192  val-ext   vrnd7                eps-1.05% t0=658ns  REFUSED  (R7) -> DELIVERED(chase) trials=24 comps=49

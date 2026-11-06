@@ -1,0 +1,8 @@
+base                       eps=+0.000 EXACT 36/54 biterr   27/6912 = 0.00391 (70s)
+drift+0.2% slope on        eps=+0.000 EXACT 34/54 biterr   27/6912 = 0.00391 (58s)
+drift+0.2% slope OFF       eps=+0.000 EXACT 34/54 biterr   27/6912 = 0.00391 (12s)
+no pin                     eps=+0.000 EXACT 36/54 biterr   27/6912 = 0.00391 (58s)
+eps-7.5 pin                eps=-0.075 EXACT  3/54 biterr  307/6912 = 0.04442 (58s)
+eps-7.5 NO pin             eps=-0.075 EXACT  3/54 biterr  307/6912 = 0.04442 (58s)
+eps-7.5 drift slope on     eps=-0.075 EXACT  3/54 biterr  306/6912 = 0.04427 (59s)
+eps-7.5 drift slope OFF    eps=-0.075 EXACT  3/54 biterr  308/6912 = 0.04456 (12s)

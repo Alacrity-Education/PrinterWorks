@@ -1,0 +1,144 @@
+{
+ "meta": {
+  "macro": "/home/alex.lucaci/Projects/RBARF/new-implementation/klipper/rbarf.cfg",
+  "firmware_expected": "build/rbarf_prod_verbose.ihx (ND_DATA=48, CHK_LEN=4, CHECK_EN=1, VERBOSE=1)",
+  "verbose_seen": true,
+  "variants": [
+   "frame"
+  ],
+  "scoring": "single transmission: DELIVERED = accepted AND the 48 DATA bytes equal ground truth; REFUSE = missed frame; accepted but different = CATASTROPHIC (must be 0)",
+  "pad_note": "v2.2: the 60-byte frame IS exactly the 20-LED chain -- no pad byte exists. 'pad1'/'lead1' rows, if present, are 61-byte negative controls that the pad law says must refuse."
+ },
+ "summary": {
+  "rows": 10,
+  "delivered": 8,
+  "direct": 6,
+  "chased": 2,
+  "refused": 2,
+  "catastrophic": 0,
+  "protocol_errors": 0,
+  "no_report": 0
+ },
+ "rows": [
+  {
+   "case": "preset_rain",
+   "variant": "frame",
+   "rep": 0,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000134015762FF000000000000000000000000F7F7F7F79A5500FF",
+   "line": "D:O:-108",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -108,
+   "report_ms": 184.14709500029858
+  },
+  {
+   "case": "preset_rain",
+   "variant": "frame",
+   "rep": 1,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000134015762FF000000000000000000000000F7F7F7F79A5500FF",
+   "line": "D:O:-110",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -110,
+   "report_ms": 183.94731800071895
+  },
+  {
+   "case": "preset_rain",
+   "variant": "frame",
+   "rep": 2,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000134015762FF000000000000000000000000F7F7F7F79A5500FF",
+   "line": "D:C:-108",
+   "verdict": "DELIVERED",
+   "status": "CHASED",
+   "eps_centi": -108,
+   "report_ms": 184.34894500023802
+  },
+  {
+   "case": "preset_rain",
+   "variant": "frame",
+   "rep": 3,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000134015762FF000000000000000000000000F7F7F7F79A5500FF",
+   "line": "D:R2:-107",
+   "verdict": "MISSED",
+   "status": "REFUSE2",
+   "eps_centi": -107,
+   "report_ms": 185.59838399960427
+  },
+  {
+   "case": "preset_rain",
+   "variant": "frame",
+   "rep": 4,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000134015762FF000000000000000000000000F7F7F7F79A5500FF",
+   "line": "D:O:-106",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -106,
+   "report_ms": 183.81429900000512
+  },
+  {
+   "case": "preset_rain_rev",
+   "variant": "frame",
+   "rep": 0,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000126751043FF000000000000000000000000737373739A5500FF",
+   "line": "D:O:-108",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -108,
+   "report_ms": 183.67685599878314
+  },
+  {
+   "case": "preset_rain_rev",
+   "variant": "frame",
+   "rep": 1,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000126751043FF000000000000000000000000737373739A5500FF",
+   "line": "D:C:-108",
+   "verdict": "DELIVERED",
+   "status": "CHASED",
+   "eps_centi": -108,
+   "report_ms": 183.700535000753
+  },
+  {
+   "case": "preset_rain_rev",
+   "variant": "frame",
+   "rep": 2,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000126751043FF000000000000000000000000737373739A5500FF",
+   "line": "D:O:-107",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -107,
+   "report_ms": 183.94009100120456
+  },
+  {
+   "case": "preset_rain_rev",
+   "variant": "frame",
+   "rep": 3,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000126751043FF000000000000000000000000737373739A5500FF",
+   "line": "D:R2:-126",
+   "verdict": "MISSED",
+   "status": "REFUSE2",
+   "eps_centi": -126,
+   "report_ms": 183.70155499906105
+  },
+  {
+   "case": "preset_rain_rev",
+   "variant": "frame",
+   "rep": 4,
+   "bytes": 60,
+   "frame": "FF00AA654040404040404040404040404040404040404040404040400314000000000126751043FF000000000000000000000000737373739A5500FF",
+   "line": "D:O:-105",
+   "verdict": "DELIVERED",
+   "status": "OK",
+   "eps_centi": -105,
+   "report_ms": 183.14048499996716
+  }
+ ]
+}

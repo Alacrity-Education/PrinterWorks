@@ -1,0 +1,121 @@
+=========================================================================================================================
+v2.3 MARKER-SPLIT STUDY -- decision report
+=========================================================================================================================
+200880 decoder runs total.  Calibrated sampler = recon/synth.py's fitted model; lock stage =
+embedded_v2._seed + ._refine x2 (as decode_state runs it), then its marker-forced
+calibration + decision passes.  All three candidate splits are 6 marker bytes, so every
+frame is 3 + 22 + 3 = 28 B = 224 bits: the frame LENGTH the seed lock solves is identical
+and any difference comes only from where the marker EDGES sit.
+
+  lock%      _seed returned K inside [K_MIN, K_MAX] (else R1)
+  eps err    |K_NOM/K - 1 - eps_true|, percentage points
+  t0 err     |(tau - BIAS_U)*TU_ns - t0_true|, ns
+  R2ok%      zero marker-bit violations
+  R1-4ok%    the R1..R4 refusal gates all pass
+  bitexact%  payload' decoded bit-for-bit correct (delivery proxy)
+
+1. CANDIDATES, FULL SWEEP  (eps -8..+8 %, t0 375-736 ns, 18 payloads, 17496 cases each)
+-------------------------------------------------------------------------------------------------------------------------
+split  markers                      lock%   eps err % (p50/p90/max)   t0 err ns (p50/p90/max)  R2ok%  R1-4ok% bitexact%
+-------------------------------------------------------------------------------------------------------------------------
+a_3+3  FF AA 65 / 9A 55 FF         100.00  0.0125/ 0.0827/ 0.7001    27.8/  140.3/ 1372.1  88.87    81.58     30.80
+b_4+2  FF 00 AA 65 / 9A FF         100.00  0.0112/ 0.0727/ 0.6591    26.0/  121.5/ 1373.2  91.72    81.96     31.65
+c_2+4  FF 65 / 9A 55 00 FF         100.00  0.0130/ 0.0733/ 0.6745    29.4/  127.0/ 1436.7  92.79    81.64     31.59
+-------------------------------------------------------------------------------------------------------------------------
+
+2. CANDIDATES INSIDE THE +-7.5 % ENVELOPE  (the stated lock requirement)
+-------------------------------------------------------------------------------------------------------------------------
+split  markers                      lock%   eps err % (p50/p90/max)   t0 err ns (p50/p90/max)  R2ok%  R1-4ok% bitexact%
+-------------------------------------------------------------------------------------------------------------------------
+a_3+3  FF AA 65 / 9A 55 FF         100.00  0.0128/ 0.0831/ 0.7001    28.3/  141.7/ 1372.1  88.70    81.59     32.16
+b_4+2  FF 00 AA 65 / 9A FF         100.00  0.0113/ 0.0749/ 0.6591    26.7/  127.0/ 1373.2  91.48    81.99     33.13
+c_2+4  FF 65 / 9A 55 00 FF         100.00  0.0132/ 0.0750/ 0.6745    30.3/  128.1/ 1436.7  93.00    81.66     33.03
+-------------------------------------------------------------------------------------------------------------------------
+
+3. CANDIDATES ON THE DELIVERY PLATEAU  (-2.3..+0.05 %, MARGIN_INVESTIGATION SS2)
+-------------------------------------------------------------------------------------------------------------------------
+split  markers                      lock%   eps err % (p50/p90/max)   t0 err ns (p50/p90/max)  R2ok%  R1-4ok% bitexact%
+-------------------------------------------------------------------------------------------------------------------------
+a_3+3  FF AA 65 / 9A 55 FF         100.00  0.0219/ 0.1887/ 0.6197    42.8/  333.4/ 1211.0  84.21    80.60     64.04
+b_4+2  FF 00 AA 65 / 9A FF         100.00  0.0229/ 0.0824/ 0.6341    36.2/  115.9/ 1229.2  85.09    81.99     68.27
+c_2+4  FF 65 / 9A 55 00 FF         100.00  0.0205/ 0.1657/ 0.6323    47.3/  279.5/ 1229.2  89.28    80.87     68.03
+-------------------------------------------------------------------------------------------------------------------------
+
+4. PAIRED TEST, full sweep (same payload/eps/t0 cell, bit-exact outcome)
+  split       wins vs a   a wins     chi2     verdict (chi2>3.84 = p<0.05)
+  b_4+2             823      673    14.84                     b_4+2 better
+  c_2+4             878      739    11.78                     c_2+4 better
+
+5. PAIRED TEST, plateau only
+  split       wins vs a   a wins     chi2     verdict (chi2>3.84 = p<0.05)
+  b_4+2             434      260    43.13                     b_4+2 better
+  c_2+4             448      284    36.30                     c_2+4 better
+
+=========================================================================================================================
+6. ATTRIBUTION -- is it the SPLIT or the marker CONTENT?
+=========================================================================================================================
+The two candidates that beat (a) both put an 8-consecutive-zero byte back into a marker
+AND make the two ends unequal.  These controls separate the two effects.
+
+6a. CANDIDATES + CONTROLS, delivery plateau
+-------------------------------------------------------------------------------------------------------------------------
+split  markers                      lock%   eps err % (p50/p90/max)   t0 err ns (p50/p90/max)  R2ok%  R1-4ok% bitexact%
+-------------------------------------------------------------------------------------------------------------------------
+a_3+3  FF AA 65 / 9A 55 FF         100.00  0.0219/ 0.1887/ 0.6197    42.8/  333.4/ 1211.0  84.21    80.60     64.04
+b_4+2  FF 00 AA 65 / 9A FF         100.00  0.0229/ 0.0824/ 0.6341    36.2/  115.9/ 1229.2  85.09    81.99     68.27
+c_2+4  FF 65 / 9A 55 00 FF         100.00  0.0205/ 0.1657/ 0.6323    47.3/  279.5/ 1229.2  89.28    80.87     68.03
+z3h_3+3  FF 00 65 / 9A 55 FF       100.00  0.0248/ 0.1010/ 0.6197    42.5/  147.6/ 1195.0  90.18    81.80     68.57
+z3t_3+3  FF AA 65 / 9A 00 FF       100.00  0.0179/ 0.1792/ 0.6197    42.7/  318.5/ 1230.5  83.33    80.34     71.05
+nz4_4+2  FF AA AA 65 / 9A FF       100.00  0.0189/ 0.2171/ 0.6341    41.8/  401.5/ 1229.2  83.77    80.65     63.40
+nz2_2+4  FF 65 / 9A 55 AA FF       100.00  0.0248/ 0.1738/ 0.6323    47.3/  305.2/ 1229.2  83.77    80.38     61.79
+-------------------------------------------------------------------------------------------------------------------------
+split      note                                          max 0-run  cal class-0 width samples/frame
+a_3+3      candidate (a) - spec default, no 00                   2                            15.50
+b_4+2      candidate (b) - 00 in header                          8                            19.56
+c_2+4      candidate (c) - 00 in trailer                         8                            19.75
+z3h_3+3    control - 3+3 sizing WITH a 00 (header)               9                            19.67
+z3t_3+3    control - 3+3 sizing WITH a 00 (trailer)              9                            19.45
+nz4_4+2    control - (b) sizing, NO 00                           2                            14.92
+nz2_2+4    control - (c) sizing, NO 00                           2                            15.34
+
+6b. PAIRED vs (a), plateau -- controls included
+  split       wins vs a   a wins     chi2     verdict (chi2>3.84 = p<0.05)
+  b_4+2             434      260    43.13                     b_4+2 better
+  c_2+4             448      284    36.30                     c_2+4 better
+  z3h_3+3           387      201    58.21                   z3h_3+3 better
+  z3t_3+3           359       71   191.56                   z3t_3+3 better
+  nz4_4+2           283      309     1.06         no measurable difference
+  nz2_2+4           310      402    11.63                       (a) better
+
+7. WITHIN-CAPTURE DRIFT  (+-0.2 / +-0.4 % linear ramp -- the stated reason for a ruler at BOTH ends)
+-------------------------------------------------------------------------------------------------------------------------
+split  markers                      lock%   eps err % (p50/p90/max)   t0 err ns (p50/p90/max)  R2ok%  R1-4ok% bitexact%
+-------------------------------------------------------------------------------------------------------------------------
+a_3+3  FF AA 65 / 9A 55 FF         100.00  0.0578/ 0.1471/ 0.6981    44.0/  250.2/ 1517.2  88.46    79.62     32.87
+b_4+2  FF 00 AA 65 / 9A FF         100.00  0.0559/ 0.1284/ 0.6711    40.9/  172.0/ 1446.4  92.60    80.67     33.67
+c_2+4  FF 65 / 9A 55 00 FF         100.00  0.0558/ 0.1394/ 0.6728    45.8/  196.7/ 1444.0  92.93    78.43     35.51
+-------------------------------------------------------------------------------------------------------------------------
+
+7b. PAIRED vs (a) under drift
+  split       wins vs a   a wins     chi2     verdict (chi2>3.84 = p<0.05)
+  b_4+2             508      439     4.88                     b_4+2 better
+  c_2+4             591      363    54.01                     c_2+4 better
+
+=========================================================================================================================
+VERDICT
+=========================================================================================================================
+  lock success is 100.00 / 100.00 / 100.00 % -- the primary metric does not discriminate at all.
+  eps/t0 error medians are equal across splits; only the p90 tail moves, and section 6
+  shows that tail tracks the presence of an 8-zero marker byte, NOT the split:
+    4+2 sizing WITHOUT a 00 byte vs (a): 283 / 309, chi2 = 1.06  -> no measurable difference
+    2+4 sizing WITHOUT a 00 byte vs (a): 310 / 402, chi2 = 11.63  -> (a) is BETTER
+  And with the content matched, 3+3 stays the best sizing: the best 3+3-with-00 variant
+  reaches 71.05 % bit-exact on the plateau vs 68.27 % for the best 4+2-with-00 variant.
+
+  -> KEEP SPLIT (a) 3+3, HEADER = FF AA 65, TRAILER = 9A 55 FF.
+     No split measurably wins once marker content is controlled.
+
+  SEPARATE FINDING FOR THE OWNER (not acted on here): dropping the 0x00 probe DOES cost.
+     Every variant carrying an 8-zero marker byte beats every variant without one, on
+     plateau bit-exactness and on the lock-error tail, regardless of split.  PROTOCOL.md's
+     rationale that payload zero runs 'serve the same purpose' is not borne out here.

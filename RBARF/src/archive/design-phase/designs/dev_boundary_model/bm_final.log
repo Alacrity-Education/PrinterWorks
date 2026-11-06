@@ -1,0 +1,67 @@
+zeros_0        tau=62.75 G=2509.6 (tau_loop=62.74) | mism  53 | blind   7 (maxrun 1) wrong  3 confl  3 | blindphase err med 62 max 523
+zeros_1        tau=63.00 G=2498.8 (tau_loop=62.47) | mism  24 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 55 max 316
+zeros_2        tau=63.00 G=2498.8 (tau_loop=62.47) | mism  25 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 55 max 315
+ones_0         tau=62.65 G=2498.5 (tau_loop=62.46) | mism  13 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 2 max 140
+ones_1         tau=62.80 G=2496.4 (tau_loop=62.41) | mism  12 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 4 max 132
+ones_2         tau=62.65 G=2497.9 (tau_loop=62.45) | mism  11 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 2 max 246
+aa_0           tau=62.75 G=2497.8 (tau_loop=62.44) | mism  13 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 120 max 245
+aa_1           tau=62.75 G=2497.3 (tau_loop=62.43) | mism  14 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 120 max 147
+aa_2           tau=62.75 G=2496.2 (tau_loop=62.41) | mism  14 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 120 max 164
+p55_0          tau=62.80 G=2500.0 (tau_loop=62.50) | mism  81 | blind   0 (maxrun 0) wrong  8 confl  6 | blindphase err med 122 max 376
+p55_1          tau=62.75 G=2508.8 (tau_loop=62.72) | mism  79 | blind   7 (maxrun 1) wrong  6 confl  4 | blindphase err med 124 max 1251
+p55_2          tau=62.75 G=2508.5 (tau_loop=62.71) | mism  77 | blind   7 (maxrun 1) wrong  4 confl  3 | blindphase err med 123 max 1251
+lone1_0        tau=62.65 G=2509.5 (tau_loop=62.74) | mism  53 | blind   7 (maxrun 1) wrong  4 confl  2 | blindphase err med 64 max 639
+lone1_1        tau=63.00 G=2509.2 (tau_loop=62.73) | mism  53 | blind   7 (maxrun 1) wrong  3 confl  1 | blindphase err med 70 max 621
+lone1_2        tau=63.00 G=2510.3 (tau_loop=62.76) | mism  57 | blind   7 (maxrun 1) wrong  5 confl  4 | blindphase err med 70 max 624
+msb1_0         tau=62.75 G=2513.1 (tau_loop=62.83) | mism  46 | blind   7 (maxrun 1) wrong  0 confl  3 | blindphase err med 120 max 1377
+msb1_1         tau=62.75 G=2499.0 (tau_loop=62.47) | mism  25 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 59 max 261
+msb1_2         tau=62.65 G=2510.7 (tau_loop=62.77) | mism  44 | blind   7 (maxrun 1) wrong  0 confl  3 | blindphase err med 68 max 567
+count_0        tau=62.80 G=2512.4 (tau_loop=62.81) | mism  58 | blind   7 (maxrun 1) wrong  7 confl  7 | blindphase err med 121 max 1373
+count_1        tau=62.65 G=2512.4 (tau_loop=62.81) | mism  60 | blind   7 (maxrun 1) wrong  8 confl  9 | blindphase err med 123 max 749
+count_2        tau=62.65 G=2510.6 (tau_loop=62.76) | mism  58 | blind   7 (maxrun 1) wrong  5 confl  6 | blindphase err med 124 max 618
+impulse_hi_0   tau=62.80 G=2499.0 (tau_loop=62.48) | mism  62 | blind   0 (maxrun 0) wrong  4 confl  0 | blindphase err med 59 max 879
+impulse_hi_1   tau=63.00 G=2497.4 (tau_loop=62.43) | mism  40 | blind   0 (maxrun 0) wrong  2 confl  3 | blindphase err med 56 max 149
+impulse_hi_2   tau=63.00 G=2499.1 (tau_loop=62.48) | mism  64 | blind   0 (maxrun 0) wrong  1 confl  2 | blindphase err med 57 max 883
+impulse_lo_0   tau=62.85 G=2498.2 (tau_loop=62.45) | mism  20 | blind   0 (maxrun 0) wrong  1 confl  1 | blindphase err med 6 max 127
+impulse_lo_1   tau=62.65 G=2498.3 (tau_loop=62.46) | mism  16 | blind   0 (maxrun 0) wrong  1 confl  0 | blindphase err med 2 max 144
+impulse_lo_2   tau=62.85 G=2496.9 (tau_loop=62.42) | mism  22 | blind   0 (maxrun 0) wrong  2 confl  2 | blindphase err med 6 max 128
+blocks_0       tau=62.80 G=2496.2 (tau_loop=62.40) | mism  19 | blind   0 (maxrun 0) wrong  6 confl  5 | blindphase err med 92 max 134
+blocks_1       tau=62.80 G=2496.1 (tau_loop=62.40) | mism  20 | blind   0 (maxrun 0) wrong  6 confl  6 | blindphase err med 65 max 146
+blocks_2       tau=62.80 G=2496.1 (tau_loop=62.40) | mism  19 | blind   0 (maxrun 0) wrong  7 confl  7 | blindphase err med 81 max 146
+nibbles_0      tau=62.80 G=2494.8 (tau_loop=62.37) | mism  19 | blind   1 (maxrun 1) wrong  6 confl  6 | blindphase err med 75 max 242
+nibbles_1      tau=62.80 G=2495.5 (tau_loop=62.39) | mism  17 | blind   3 (maxrun 1) wrong  1 confl  1 | blindphase err med 60 max 140
+nibbles_2      tau=62.65 G=2496.1 (tau_loop=62.40) | mism  22 | blind   0 (maxrun 0) wrong  7 confl  7 | blindphase err med 105 max 140
+sparse_0       tau=62.80 G=2511.4 (tau_loop=62.79) | mism  73 | blind   7 (maxrun 1) wrong  8 confl  4 | blindphase err med 124 max 1365
+sparse_1       tau=62.80 G=2511.4 (tau_loop=62.79) | mism  71 | blind   7 (maxrun 1) wrong  8 confl  4 | blindphase err med 124 max 1319
+sparse_2       tau=62.75 G=2509.5 (tau_loop=62.74) | mism  71 | blind   7 (maxrun 1) wrong  7 confl  3 | blindphase err med 124 max 1251
+dense_0        tau=62.80 G=2495.7 (tau_loop=62.39) | mism  18 | blind   0 (maxrun 0) wrong  5 confl  5 | blindphase err med 119 max 243
+dense_1        tau=62.75 G=2497.0 (tau_loop=62.43) | mism  16 | blind   0 (maxrun 0) wrong  4 confl  4 | blindphase err med 120 max 143
+dense_2        tau=62.75 G=2496.9 (tau_loop=62.42) | mism  20 | blind   0 (maxrun 0) wrong  6 confl  6 | blindphase err med 120 max 244
+runs_0         tau=62.75 G=2497.5 (tau_loop=62.44) | mism  18 | blind   0 (maxrun 0) wrong  1 confl  1 | blindphase err med 6 max 134
+runs_1         tau=62.65 G=2497.6 (tau_loop=62.44) | mism  17 | blind   0 (maxrun 0) wrong  1 confl  1 | blindphase err med 3 max 133
+runs_2         tau=62.75 G=2496.3 (tau_loop=62.41) | mism  17 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 6 max 243
+edges_0        tau=62.90 G=2510.1 (tau_loop=62.75) | mism  55 | blind   7 (maxrun 1) wrong  1 confl  4 | blindphase err med 70 max 599
+edges_1        tau=62.65 G=2509.4 (tau_loop=62.73) | mism  57 | blind   7 (maxrun 1) wrong  1 confl  2 | blindphase err med 66 max 600
+edges_2        tau=63.00 G=2510.7 (tau_loop=62.77) | mism  61 | blind   9 (maxrun 1) wrong  4 confl  3 | blindphase err med 72 max 598
+rnd1_0         tau=62.75 G=2495.0 (tau_loop=62.38) | mism  23 | blind   0 (maxrun 0) wrong  1 confl  1 | blindphase err med 33 max 129
+rnd1_1         tau=62.65 G=2497.3 (tau_loop=62.43) | mism  25 | blind   0 (maxrun 0) wrong  3 confl  3 | blindphase err med 57 max 246
+rnd1_2         tau=62.75 G=2496.9 (tau_loop=62.42) | mism  19 | blind   0 (maxrun 0) wrong  1 confl  1 | blindphase err med 56 max 272
+rnd2_0         tau=62.75 G=2499.5 (tau_loop=62.49) | mism  11 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 38 max 101
+rnd2_1         tau=62.75 G=2494.5 (tau_loop=62.36) | mism  23 | blind   0 (maxrun 0) wrong 10 confl 10 | blindphase err med 111 max 138
+rnd2_2         tau=62.75 G=2496.5 (tau_loop=62.41) | mism  22 | blind   0 (maxrun 0) wrong  9 confl  9 | blindphase err med 118 max 141
+rnd3_0         tau=62.65 G=2500.0 (tau_loop=62.50) | mism  26 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 29 max 626
+rnd3_1         tau=62.75 G=2497.5 (tau_loop=62.44) | mism  24 | blind   0 (maxrun 0) wrong 12 confl 12 | blindphase err med 119 max 246
+rnd3_2         tau=62.65 G=2498.9 (tau_loop=62.47) | mism   6 | blind   0 (maxrun 0) wrong  0 confl  0 | blindphase err med 60 max 115
+
+=== payload bits 6912 ===
+blind (no sample in [h0,h1))   125 = 1.81%  -> 2.31 bits/capture
+wrong (majority of in-window)  179 = 2.590%
+conflicting in-window votes    164
+header/trailer blind bits       56 (of 3456)
+informative samples per payload bit: {0: 125, 1: 4510, 2: 2277, 3: 0, 4: 0}
+per-slot informative fraction: {0: 0.041, 1: 0.273, 2: 0.634, 3: 0.303, 4: 0.03, 5: 0.08, 6: 0.674, 7: 0.62}
+blind bit attributed to gap AFTER slot: {5: 6, 7: 119}
+max consecutive blind payload bits: med 0 max 1
+tau fitted: min 62.65 med 62.75 max 63.00
+loop G: min 2494.5 med 2498.4 max 2513.1 | G/40 = 62.36..62.83 ns
+blind phase track (rising edges only) vs oracle: med 69.0 ns, p90 1251.3 ns, worst 1376.9 ns

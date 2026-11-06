@@ -1,0 +1,29 @@
+  eps-0.080/ones                                       refuse_admit     trials= 0 comps=  1 ticks=2042774 OK
+  eps-0.060/val_v5a                                    refuse_infeasible trials= 0 comps=  0 ticks=2016517 OK
+  eps-0.040/runs                                       refuse_chase     trials=58 comps= 61 ticks=2286393 OK
+  eps-0.025/msb1                                       direct           trials= 0 comps=  1 ticks=2115347 OK
+  malform tr0 ch8/val_vprime                           refuse_marker    trials= 0 comps=  0 ticks=1907809 OK
+  mk[last byte all] eps-0.011/edges                    refuse_labelerr  trials= 0 comps=  0 ticks=2074679 OK
+  mk[trl 4] eps+0.002/blocks                           chase            trials=20 comps= 21 ticks=2138235 OK
+  chk[HI position SPLIT (all 3 differ)] eps-0.002/edge refuse_nocand    trials= 0 comps=  3 ticks=2068963 OK
+  chk[BOTH positions SPLIT] eps-0.011/val_vrnd8        refuse_chase     trials= 7 comps= 72 ticks=2098974 OK
+  chk[HI position SPLIT (all 3 differ)] eps-0.011/msb1 refuse_chase     trials=22 comps= 69 ticks=2212917 OK
+  weak eps-0.0450 t0=650/runs                          refuse_chase     trials=59 comps= 64 ticks=2277974 OK
+  zr[ff_then_zero] eps+0.0060                          refuse_chase     trials=55 comps= 56 ticks=2235601 OK
+  drift+0.002 eps-0.002/val_vrnd5                      refuse_chase     trials=55 comps= 56 ticks=2197927 OK
+  drift-0.004 eps-0.011/val_vrnd6                      refuse_chase     trials=21 comps= 22 ticks=2118125 OK
+  drift-0.002 eps-0.011/val_vwalk1                     refuse_chase     trials=21 comps= 22 ticks=2179891 OK
+  chk[all 6 check bytes damaged] eps-0.011/val_vchecke refuse_chase     trials= 1 comps= 18 ticks=2048269 OK
+  chk[all 6 check bytes damaged] eps+0.002/ones        refuse_chase     trials= 1 comps= 18 ticks=1923513 OK
+  zr[all_zero] eps+0.0020                              refuse_chase     trials=11 comps= 12 ticks=2127990 OK
+  chk[HI position SPLIT (all 3 differ)] eps+0.002/val_ refuse_chase     trials= 3 comps= 12 ticks=2044750 OK
+  zr[zero_then_ff] eps+0.0025                          refuse_chase     trials= 9 comps= 10 ticks=2077147 OK
+  chk[BOTH positions SPLIT] eps-0.002/msb1             refuse_nocand    trials= 0 comps=  9 ticks=2084497 OK
+  chk[BOTH positions SPLIT] eps+0.002/val_va5          refuse_chase     trials= 0 comps=  9 ticks=1995827 OK
+  chk[all 6 check bytes damaged] eps-0.002/zeros       refuse_nocand    trials= 0 comps=  9 ticks=2072144 OK
+  zr[all_zero] eps+0.0025                              refuse_chase     trials= 5 comps=  6 ticks=2112190 OK
+
+UCSIM v2.3 ON-TARGET PARITY (ND=16): 24/24 bit-identical
+decode ticks: min 1907809  p50 2098974  max 2286393   (@16 MHz: 119.2 / 131.2 / 142.9 ms; ucsim under-reads this silicon ~7 %)
+heaviest chase: comps=72 trials=7 -> 2098974 ticks (131.2 ms)
+stray ucsim processes at exit: 0

@@ -1,0 +1,651 @@
+{
+ "loop_ns": 2500.0,
+ "slot_offsets_ns": [
+  0.0,
+  250.0,
+  562.5,
+  812.5,
+  1062.5,
+  1312.5,
+  1687.5,
+  2000.0
+ ],
+ "eff_high_1_ns": 752.0,
+ "eff_high_0_ns": 377.0,
+ "gaps_cycles": [
+  4.0,
+  5.0,
+  4.0,
+  4.0,
+  4.0,
+  6.0,
+  5.0,
+  8.0
+ ],
+ "branch_cost_ns": [
+  0.0,
+  -62.5,
+  0.0,
+  125.0,
+  0.0,
+  0.0,
+  0.0,
+  62.5
+ ],
+ "branch_cost_cycles": [
+  0.0,
+  -1.0,
+  0.0,
+  2.0,
+  0.0,
+  0.0,
+  0.0,
+  1.0
+ ],
+ "mean_effective_loop_ns": 2502.488364043093,
+ "mean_cycle_ns": 63.20657088809589,
+ "notes": "Model: t(i,s) = t0 + (i*LOOP + o[s] + sum_j w[j]*C_j(i,s))/(1+eps), C_j(i,s) = number of HIGH reads at slot j strictly before sample (i,s). LOOP and o[] are quoted at the nominal 16 MHz clock (62.5 ns/cycle) and come out as exact integer cycles: the loop is 40 cycles with inter-sample gaps [4,5,4,4,4,6,5,8] cycles, i.e. the documented [4,4,4,4,4,6,5,6]=37 plus 1 cycle in the R1->R2 gap and 2 cycles in the BS1->R0 end-of-loop gap. w[] is the extra loop time when a sample reads HIGH (the BTJT-taken / NOP-skipped path, whose cost varies with instruction alignment); it is also whole cycles, [0,-1,0,+2,0,0,0,+1]. Without w the sampler's period-2 loop-length alternation is unreproducible and agreement caps near 85-95% in the frame window. eff_high_1/eff_high_0 stayed at the exact PIO wire values, so the STM8 input threshold introduces no measurable high-width distortion beyond a +2 ns common edge shift (a common rise/fall delay is absorbed by t0; 750/375 exactly scores 99.961% / 99.750%). Mean effective loop period over the captures: 2502.49 ns (mean cycle 63.207 ns, eps = -0.01118, spread across captures only +-0.014%). End-of-loop (slot7->slot0) gap = 8 nominal cycles = 505.7 ns after a LOW read at slot 7 and 9 cycles = 568.9 ns after a HIGH read, versus T1L = 498 ns: that is why the inter-bit low of a 1-bit disappears into it. The loop beats against 2 bit periods by only 2.49 ns/loop, but the w[7] term makes the loop length alternate by a whole cycle, so the merged loops come in runs of 1-2 spread over loops ~21-94 rather than one long run (observed 36-39 merged loops per 'ones' capture, simulated 35-38).",
+ "per_capture": {
+  "zeros_0": {
+   "t0_ns": 360.5,
+   "eps": -0.01102510647918964
+  },
+  "zeros_1": {
+   "t0_ns": 261.28955078125,
+   "eps": -0.011433582457336944
+  },
+  "zeros_2": {
+   "t0_ns": 254.11865234375,
+   "eps": -0.011224263631531173
+  },
+  "ones_0": {
+   "t0_ns": 314.0,
+   "eps": -0.011092662153978639
+  },
+  "ones_1": {
+   "t0_ns": 470.0,
+   "eps": -0.011034599960152214
+  },
+  "ones_2": {
+   "t0_ns": 350.0,
+   "eps": -0.011124024226155105
+  },
+  "aa_0": {
+   "t0_ns": 298.0,
+   "eps": -0.011364366605872367
+  },
+  "aa_1": {
+   "t0_ns": 362.0,
+   "eps": -0.011160922675912066
+  },
+  "aa_2": {
+   "t0_ns": 427.2833251953125,
+   "eps": -0.011240310552599997
+  },
+  "p55_0": {
+   "t0_ns": 378.0,
+   "eps": -0.011323999167625387
+  },
+  "p55_1": {
+   "t0_ns": 413.6842041015625,
+   "eps": -0.011315088469613044
+  },
+  "p55_2": {
+   "t0_ns": 449.625,
+   "eps": -0.010964205490698542
+  },
+  "lone1_0": {
+   "t0_ns": 442.046875,
+   "eps": -0.011467536785931931
+  },
+  "lone1_1": {
+   "t0_ns": 466.0,
+   "eps": -0.011156444541181476
+  },
+  "lone1_2": {
+   "t0_ns": 362.0,
+   "eps": -0.01126172890774757
+  },
+  "msb1_0": {
+   "t0_ns": 306.0,
+   "eps": -0.011156625374222018
+  },
+  "msb1_1": {
+   "t0_ns": 500.875,
+   "eps": -0.01128473522708584
+  },
+  "msb1_2": {
+   "t0_ns": 421.2470703125,
+   "eps": -0.010966492749079015
+  },
+  "count_0": {
+   "t0_ns": 342.0,
+   "eps": -0.011328885053136561
+  },
+  "count_1": {
+   "t0_ns": 343.50201416015625,
+   "eps": -0.011157602050539395
+  },
+  "count_2": {
+   "t0_ns": 410.9296875,
+   "eps": -0.011419685901014165
+  },
+  "impulse_hi_0": {
+   "t0_ns": 484.5,
+   "eps": -0.01130136279878835
+  },
+  "impulse_hi_1": {
+   "t0_ns": 294.0,
+   "eps": -0.010978183811617304
+  },
+  "impulse_hi_2": {
+   "t0_ns": 486.0,
+   "eps": -0.01126849702243593
+  },
+  "impulse_lo_0": {
+   "t0_ns": 382.375,
+   "eps": -0.011094375213306362
+  },
+  "impulse_lo_1": {
+   "t0_ns": 286.77252197265625,
+   "eps": -0.011022965749563296
+  },
+  "impulse_lo_2": {
+   "t0_ns": 462.0,
+   "eps": -0.011278746276521923
+  },
+  "blocks_0": {
+   "t0_ns": 373.75,
+   "eps": -0.010969760626507119
+  },
+  "blocks_1": {
+   "t0_ns": 321.49853515625,
+   "eps": -0.01130005109740062
+  },
+  "blocks_2": {
+   "t0_ns": 318.0,
+   "eps": -0.011095177722855953
+  },
+  "nibbles_0": {
+   "t0_ns": 413.25,
+   "eps": -0.01114039668828759
+  },
+  "nibbles_1": {
+   "t0_ns": 433.90020751953125,
+   "eps": -0.011384036218920812
+  },
+  "nibbles_2": {
+   "t0_ns": 354.0,
+   "eps": -0.011328729340331467
+  },
+  "sparse_0": {
+   "t0_ns": 341.625,
+   "eps": -0.01112272070849507
+  },
+  "sparse_1": {
+   "t0_ns": 319.5291748046875,
+   "eps": -0.011363634032263925
+  },
+  "sparse_2": {
+   "t0_ns": 411.75,
+   "eps": -0.011124285943914902
+  },
+  "dense_0": {
+   "t0_ns": 473.1483154296875,
+   "eps": -0.011176469458930804
+  },
+  "dense_1": {
+   "t0_ns": 362.0,
+   "eps": -0.011256823562797003
+  },
+  "dense_2": {
+   "t0_ns": 366.0,
+   "eps": -0.011322568801259814
+  },
+  "runs_0": {
+   "t0_ns": 347.0,
+   "eps": -0.010991592192279853
+  },
+  "runs_1": {
+   "t0_ns": 335.5,
+   "eps": -0.011085078064622667
+  },
+  "runs_2": {
+   "t0_ns": 421.125,
+   "eps": -0.011064487743842721
+  },
+  "edges_0": {
+   "t0_ns": 422.75,
+   "eps": -0.011094961352800858
+  },
+  "edges_1": {
+   "t0_ns": 482.0,
+   "eps": -0.010978142616958508
+  },
+  "edges_2": {
+   "t0_ns": 366.0,
+   "eps": -0.011095508395805864
+  },
+  "rnd1_0": {
+   "t0_ns": 431.750732421875,
+   "eps": -0.011128826441509698
+  },
+  "rnd1_1": {
+   "t0_ns": 306.0,
+   "eps": -0.011046131819946847
+  },
+  "rnd1_2": {
+   "t0_ns": 325.0,
+   "eps": -0.011094516973176649
+  },
+  "rnd2_0": {
+   "t0_ns": 466.0,
+   "eps": -0.011276392740798058
+  },
+  "rnd2_1": {
+   "t0_ns": 449.994140625,
+   "eps": -0.011079587495734677
+  },
+  "rnd2_2": {
+   "t0_ns": 326.0,
+   "eps": -0.011034769794079358
+  },
+  "rnd3_0": {
+   "t0_ns": 489.90478515625,
+   "eps": -0.011088290244483101
+  },
+  "rnd3_1": {
+   "t0_ns": 278.0,
+   "eps": -0.011458432444929723
+  },
+  "rnd3_2": {
+   "t0_ns": 429.25,
+   "eps": -0.011103438511530839
+  }
+ },
+ "per_capture_agreement": {
+  "zeros_0": 0.9994138335287222,
+  "zeros_1": 0.9994138335287222,
+  "zeros_2": 0.9998046111762408,
+  "ones_0": 0.9996092223524814,
+  "ones_1": 0.9996092223524814,
+  "ones_2": 0.9994138335287222,
+  "aa_0": 1.0,
+  "aa_1": 0.9998046111762408,
+  "aa_2": 0.9996092223524814,
+  "p55_0": 0.9998046111762408,
+  "p55_1": 0.9992184447049629,
+  "p55_2": 0.9998046111762408,
+  "lone1_0": 0.9998046111762408,
+  "lone1_1": 0.9998046111762408,
+  "lone1_2": 1.0,
+  "msb1_0": 1.0,
+  "msb1_1": 0.9994138335287222,
+  "msb1_2": 0.9998046111762408,
+  "count_0": 0.9990230558812035,
+  "count_1": 0.9996092223524814,
+  "count_2": 0.9998046111762408,
+  "impulse_hi_0": 0.9998046111762408,
+  "impulse_hi_1": 0.9990230558812035,
+  "impulse_hi_2": 0.9996092223524814,
+  "impulse_lo_0": 0.9992184447049629,
+  "impulse_lo_1": 0.9996092223524814,
+  "impulse_lo_2": 0.9992184447049629,
+  "blocks_0": 0.9996092223524814,
+  "blocks_1": 0.9998046111762408,
+  "blocks_2": 0.9992184447049629,
+  "nibbles_0": 0.9998046111762408,
+  "nibbles_1": 0.9992184447049629,
+  "nibbles_2": 0.9998046111762408,
+  "sparse_0": 0.9996092223524814,
+  "sparse_1": 0.9996092223524814,
+  "sparse_2": 0.9998046111762408,
+  "dense_0": 0.9992184447049629,
+  "dense_1": 0.9990230558812035,
+  "dense_2": 0.9998046111762408,
+  "runs_0": 1.0,
+  "runs_1": 0.9992184447049629,
+  "runs_2": 0.9998046111762408,
+  "edges_0": 0.9998046111762408,
+  "edges_1": 1.0,
+  "edges_2": 1.0,
+  "rnd1_0": 0.9998046111762408,
+  "rnd1_1": 0.9994138335287222,
+  "rnd1_2": 0.9994138335287222,
+  "rnd2_0": 1.0,
+  "rnd2_1": 0.9996092223524814,
+  "rnd2_2": 0.9998046111762408,
+  "rnd3_0": 0.9998046111762408,
+  "rnd3_1": 1.0,
+  "rnd3_2": 0.9994138335287222
+ },
+ "per_pattern_agreement": {
+  "zeros": 0.9995440927445617,
+  "ones": 0.9995440927445617,
+  "aa": 0.9998046111762408,
+  "p55": 0.9996092223524814,
+  "lone1": 0.9998697407841605,
+  "msb1": 0.9997394815683209,
+  "count": 0.9994789631366419,
+  "impulse_hi": 0.9994789631366419,
+  "impulse_lo": 0.9993487039208024,
+  "blocks": 0.9995440927445617,
+  "nibbles": 0.9996092223524814,
+  "sparse": 0.9996743519604012,
+  "dense": 0.9993487039208024,
+  "runs": 0.9996743519604012,
+  "edges": 0.9999348703920803,
+  "rnd1": 0.9995440927445617,
+  "rnd2": 0.9998046111762408,
+  "rnd3": 0.9997394815683209
+ },
+ "per_pattern_agreement_active": {
+  "zeros": 0.9970833333333333,
+  "ones": 0.9970833333333333,
+  "aa": 0.99875,
+  "p55": 0.9975,
+  "lone1": 0.9991666666666666,
+  "msb1": 0.9983333333333333,
+  "count": 0.9966666666666667,
+  "impulse_hi": 0.9966666666666667,
+  "impulse_lo": 0.9958333333333333,
+  "blocks": 0.9970833333333333,
+  "nibbles": 0.9975,
+  "sparse": 0.9979166666666667,
+  "dense": 0.9958333333333333,
+  "runs": 0.9979166666666667,
+  "edges": 0.9995833333333334,
+  "rnd1": 0.9970833333333333,
+  "rnd2": 0.99875,
+  "rnd3": 0.9983333333333333
+ },
+ "agreement_rate": 0.999627313910237,
+ "agreement_rate_active": 0.9976157407407408,
+ "merge_check": {
+  "ones_0": {
+   "observed": 37,
+   "simulated": 35,
+   "observed_runs": [
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1
+   ],
+   "simulated_runs": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1
+   ],
+   "observed_span": [
+    21,
+    93
+   ],
+   "simulated_span": [
+    21,
+    93
+   ]
+  },
+  "ones_1": {
+   "observed": 36,
+   "simulated": 36,
+   "observed_runs": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   "simulated_runs": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   "observed_span": [
+    25,
+    93
+   ],
+   "simulated_span": [
+    25,
+    93
+   ]
+  },
+  "ones_2": {
+   "observed": 39,
+   "simulated": 38,
+   "observed_runs": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "simulated_runs": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    4,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "observed_span": [
+    22,
+    94
+   ],
+   "simulated_span": [
+    22,
+    94
+   ]
+  }
+ },
+ "swallow_check": {
+  "zeros_0": {
+   "observed": 3,
+   "simulated": 3
+  },
+  "zeros_1": {
+   "observed": 1,
+   "simulated": 0
+  },
+  "zeros_2": {
+   "observed": 0,
+   "simulated": 0
+  },
+  "lone1_0": {
+   "observed": 4,
+   "simulated": 4
+  },
+  "lone1_1": {
+   "observed": 4,
+   "simulated": 4
+  },
+  "lone1_2": {
+   "observed": 3,
+   "simulated": 3
+  },
+  "msb1_0": {
+   "observed": 4,
+   "simulated": 4
+  },
+  "msb1_1": {
+   "observed": 0,
+   "simulated": 0
+  },
+  "msb1_2": {
+   "observed": 4,
+   "simulated": 4
+  },
+  "sparse_0": {
+   "observed": 6,
+   "simulated": 6
+  },
+  "sparse_1": {
+   "observed": 5,
+   "simulated": 5
+  },
+  "sparse_2": {
+   "observed": 4,
+   "simulated": 4
+  },
+  "edges_0": {
+   "observed": 5,
+   "simulated": 5
+  },
+  "edges_1": {
+   "observed": 5,
+   "simulated": 5
+  },
+  "edges_2": {
+   "observed": 3,
+   "simulated": 3
+  }
+ }
+}

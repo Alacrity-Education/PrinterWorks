@@ -1,0 +1,33 @@
+  zeros_0        MODEL  nerr= 2 cost_free=   47.391 cost_true=   48.865 gap=  +1.475 kf=1.00140 kt=1.00140
+  p55_0          MODEL  nerr= 1 cost_free=   67.506 cost_true=   67.527 gap=  +0.021 kf=1.00188 kt=1.00188
+  p55_1          MODEL  nerr= 1 cost_free=   63.068 cost_true=   63.084 gap=  +0.016 kf=1.00188 kt=1.00188
+  p55_2          MODEL  nerr= 1 cost_free=   62.672 cost_true=   62.697 gap=  +0.025 kf=0.99965 kt=0.99965
+  lone1_0        MODEL  nerr= 1 cost_free=   46.535 cost_true=   46.553 gap=  +0.018 kf=1.00112 kt=1.00112
+  lone1_1        MODEL  nerr= 1 cost_free=   46.226 cost_true=   46.241 gap=  +0.015 kf=1.00088 kt=1.00088
+  lone1_2        MODEL  nerr= 1 cost_free=   47.992 cost_true=   48.011 gap=  +0.019 kf=1.00114 kt=1.00114
+  count_0        MODEL  nerr= 2 cost_free=   63.584 cost_true=   64.268 gap=  +0.684 kf=1.00164 kt=1.00164
+  count_1        MODEL  nerr= 3 cost_free=   61.821 cost_true=   62.072 gap=  +0.252 kf=1.00090 kt=1.00090
+  count_2        MODEL  nerr= 2 cost_free=   61.047 cost_true=   61.222 gap=  +0.175 kf=1.00112 kt=1.00112
+  impulse_hi_0   MODEL  nerr= 1 cost_free=   47.518 cost_true=   47.984 gap=  +0.467 kf=1.00012 kt=1.00012
+  blocks_0       MODEL  nerr= 3 cost_free=   66.746 cost_true=   69.243 gap=  +2.496 kf=1.00040 kt=1.00040
+  blocks_1       MODEL  nerr= 2 cost_free=   72.022 cost_true=   72.860 gap=  +0.838 kf=1.00046 kt=1.00046
+  blocks_2       MODEL  nerr= 1 cost_free=   71.450 cost_true=   71.716 gap=  +0.266 kf=1.00139 kt=1.00139
+  nibbles_0      MODEL  nerr= 3 cost_free=   61.426 cost_true=   62.837 gap=  +1.411 kf=1.00070 kt=1.00070
+  nibbles_1      MODEL  nerr= 1 cost_free=   73.132 cost_true=   73.379 gap=  +0.247 kf=1.00061 kt=1.00061
+  nibbles_2      MODEL  nerr= 1 cost_free=   69.733 cost_true=   70.265 gap=  +0.532 kf=1.00113 kt=1.00113
+  sparse_0       MODEL  nerr= 1 cost_free=   67.039 cost_true=   67.054 gap=  +0.015 kf=1.00140 kt=1.00140
+  sparse_1       MODEL  nerr= 1 cost_free=   59.888 cost_true=   59.903 gap=  +0.016 kf=1.00064 kt=1.00064
+  sparse_2       MODEL  nerr= 2 cost_free=   68.307 cost_true=   69.376 gap=  +1.069 kf=1.00114 kt=1.00114
+  edges_0        MODEL  nerr= 1 cost_free=   45.820 cost_true=   45.834 gap=  +0.014 kf=1.00064 kt=1.00064
+  edges_1        MODEL  nerr= 1 cost_free=   47.330 cost_true=   47.345 gap=  +0.015 kf=1.00038 kt=1.00038
+  edges_2        MODEL  nerr= 2 cost_free=   46.573 cost_true=   47.040 gap=  +0.467 kf=1.00064 kt=1.00064
+  rnd1_0         MODEL  nerr= 2 cost_free=   77.663 cost_true=   78.404 gap=  +0.741 kf=1.00070 kt=1.00070
+  rnd1_2         MODEL  nerr= 1 cost_free=   70.360 cost_true=   70.514 gap=  +0.154 kf=1.00040 kt=1.00040
+  rnd2_0         MODEL  nerr= 2 cost_free=   57.905 cost_true=   58.098 gap=  +0.194 kf=1.00122 kt=1.00122
+  rnd2_1         MODEL  nerr= 2 cost_free=   80.284 cost_true=   81.119 gap=  +0.835 kf=1.00137 kt=1.00187
+  rnd3_0         MODEL  nerr= 1 cost_free=   66.961 cost_true=   66.971 gap=  +0.010 kf=1.00062 kt=1.00062
+  rnd3_1         MODEL  nerr= 3 cost_free=   79.652 cost_true=   80.477 gap=  +0.825 kf=1.00096 kt=1.00096
+  rnd3_2         MODEL  nerr= 7 cost_free=   59.582 cost_true=   62.311 gap=  +2.729 kf=1.00025 kt=1.00025
+
+EXACT 24/54;  of the 30 misses: SEARCH failures 0, MODEL failures 30
+cost gap (true - ML): median +0.249 nats, max +2.729, min +0.010  (41s)

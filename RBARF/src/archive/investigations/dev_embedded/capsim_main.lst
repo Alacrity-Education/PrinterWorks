@@ -1,0 +1,116 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ISO C Compiler
+                                      3 ; Version 4.6.0 #16555 (Linux)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module capsim_main
+                                      6 	
+                                      7 ;--------------------------------------------------------
+                                      8 ; Public variables in this module
+                                      9 ;--------------------------------------------------------
+                                     10 	.globl _main
+                                     11 	.globl _done
+                                     12 	.globl _buf
+                                     13 ;--------------------------------------------------------
+                                     14 ; ram data
+                                     15 ;--------------------------------------------------------
+                                     16 	.area DATA
+      000000                         17 _buf::
+      000000                         18 	.ds 64
+                                     19 ;--------------------------------------------------------
+                                     20 ; ram data
+                                     21 ;--------------------------------------------------------
+                                     22 	.area INITIALIZED
+                                     23 ;--------------------------------------------------------
+                                     24 ; Stack segment in internal ram
+                                     25 ;--------------------------------------------------------
+                                     26 	.area SSEG
+      000000                         27 __start__stack:
+      000000                         28 	.ds	1
+                                     29 
+                                     30 ;--------------------------------------------------------
+                                     31 ; absolute external ram data
+                                     32 ;--------------------------------------------------------
+                                     33 	.area DABS (ABS)
+                                     34 
+                                     35 ; default segment ordering for linker
+                                     36 	.area HOME
+                                     37 	.area GSINIT
+                                     38 	.area GSFINAL
+                                     39 	.area CONST
+                                     40 	.area INITIALIZER
+                                     41 	.area CODE
+                                     42 
+                                     43 ;--------------------------------------------------------
+                                     44 ; interrupt vector
+                                     45 ;--------------------------------------------------------
+                                     46 	.area HOME
+      000000                         47 __interrupt_vect:
+      000000 82v00u00u00             48 	int s_GSINIT ; reset
+                                     49 ;--------------------------------------------------------
+                                     50 ; global & static initialisations
+                                     51 ;--------------------------------------------------------
+                                     52 	.area HOME
+                                     53 	.area GSINIT
+                                     54 	.area GSFINAL
+                                     55 	.area GSINIT
+      000000 CDr00r00         [ 4]   56 	call	___sdcc_external_startup
+      000003 4D               [ 1]   57 	tnz	a
+      000004 27 03            [ 1]   58 	jreq	__sdcc_init_data
+      000006 CCr00r04         [ 2]   59 	jp	__sdcc_program_startup
+      000009                         60 __sdcc_init_data:
+                                     61 ; stm8_genXINIT() start
+      000009 AEr00r00         [ 2]   62 	ldw x, #l_DATA
+      00000C 27 07            [ 1]   63 	jreq	00002$
+      00000E                         64 00001$:
+      00000E 72 4FuFFuFF      [ 1]   65 	clr (s_DATA - 1, x)
+      000012 5A               [ 2]   66 	decw x
+      000013 26 F9            [ 1]   67 	jrne	00001$
+      000015                         68 00002$:
+      000015 AEr00r00         [ 2]   69 	ldw	x, #l_INITIALIZER
+      000018 27 09            [ 1]   70 	jreq	00004$
+      00001A                         71 00003$:
+      00001A D6uFFuFF         [ 1]   72 	ld	a, (s_INITIALIZER - 1, x)
+      00001D D7uFFuFF         [ 1]   73 	ld	(s_INITIALIZED - 1, x), a
+      000020 5A               [ 2]   74 	decw	x
+      000021 26 F7            [ 1]   75 	jrne	00003$
+      000023                         76 00004$:
+                                     77 ; stm8_genXINIT() end
+                                     78 	.area GSFINAL
+      000000 CCr00r04         [ 2]   79 	jp	__sdcc_program_startup
+                                     80 ;--------------------------------------------------------
+                                     81 ; Home
+                                     82 ;--------------------------------------------------------
+                                     83 	.area HOME
+                                     84 	.area HOME
+      000004                         85 __sdcc_program_startup:
+      000004 CCr00r04         [ 2]   86 	jp	_main
+                                     87 ;	return from main will return to caller
+                                     88 ;--------------------------------------------------------
+                                     89 ; code
+                                     90 ;--------------------------------------------------------
+                                     91 	.area CODE
+                                     92 ;	capsim_main.c: 4: void done(void) { __asm__("halt"); for(;;); }
+                                     93 ;	-----------------------------------------
+                                     94 ;	 function done
+                                     95 ;	-----------------------------------------
+      000000                         96 _done:
+      000000 8E               [10]   97 	halt
+      000001                         98 00103$:
+      000001 20 FE            [ 2]   99 	jra	00103$
+      000003 81               [ 4]  100 	ret
+                                    101 ;	capsim_main.c: 5: void main(void)
+                                    102 ;	-----------------------------------------
+                                    103 ;	 function main
+                                    104 ;	-----------------------------------------
+      000004                        105 _main:
+                                    106 ;	capsim_main.c: 7: __asm__("ldw x, #_buf");
+      000004 AEr00r00         [ 2]  107 	ldw	x, #_buf
+                                    108 ;	capsim_main.c: 8: __asm__("call _capsim");
+      000007 CDr00r00         [ 4]  109 	call	_capsim
+                                    110 ;	capsim_main.c: 9: done();
+                                    111 ;	capsim_main.c: 10: }
+      00000A CCr00r00         [ 2]  112 	jp	_done
+                                    113 	.area CODE
+                                    114 	.area CONST
+                                    115 	.area INITIALIZER
+                                    116 	.area CABS (ABS)

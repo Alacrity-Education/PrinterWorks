@@ -1,0 +1,23 @@
+capture        drop1  drop2  drop5
+zeros_0        REFUSE  REFUSE  REFUSE
+ones_0         EXACT   EXACT   EXACT 
+aa_0           EXACT   EXACT   EXACT 
+p55_0          REFUSE  REFUSE  REFUSE
+lone1_0        EXACT   EXACT   EXACT 
+msb1_0         REFUSE  REFUSE  REFUSE
+count_0        REFUSE  REFUSE  REFUSE
+impulse_hi_0   EXACT   EXACT   EXACT 
+impulse_lo_0   EXACT   EXACT   EXACT 
+blocks_0       REFUSE  REFUSE  REFUSE
+nibbles_0      EXACT   REFUSE  REFUSE
+sparse_0       REFUSE  REFUSE  REFUSE
+dense_0        REFUSE  REFUSE  EXACT 
+runs_0         EXACT   EXACT   EXACT 
+edges_0        EXACT   EXACT   EXACT 
+rnd1_0         REFUSE  REFUSE  REFUSE
+rnd2_0         REFUSE  REFUSE  REFUSE
+rnd3_0         REFUSE  REFUSE  REFUSE
+
+============================================================
+tally: {'REFUSE': 31, 'EXACT': 23}
+VERDICT: PASS (no confident wrong payload under truncation)

@@ -1,0 +1,38 @@
+seeded: 98.7296%
+p0 r0: 99.3469%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1412.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p0 r1: 99.4355%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p0 r2: 99.4486%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p0 r3: 99.4489%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p0 r4: 99.4489%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p1 r0: 99.4489%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=336.25
+p2 r0: 99.4670%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+p2 r1: 99.4692%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+p2 r2: 99.4699%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+p2 r3: 99.4699%  G=2525.894
+   o=[np.float64(62.0), np.float64(312.0), np.float64(580.0), np.float64(859.25), np.float64(1125.0), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+p3 r0: 99.4721%  G=2525.894
+   o=[np.float64(61.88), np.float64(311.62), np.float64(580.38), np.float64(859.25), np.float64(1124.75), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+p3 r1: 99.4721%  G=2525.894
+   o=[np.float64(61.88), np.float64(311.62), np.float64(580.38), np.float64(859.25), np.float64(1124.75), np.float64(1388.0), np.float64(1727.0), np.float64(2000.0)]
+   w=[np.float64(0.0), np.float64(-62.5), np.float64(0.0), np.float64(125.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(62.5)] h1=737.25 h0=339.25
+FINAL 99.4721%

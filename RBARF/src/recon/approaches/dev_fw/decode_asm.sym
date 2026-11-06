@@ -1,0 +1,98 @@
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.=  002710 L   |     .__.ABS.=  000000 G   |     .__.CPU.=  000000 L
+    .__.H$L.=  000001 L   |   4 HT         000594 R   |   4 _a_bound   00059C GR
+  4 _calibra   0011E8 R   |   4 _dec_eps   00051A GR  |     _dec_inf   ****** GX
+  4 _decide_   000800 GR  |   2 _dq_amax   000068 GR  |   2 _dq_amin   000066 GR
+    _g_CHK     ****** GX  |     _g_K       ****** GX  |     _g_NB      ****** GX
+    _g_NBm32   ****** GX  |     _g_ND      ****** GX  |     _g_ND8     ****** GX
+    _g_NPP     ****** GX  |     _g_PPHI    ****** GX  |     _g_Wu11    ****** GX
+  2 _g_sg      00005D GR  |     _g_tau     ****** GX  |     _g_yend    ****** GX
+    _g_ymid    ****** GX  |   4 _known_b   00056F GR  |     _ov        ****** GX
+  4 _refine    00025B GR  |   2 _scan_ca   0000B7 GR  |   2 _scan_fa   0000BF GR
+  2 _scan_fb   0000C1 GR  |   4 _scan_in   001357 GR  |   2 _scan_le   0000B9 GR
+  4 _scan_ne   001373 GR  |   2 _scan_ra   0000BB GR  |   2 _scan_rb   0000BD GR
+  2 _scan_sf   0000C3 GR  |   4 _seed      0004A1 GR  |   4 _set_gap   000550 GR
+  4 _ss_init   000070 GR  |   4 _ss_next   0000CA GR  |   4 _ws_deco   000D32 GR
+  4 accum      000203 R   |   4 addd56     0006A6 R   |   4 argmin     00065C R
+  4 bitmz      000B2C R   |   2 c_c0       0000F5 R   |   2 c_hi       0000D9 R
+  2 c_lo       0000D5 R   |   2 c_n        0000DD R   |   4 cadd       000EB2 R
+  4 candi      000792 R   |   4 candk      000AC9 R   |   4 capat      00136D R
+  4 ccloud     000E66 R   |   4 chasez     000C30 R   |   4 cpair      000BD5 R
+  4 cpflip     000B3D R   |   4 crc8pp     000A35 R   |   4 csing      000BB4 R
+  3 d_costs    000000 R   |   3 d_sm       000020 R   |   2 dq_acap    00006C R
+  2 dq_afree   000074 R   |   2 dq_ahat    000072 R   |   4 dq_decid   0006C1 R
+  2 dq_hi      000070 R   |   2 dq_inter   00006A R   |   2 dq_lo      00006E R
+  4 emit       000089 R   |   4 gap1       00055F R   |   4 getbit     000641 R
+  4 has01      0011D4 R   |   4 hcost      0005EA R   |   6 hix        008058 R
+  4 itst       00060B R   |   4 la_int     000DEA R   |   2 labx0      0000E5 R
+  2 labx0b     0000ED R   |   2 labx1      0000E9 R   |   2 labx1b     0000F1 R
+  4 ldcpz      000A99 R   |   2 m_L        00007C R   |   2 m_R        0000AC R
+  2 m_a        000001 R   |   2 m_ahi      000094 R   |   2 m_ai       000091 R
+  2 m_ai2      000092 R   |   2 m_alo      000093 R   |   2 m_b        000003 R
+  2 m_bb    =  000054 R   |   2 m_best     000095 R   |   2 m_bg    =  000048 R
+  2 m_bhi2  =  000046 R   |   2 m_blo2  =  000044 R   |   2 m_c        00007E R
+  2 m_c0       000080 R   |   2 m_c1       000082 R   |   2 m_cl1   =  000053 R
+  2 m_cn       0000B5 R   |   2 m_cp    =  000024 R   |   2 m_d        000028 R
+  2 m_e        000084 R   |   2 m_f     =  000036 R   |   2 m_fa       000020 R
+  2 m_fb       000022 R   |   2 m_h        00007A R   |   2 m_h0       000076 R
+  2 m_h1       000078 R   |   2 m_hR       0000B3 R   |   2 m_htp   =  000052 R
+  2 m_hv    =  000042 R   |   2 m_hx    =  000055 R   |   2 m_i        00009A R
+  2 m_i0       000098 R   |   2 m_i1       000099 R   |   2 m_it       000090 R
+  2 m_j        00009B R   |   2 m_k        00008A R   |   2 m_ka       000096 R
+  2 m_la    =  000034 R   |   2 m_m        00009C R   |   2 m_n        000024 R
+  2 m_n1       000097 R   |   2 m_no    =  00004A R   |   2 m_off      000088 R
+  2 m_out      00001E R   |   2 m_outp     0000AA R   |   2 m_p        000005 R
+  2 m_par      0000B2 R   |   2 m_pp       0000A8 R   |   2 m_prev  =  00004B R
+  2 m_r        00002C R   |   2 m_rb       0000B4 R   |   2 m_rr       0000B0 R
+  2 m_s        00000D R   |   2 m_si       0000B1 R   |   2 m_t        000086 R
+  2 m_th    =  000040 R   |   2 m_ti       0000AE R   |   2 m_tj       0000AF R
+  2 m_top   =  000058 R   |   2 m_vi       0000AD R   |   2 m_whi   =  000050 R
+  2 m_wlo   =  00004E R   |   2 m_ww       0000B6 R   |   2 m_x0    =  000037 R
+  2 m_x1    =  00003A R   |   2 m_y        000009 R   |   2 m_zhi   =  00003E R
+  2 m_zlo   =  00003C R   |   4 majz       000A4F R   |   6 mediv      008014 R
+  4 mr16       000034 R   |   4 mul16      000000 R   |   4 mulacc     00001F R
+  6 mydiv      008040 R   |   4 negmn      0001EE R   |   2 p_dn       0000D2 R
+  2 p_hp       0000CF R   |   2 p_i        0000C4 R   |   2 p_ip       0000D0 R
+  2 p_lr       0000D3 R   |   2 p_s        0000CE R   |   2 p_se       0000D1 R
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 2
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  2 p_t        0000CC R   |   2 p_tb       0000C6 R   |   2 p_tp       0000CA R
+  2 p_ws       0000C8 R   |   4 par8       000AB6 R   |   4 ppout      000C20 R
+  2 q_done     00001D R   |   2 q_have     000014 R   |   2 q_n        000012 R
+  2 q_pend     000015 R   |   2 q_pfam     00001C R   |   2 q_pk0      000016 R
+  2 q_pu       000018 R   |   2 q_pv       00001A R   |   2 q_yprev    00000E R
+  2 r_de       000048 R   |   2 r_dk       00004E R   |   2 r_dy       00004A R
+  2 r_hi       00003A R   |   2 r_lo       000030 R   |   2 r_me       000052 R
+  2 r_mehi     000046 R   |   2 r_melo     000044 R   |   2 r_myhi     000058 R
+  2 r_mylo     000054 R   |   2 r_sgn      00005C R   |   4 setbit     00061E R
+  4 setp       0000AB R   |   4 shp11      000496 R   |   6 sot        008004 GR
+  4 stepi      0014EE R   |   6 swt        00800C R   |   4 syn8k      000A15 R
+  4 talias     000B50 R   |   4 tapply     000B95 R   |   4 tflip      000B14 R
+  4 th56       000FC8 R   |   4 trial      000AD0 R   |   4 udiv32     0001AD R
+  2 w_inf      00009D R   |   2 w_lab      00009F R   |   2 w_lhi   =  000032 R
+  2 w_llo   =  000030 R   |   2 w_nseg     0000A1 R   |   2 w_ntied    0000A6 R
+  2 w_nweak    0000A4 R   |   2 w_tieh     00008E R   |   2 w_tiep     00008C R
+  4 wfit       000F83 R   |   3 zc_d       00004F R   |   3 zc_m       00004A R
+  2 zc_n       0000A3 R   |   3 zc_t       000040 R   |   2 zd56       0000E3 R
+  2 zgap       0000F9 R   |   2 zh0c       0000DF R   |   2 zh1c       0000E1 R
+
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 3
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE      size      0   flags    0
+   1 DZP        size      0   flags    8
+   2 DZP0       size     FC   flags    8
+   3 DATA       size     54   flags    0
+   4 CODE       size   14FB   flags    0
+   5 VGAP       size      0   flags    8
+   6 VGAP1      size     5C   flags    8
+

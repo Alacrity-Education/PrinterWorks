@@ -1,0 +1,488 @@
+[
+ {
+  "pattern": "zeros",
+  "rep": 0,
+  "nhi": 188,
+  "n1": 32,
+  "n0": 160,
+  "miss1": 3,
+  "miss0": 6
+ },
+ {
+  "pattern": "zeros",
+  "rep": 1,
+  "nhi": 183,
+  "n1": 32,
+  "n0": 160,
+  "miss1": 0,
+  "miss0": 5
+ },
+ {
+  "pattern": "zeros",
+  "rep": 2,
+  "nhi": 187,
+  "n1": 32,
+  "n0": 160,
+  "miss1": 0,
+  "miss0": 4
+ },
+ {
+  "pattern": "ones",
+  "rep": 0,
+  "nhi": 155,
+  "n1": 160,
+  "n0": 32,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "ones",
+  "rep": 1,
+  "nhi": 154,
+  "n1": 160,
+  "n0": 32,
+  "miss1": 0,
+  "miss0": 2
+ },
+ {
+  "pattern": "ones",
+  "rep": 2,
+  "nhi": 153,
+  "n1": 160,
+  "n0": 32,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "aa",
+  "rep": 0,
+  "nhi": 188,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "aa",
+  "rep": 1,
+  "nhi": 188,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "aa",
+  "rep": 2,
+  "nhi": 188,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "p55",
+  "rep": 0,
+  "nhi": 186,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 1,
+  "miss0": 1
+ },
+ {
+  "pattern": "p55",
+  "rep": 1,
+  "nhi": 185,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 1,
+  "miss0": 3
+ },
+ {
+  "pattern": "p55",
+  "rep": 2,
+  "nhi": 184,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 1,
+  "miss0": 6
+ },
+ {
+  "pattern": "lone1",
+  "rep": 0,
+  "nhi": 185,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 3,
+  "miss0": 10
+ },
+ {
+  "pattern": "lone1",
+  "rep": 1,
+  "nhi": 185,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 3,
+  "miss0": 11
+ },
+ {
+  "pattern": "lone1",
+  "rep": 2,
+  "nhi": 186,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 3,
+  "miss0": 6
+ },
+ {
+  "pattern": "msb1",
+  "rep": 0,
+  "nhi": 187,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 3,
+  "miss0": 12
+ },
+ {
+  "pattern": "msb1",
+  "rep": 1,
+  "nhi": 189,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 4,
+  "miss0": 6
+ },
+ {
+  "pattern": "msb1",
+  "rep": 2,
+  "nhi": 187,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 2,
+  "miss0": 14
+ },
+ {
+  "pattern": "count",
+  "rep": 0,
+  "nhi": 178,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 1,
+  "miss0": 5
+ },
+ {
+  "pattern": "count",
+  "rep": 1,
+  "nhi": 183,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 1,
+  "miss0": 5
+ },
+ {
+  "pattern": "count",
+  "rep": 2,
+  "nhi": 183,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 0,
+  "miss0": 7
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 0,
+  "nhi": 189,
+  "n1": 40,
+  "n0": 152,
+  "miss1": 4,
+  "miss0": 5
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 1,
+  "nhi": 185,
+  "n1": 40,
+  "n0": 152,
+  "miss1": 0,
+  "miss0": 5
+ },
+ {
+  "pattern": "impulse_hi",
+  "rep": 2,
+  "nhi": 188,
+  "n1": 40,
+  "n0": 152,
+  "miss1": 3,
+  "miss0": 7
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 0,
+  "nhi": 158,
+  "n1": 152,
+  "n0": 40,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 1,
+  "nhi": 152,
+  "n1": 152,
+  "n0": 40,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "impulse_lo",
+  "rep": 2,
+  "nhi": 156,
+  "n1": 152,
+  "n0": 40,
+  "miss1": 0,
+  "miss0": 3
+ },
+ {
+  "pattern": "blocks",
+  "rep": 0,
+  "nhi": 178,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 1
+ },
+ {
+  "pattern": "blocks",
+  "rep": 1,
+  "nhi": 177,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 2
+ },
+ {
+  "pattern": "blocks",
+  "rep": 2,
+  "nhi": 174,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 2
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 0,
+  "nhi": 179,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 1
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 1,
+  "nhi": 187,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 1
+ },
+ {
+  "pattern": "nibbles",
+  "rep": 2,
+  "nhi": 175,
+  "n1": 96,
+  "n0": 96,
+  "miss1": 0,
+  "miss0": 1
+ },
+ {
+  "pattern": "sparse",
+  "rep": 0,
+  "nhi": 184,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 1,
+  "miss0": 5
+ },
+ {
+  "pattern": "sparse",
+  "rep": 1,
+  "nhi": 184,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 1,
+  "miss0": 4
+ },
+ {
+  "pattern": "sparse",
+  "rep": 2,
+  "nhi": 186,
+  "n1": 64,
+  "n0": 128,
+  "miss1": 2,
+  "miss0": 5
+ },
+ {
+  "pattern": "dense",
+  "rep": 0,
+  "nhi": 163,
+  "n1": 128,
+  "n0": 64,
+  "miss1": 0,
+  "miss0": 2
+ },
+ {
+  "pattern": "dense",
+  "rep": 1,
+  "nhi": 162,
+  "n1": 128,
+  "n0": 64,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "dense",
+  "rep": 2,
+  "nhi": 167,
+  "n1": 128,
+  "n0": 64,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "runs",
+  "rep": 0,
+  "nhi": 158,
+  "n1": 144,
+  "n0": 48,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "runs",
+  "rep": 1,
+  "nhi": 157,
+  "n1": 144,
+  "n0": 48,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "runs",
+  "rep": 2,
+  "nhi": 158,
+  "n1": 144,
+  "n0": 48,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "edges",
+  "rep": 0,
+  "nhi": 186,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 2,
+  "miss0": 13
+ },
+ {
+  "pattern": "edges",
+  "rep": 1,
+  "nhi": 184,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 3,
+  "miss0": 11
+ },
+ {
+  "pattern": "edges",
+  "rep": 2,
+  "nhi": 189,
+  "n1": 48,
+  "n0": 144,
+  "miss1": 2,
+  "miss0": 9
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 0,
+  "nhi": 175,
+  "n1": 109,
+  "n0": 83,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 1,
+  "nhi": 171,
+  "n1": 109,
+  "n0": 83,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "rnd1",
+  "rep": 2,
+  "nhi": 166,
+  "n1": 109,
+  "n0": 83,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 0,
+  "nhi": 190,
+  "n1": 101,
+  "n0": 91,
+  "miss1": 0,
+  "miss0": 2
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 1,
+  "nhi": 172,
+  "n1": 101,
+  "n0": 91,
+  "miss1": 0,
+  "miss0": 1
+ },
+ {
+  "pattern": "rnd2",
+  "rep": 2,
+  "nhi": 169,
+  "n1": 101,
+  "n0": 91,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 0,
+  "nhi": 179,
+  "n1": 99,
+  "n0": 93,
+  "miss1": 1,
+  "miss0": 11
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 1,
+  "nhi": 162,
+  "n1": 99,
+  "n0": 93,
+  "miss1": 0,
+  "miss0": 0
+ },
+ {
+  "pattern": "rnd3",
+  "rep": 2,
+  "nhi": 191,
+  "n1": 99,
+  "n0": 93,
+  "miss1": 0,
+  "miss0": 1
+ }
+]

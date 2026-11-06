@@ -1,0 +1,64 @@
+
+=== /home/alex.lucaci/Projects/RBARF/anim.sym ===
+-- area CONST (1052 B)
+   _gamma_lut               0x0000   1024
+   _seq_spin_fwd            0x0400      4
+   _seq_spin_rev            0x0404      4
+   _seq_rain_fwd            0x0408      5
+   _seq_rain_rev            0x040D      5
+   _seq_draw_fwd            0x0412      5
+   _seq_draw_rev            0x0417      5
+-- area CODE (2877 B)
+   _lerp                    0x0000     68
+   _get_seq_nib             0x0044     27
+   _count_seq_len           0x005F     34
+   _scale_phase             0x0081     53
+   _fill_seq_data           0x00B6     38
+   _add_clamp               0x00DC    143
+   _anim_none               0x016B     30
+   _apply_mask              0x0189    114
+   _anim_blink              0x01FB    112
+   _anim_fade               0x026B    157
+   _anim_sequence           0x0308   1458
+   _apply_gamma             0x08BA     59
+   _anim_render             0x08F5    584
+
+=== /home/alex.lucaci/Projects/RBARF/ws2812_out.sym ===
+-- area DATA (26 B)
+   _ws2812_out_buf          0x0000     24
+   _ws_bit_cnt              0x0018      1
+   _ws_byte_cnt             0x0019      1
+-- area CODE (106 B)
+   _ws2812_out_init         0x0000     17
+   _ws2812_out_send         0x0011     89
+
+=== /home/alex.lucaci/Projects/RBARF/ws2812_in.sym ===
+-- area DATA (277 B)
+   _ws2812_in_buf           0x0000     48
+   _ws2812_in_complete      0x0030      1
+   _ws2812_in_during_tx     0x0031      1
+   _capture_buf             0x0032    225
+   _ms_counter              0x0113      2
+-- area CODE (405 B)
+   _ws2812_in_init          0x0000    101
+   _millis                  0x0065      6
+   _tim4_upd_isr            0x006B     12
+   _decode_capture          0x0077    252
+   _ws2812_in_isr           0x0173     34
+
+=== /home/alex.lucaci/Projects/RBARF/main.sym ===
+-- area DATA (2 B)
+   _main_last_beacon_40001_23 0x0000      2
+-- area CODE (159 B)
+   _clock_init              0x0000      5
+   _main                    0x0005    154
+
+=== /home/alex.lucaci/Projects/RBARF/debug_uart.sym ===
+-- area CONST (17 B)
+   _hex_chars               0x0000     17
+-- area CODE (425 B)
+   _debug_uart_init         0x0000     13
+   _debug_uart_byte         0x000D    192
+   _debug_uart_hex          0x00CD     30
+   _debug_uart_buf          0x00EB     41
+   _debug_uart_send_report  0x0114    149

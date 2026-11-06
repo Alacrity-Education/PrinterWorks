@@ -1,0 +1,100 @@
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  7 _HDR                                                           000000 R
+  7 _TRL                                                           000004 R
+    ___mulsint2slong                                               ****** GX
+    ___muluint2ulong                                               ****** GX
+    __divslong                                                     ****** GX
+    __divulong                                                     ****** GX
+    __mullong                                                      ****** GX
+  9 _a_bounds                                                      000640 R
+  1 _c_c0                                                          0000B8 R
+  1 _c_d56                                                         000026 R
+  1 _c_gap56                                                       0000BC R
+  1 _c_h0c                                                         000022 R
+  1 _c_h1c                                                         000024 R
+  1 _c_hi0                                                         00001A R
+  1 _c_hi1                                                         00001E R
+  1 _c_hist                                                        000028 R
+  1 _c_labx0                                                       0000A8 R
+  1 _c_labx0b                                                      0000B0 R
+  1 _c_labx1                                                       0000AC R
+  1 _c_labx1b                                                      0000B4 R
+  1 _c_lo0                                                         000018 R
+  1 _c_lo1                                                         00001C R
+  1 _c_n0                                                          000020 R
+  1 _c_n1                                                          000021 R
+  9 _cal_add                                                       0007CD R
+  9 _cal_cloud                                                     000786 R
+  9 _calibrate                                                     000B7F R
+  9 _cand_insert                                                   00102B R
+  9 _chase                                                         00133F R
+  1 _d_bits                                                        0000C0 R
+  1 _d_costs                                                       0000DE R
+  1 _d_infeas                                                      0000D8 R
+  1 _d_inter                                                       0000FE R
+  1 _d_laberr                                                      0000DA R
+  1 _d_nseg                                                        0000DC R
+  1 _d_pp                                                          000116 R
+  9 _dec_eps_centi                                                 0014EB GR
+  1 _dec_info                                                      000000 GR
+  9 _decide                                                        000E1B R
+  9 _decide_pass                                                   0010BB R
+  1 _g_K                                                           000014 R
+  1 _g_tau                                                         000016 R
+  9 _hinge                                                         000DFB R
+  9 _known_bit                                                     000000 R
+  9 _label_interval                                                0006AB R
+  9 _map_raw                                                       000056 R
+  9 _refine                                                        00012D R
+    _scan_cap                                                      ****** GX
+    _scan_fa                                                       ****** GX
+    _scan_fb                                                       ****** GX
+    _scan_init                                                     ****** GX
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 2
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    _scan_len                                                      ****** GX
+    _scan_next                                                     ****** GX
+    _scan_ra                                                       ****** GX
+    _scan_rb                                                       ****** GX
+    _scan_sfa                                                      ****** GX
+  9 _seed                                                          000087 R
+  1 _ss                                                            000126 R
+  9 _ss_init                                                       0003C4 R
+  9 _ss_next                                                       000406 R
+  9 _theta56                                                       0008E2 R
+  1 _v_cand_m                                                      00010A R
+  1 _v_cand_t                                                      000100 R
+  1 _v_ncand                                                       00010F R
+  1 _v_ntied                                                       000112 R
+  1 _v_nweak                                                       000110 R
+  1 _v_tiepend                                                     000114 R
+  9 _ws_decode_ex                                                  0013D8 GR
+
+ASxxxx Assembler V05.50.4+NoICE+SDCCmods-WIP-R14  (STMicroelectronics STM8)   Page 3
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size    13A   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      8   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size   152E   flags    0
+   A CABS                                       size      0   flags    8
+

@@ -1,0 +1,12 @@
+  eps-0.010/preset_rainR                     direct         nweak= 2 trials= 0 comps=  1 peak= 18 B  ws_decode_ex subtree= 11 B
+  eps-0.020/kl_preset_rain_rev               chase          nweak= 1 trials= 1 comps=  2 peak= 18 B  ws_decode_ex subtree= 11 B
+  eps-0.080/kl_fade_masked                   refuse_infeasible nweak= 0 trials= 0 comps=  0 peak= 18 B  ws_decode_ex subtree= 11 B
+  chk[3 copies, all different halves/bits] e refuse_chase   nweak= 1 trials=50 comps=131 peak= 19 B  ws_decode_ex subtree= 12 B
+  chk[HI position SPLIT (all 3 differ)] eps+ refuse_chase   nweak= 2 trials=43 comps=131 peak= 19 B  ws_decode_ex subtree= 12 B
+  chk[BOTH positions SPLIT] eps+0.002/kl_sta refuse_chase   nweak= 5 trials=14 comps=131 peak= 19 B  ws_decode_ex subtree= 12 B
+
+ND=48  A_MAX=11 T_MAX=131  DZP0 242 B (0x0001..0x00F2) + REL DATA/SSEG end 0x9714
+statics (sim image, incl. the sim harness's own buffers): 38677 B
+DECODE-PATH STACK PEAK (sim main frame included): 19 B
+ws_decode_ex SUBTREE below its entry SP (max): 12 B
+stray ucsim processes at exit: 0

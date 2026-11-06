@@ -1,0 +1,33 @@
+Synthetic sampler model vs the 54 real captures (bench point, per-capture t0/eps only)
+  loop 2500.0 ns, slots [0.0, 250.0, 562.5, 812.5, 1062.5, 1312.5, 1687.5, 2000.0]
+  branch cost [0.0, -62.5, 0.0, 125.0, 0.0, 0.0, 0.0, 62.5], T1H 752 ns, T0H 377 ns
+
+pattern      pulses real     synth  dmean  dmax   merged real     synth    agree  verdict
+--------------------------------------------------------------------------------------------
+zeros            183-188   185-188    0.7     2           1-8       1-7  99.88%  MATCH
+ones             153-155   153-155    0.0     0         36-39     36-39  99.88%  MATCH
+aa                   188   187-188    0.7     1             4       4-5  99.90%  MATCH
+p55              184-186   185-186    0.7     2           3-4       2-4  99.88%  MATCH
+lone1            185-186   185-186    0.0     0             3         3  99.94%  MATCH
+msb1             187-189   186-189    0.3     1           1-4       1-4  99.92%  MATCH
+count            178-183   176-183    0.7     2          5-11      5-12  99.88%  MATCH
+impulse_hi       185-189   186-189    0.3     1           2-7       2-6  99.88%  MATCH
+impulse_lo       152-158   151-158    0.3     2         33-40     32-40  99.84%  MATCH
+blocks           174-178   176-179    1.3     2         13-16     13-16  99.79%  MATCH
+nibbles          175-187   175-188    0.7     1          4-16      4-16  99.92%  MATCH
+sparse           184-186   183-188    1.3     3           2-3       2-3  99.77%  MATCH
+dense            162-167   164-168    2.3     5         25-30     22-28  99.77%  MATCH
+runs             157-158   157-158    0.0     0         34-35     34-35  99.88%  MATCH
+edges            184-189   184-189    0.0     0           0-4       0-4  99.98%  MATCH
+rnd1             166-175   166-175    0.7     2         17-26     17-26  99.84%  MATCH
+rnd2             169-190   170-190    0.3     1          0-23      0-22  99.96%  MATCH
+rnd3             162-191   162-191    0.3     1          0-30      0-30  99.94%  MATCH
+--------------------------------------------------------------------------------------------
+18/18 patterns match  (mean pulse count within 3; merged-loop count within 20%)
+worst per-pattern mean pulse deviation  : 2.3
+worst single-capture pulse deviation    : 5
+mean sample agreement (all samples)     : 99.9313%
+worst per-capture agreement (all)       : 99.766%
+worst per-capture agreement (frame win) : 98.500%
+'ones' merged loops  real [37, 36, 39] -> synth [37, 36, 39]
+-> MODEL VALIDATED
