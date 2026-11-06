@@ -1,12 +1,12 @@
 # CANDU V1.1
 
-A passive CAN bus and 24 V distribution board. The CAN bus and 24 V come in
+A passive CAN bus and 24V distribution board. The CAN bus and 24V come in
 once, from the host side, and go out to up to four devices (toolhead boards,
-for example). Each device port is a pair: a screw terminal for 24 V and a
+for example). Each device port is a pair: a screw terminal for 24V and a
 JST-XH connector for CAN, placed one above the other.
 
 The board has no active parts: every CAN connector is on the same bus, and
-every power terminal is on the same 24 V rail.
+every power terminal is on the same 24V rail.
 
 | ![](images/candu-render.png) | ![](images/candu-operation.jpeg) |
 | -- | -- |
@@ -14,7 +14,7 @@ every power terminal is on the same 24 V rail.
 
 ## Host side
 
-**RJ45**: CAN bus input.The two RJ45 LEDs light up when the board has 24 V.
+**RJ45**: CAN bus input. The two RJ45 LEDs light up when the board has 24V.
 
 ![](images/candu-rj45-pinout.jpg)
 
@@ -42,5 +42,5 @@ The swap only affects the RJ45 uplink.
 
 - The CAN bus needs a 120 Ω terminator at each end. The board has none, so terminate at the host and at the last device.
 - If using long cables to the 2-4 devices, terminate at two devices instead of at the host. In this case, make sure the CANDU-Host cable is short. 
-- Four 330 µF high-quality capacitors (C1-C4) buffer the 24 V rail.
+- Four 330 µF high-quality capacitors (C1-C4) buffer the 24V rail.
 - M3 mounting holes are connected to GND.

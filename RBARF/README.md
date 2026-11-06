@@ -21,7 +21,7 @@ The `reference/` folder contains a C version of the firmware. Because the algori
 
 ## Build and flash
 
-Needs SDCC 4.6.0 (other versions are refused), `stm8flash` and an ST-LINK/V2 wired to the board: SWIM → `SWIM` pad, TVCC → 3.3 V, GND → GND.
+Needs SDCC 4.6.0 (other versions are refused), `stm8flash` and an ST-LINK/V2 wired to the board: SWIM → `SWIM` pad, TVCC → 3.3V, GND → GND.
 
 ```sh
 cd firmware

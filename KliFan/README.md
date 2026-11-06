@@ -3,8 +3,8 @@
 A fan hub for Klipper printers. One PWM signal from the motherboard drives four
 4-pin PWM fans, and a tiny microcontroller (STM8S001J3) reads the four tach
 lines so the printer can watch the fans through a single endstop input. The
-board takes 12 V through one of its three 2-pin headers; the other two take
-always-on 12 V fans.
+board takes 12V through one of its three 2-pin headers; the other two take
+always-on 12V fans.
 
 | ![](images/klifan-top.png) | ![](images/klifan-bottom.png) |
 | -- | -- |
@@ -35,12 +35,12 @@ The four 4-pin headers are PC-fan compatible: any standard 4-pin PWM PC fan
 plugs straight in. Their speed follows the PWM signal on J11 pin 4, and the
 microcontroller reads each fan's tach line.
 
-The three 2-pin headers are standard 3D-printer 12 V fan headers, all wired
-in parallel. One of them must be connected to an always-on 12 V fan header on
-the motherboard, or directly to the 12 V supply: this powers the whole board,
+The three 2-pin headers are standard 3D-printer 12V fan headers, all wired
+in parallel. One of them must be connected to an always-on 12V fan header on
+the motherboard, or directly to the 12V supply: this powers the whole board,
 including the 4-pin fans. J9 is marked `SUPPLY` for this, but any of the three
 works. The other two take always-on fans, which run at full speed whenever
-the board has 12 V.
+the board has 12V.
 
 The mounting holes H1 and H2 are connected to GND.
 
