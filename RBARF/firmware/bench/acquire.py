@@ -288,7 +288,7 @@ def main() -> None:
 
     patterns, default_name, version = SETS[args.set]
     if args.out is None:
-        args.out = str(Path(__file__).parent.parent / "data" / default_name)
+        args.out = str(Path(__file__).parent / "data" / default_name)
 
     meta = dict(META)
     if version == "v2.1":

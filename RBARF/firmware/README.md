@@ -10,6 +10,22 @@ not touched. The engineering documents (`ARCHITECTURE.md`, `PROTOCOL.md`,
 Status: **GO** on the v2.3 silicon gate — `recon/PROD_CLOSURE.md` §16.
 Start with `make verify`.
 
+## Production: build and flash
+
+Needs SDCC 4.6.0 (sdasstm8 / sdld V05.50.4 — other versions are refused),
+`stm8flash`, and an ST-LINK/V2 wired to the board: SWIM → pin 8,
+TVCC → 3.3 V, GND → GND.
+
+```sh
+make build/rbarf_prod.ihx
+# power the board, then within 5 s:
+stm8flash -c stlinkv2 -p stm8s001j3 -w build/rbarf_prod.ihx
+```
+
+The pin is only programmable during the first 5 s after power-on. After
+that the firmware listens for frames on its WS2812 input (pin 7) and
+drives the LED strip (pin 5).
+
 ## Layout
 
 | path | role |

@@ -115,7 +115,7 @@ def main() -> None:
     args = ap.parse_args()
 
     if args.out is None:
-        args.out = str(Path(__file__).parent.parent / "data"
+        args.out = str(Path(__file__).parent / "data"
                        / "captures_trim.json")
 
     port = probe_port(args.port)

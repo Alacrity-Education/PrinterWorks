@@ -1,5 +1,0 @@
-full                                   EXACT 30/54 biterr   33/6912 = 0.00477 (63s)
-no header/trailer pin                  EXACT 30/54 biterr   32/6912 = 0.00463 (63s)
-no slope state (vmax=0)                EXACT 29/54 biterr   36/6912 = 0.00521 (13s)
-stiff phase (vpen=1e6)                 EXACT 29/54 biterr   36/6912 = 0.00521 (61s)
-free phase per bit (vpen=0, vmax=100)  EXACT 31/54 biterr   44/6912 = 0.00637 (115s)

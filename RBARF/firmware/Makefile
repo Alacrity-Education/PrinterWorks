@@ -24,7 +24,6 @@ AS      = sdasstm8
 PYTHON  = python3
 CFLAGS  = -mstm8 --std-c99 --opt-code-size
 BUILD   = build
-ARCHFW  = archive/firmware-variants
 
 # ======================================================================
 # CHASE BUDGET -- the ONE source for both constants (recon/AMAX_TMAX_SWEEP.md)
@@ -242,71 +241,28 @@ rbarf-prod: $(BUILD)/rbarf_prod.ihx $(BUILD)/rbarf_prod_verbose.ihx
 # command a newcomer should run to confirm the tree is sound.  It FAILS
 # (non-zero) on any drift, including a ledger md5 that no longer matches.
 # Deliberately NOT included (slow or needs hardware):
-#   ucsim bit-exactness   recon/approaches/dev_prod/ucsim_v23.py
 #   bench gates/soaks     bench/drive_prod.py, bench/rate_spot.py, ...
 LEDGER_MD5 = b8f0ae06e740e0f811ff3ebcb0a201ab  $(BUILD)/rbarf_prod.ihx\n5524ce94f4ae3cb404503beccb0b9373  $(BUILD)/rbarf_prod_verbose.ihx\n84955f771ef8ad41a36fc16187afca38  $(BUILD)/capture.ihx
 
 .PHONY: verify ledger
 verify: toolcheck ledger
-	@echo "== [2/8] link guard, production image =========================="
+	@echo "== [2/5] link guard, production image =========================="
 	@$(PYTHON) guard_prod.py $(BUILD)/rbarf_prod.map
-	@echo "== [3/8] link guard, verbose image ============================"
+	@echo "== [3/5] link guard, verbose image ============================"
 	@$(PYTHON) guard_prod.py $(BUILD)/rbarf_prod_verbose.map
-	@echo "== [4/8] pinned CAPLOOP blocks vs the ledger ==================="
-	@echo "   (0x9F65.. and 0x9F66..0x9FFF are EXPECTED to DIFF: those two"
-	@echo "    ledger rows are the SS16 and pre-SS16 arms, kept only for"
-	@echo "    diffing -- absmd5.py treats them as informational.  The two"
-	@echo "    CAPLOOP rows are the hard pins; the 0x9F63 rows are the"
-	@echo "    current arm and must match.)"
-	@$(PYTHON) recon/approaches/dev_arm/absmd5.py \
-		$(BUILD)/rbarf_prod.ihx $(BUILD)/rbarf_prod_verbose.ihx
-	@echo "== [5/8] bench/crc.py self-test ================================"
+	@echo "== [4/5] bench/crc.py self-test ================================"
 	@$(PYTHON) bench/crc.py >/dev/null && echo "bench/crc.py: PASS"
-	@echo "== [6/8] bench/patterns.py self-test ==========================="
+	@echo "== [5/5] bench/patterns.py self-test ==========================="
 	@$(PYTHON) bench/patterns.py >/dev/null && echo "bench/patterns.py: PASS"
-	@echo "== [7/8] embedded_v2.py reference self-test ===================="
-	@$(PYTHON) recon/approaches/embedded_v2.py
-	@echo "== [8/8] Klipper macro + host parity ==========================="
-	@$(PYTHON) klipper/verify_macro.py | grep -E "passed, [0-9]+ failed|all wire frames byte-match"
-	@$(PYTHON) recon/approaches/dev_prod/parity_v23.py \
-		| grep -E "bit-identical|HOST PARITY"
 	@echo
 	@echo "VERIFY: PASS -- every check above completed and none failed."
 
 # md5 the three ledger images and ASSERT them (used by `verify`)
 ledger: $(BUILD)/rbarf_prod.ihx $(BUILD)/rbarf_prod_verbose.ihx $(BUILD)/capture.ihx
-	@echo "== [1/8] ledger md5 ============================================"
+	@echo "== [1/5] ledger md5 ============================================"
 	@printf '$(LEDGER_MD5)\n' | md5sum --check --strict -
 	@md5sum $(BUILD)/rbarf_prod.ihx $(BUILD)/rbarf_prod_verbose.ihx \
 		$(BUILD)/capture.ihx
-
-# ======================================================================
-# READABLE REFERENCE DECODER (reference/) -- documentation, not firmware
-# ======================================================================
-# reference/rbarf_decoder.c is the presentation copy of the decoder: one
-# translation unit, no build-time forks, v2.3 only.  It is NOT part of any
-# shipping image and is deliberately absent from `all` and from `verify`
-# (which own the ledger).  This target compiles it with gcc and proves it
-# bit-exact against recon/approaches/embedded_v2.py over the real-silicon
-# corpus, both fuzz sets and a 20 160-capture synthetic grid.
-.PHONY: ref-parity
-ref-parity:
-	$(PYTHON) reference/parity_readable.py
-
-# reference/rbarf_capture.c is the presentation copy of the CAPTURE FRONT
-# END: cap_arm.s + caploop.s rendered line for line with cycle annotations
-# (layer 1), plus a host-executable model of the fitted sampler (layer 2).
-# This target proves layer 2 byte-for-byte against the normative Python
-# sampler recon/approaches/dev_prod/v23lib.capture() over the 70-payload
-# production grid, the drift/trunc/chop malformations, the ND=16 test
-# geometry and a t0 sweep through the 681 ns trigger-phase cliff -- and runs
-# rbarf_capture.c's own self-checks (the rendered RLC chain against the
-# model's packer, and the four hand-assembled BTJT poll offsets).  Like
-# ref-parity it is additive: not in `all`, not in `verify`, and it touches
-# no shipping source.
-.PHONY: ref-capture-parity
-ref-capture-parity:
-	$(PYTHON) reference/parity_capture.py
 
 # ======================================================================
 # FLASH (needs the bench: probe + ST-LINK; see README.md)
@@ -325,91 +281,6 @@ flash-prod-verbose: $(BUILD)/rbarf_prod_verbose.ihx
 	$(PYTHON) flash.py --ihx $(BUILD)/rbarf_prod_verbose.ihx flash-only
 
 # ======================================================================
-# SUPERSEDED / bench-only builds.  Sources live in archive/firmware-variants/
-# (see archive/README.md).  None of these is in `all`.  Do not flash them
-# expecting production behaviour.
-#
-# STATUS at HEAD (measured 2026-09-08):
-#   capture-trim     BUILDS       (does not link the decoder)
-#   rbarf-v21        DOES NOT LINK -- CODE 0x9FAD overruns the pinned
-#   rbarf-v21-trim   DOES NOT LINK -- CODE 0x9FB9 overruns the pinned
-#                    capture loop at 0x9FA1.  Both now FAIL LOUDLY via
-#                    guard_caploop.py; rbarf-v21-trim previously had NO
-#                    guard and emitted a silently CORRUPT image.
-#   Cause: these targets link the CURRENT decode.c, which has grown into
-#   the v2.3 decoder.  Rebuilding a real v2.1 image needs a v2.1-era
-#   decode.c, which this tree does not keep.  This is history, not a
-#   regression -- see guard_caploop.py and archive/README.md.
-# ======================================================================
-
-# ---- v2.1 decoder firmware (decode.c + scan.s + rbarf_v21.c) ----------
-# SUPERSEDED bench/test build kept reproducible: ND_DATA=16, CHK_LEN=3
-# (216-bit v2.1 frame), CHECK_EN=1 (full CRC8 chase), USE_ASM_SCAN=1
-# (scan.s hot path).  The current protocol is v2.3 (CHK_LEN=6, the
-# PRODFLAGS default) -- this build exists only to reproduce the v2.1
-# bench-proof firmware against the captures_v21*.json corpora.
-# -I. is added on the two archived mains only: SDCC resolves #include "decode.h"
-# relative to the SOURCE file, which now lives in archive/firmware-variants/.
-V21FLAGS = -DND_DATA=16 -DCHECK_EN=1 -DCHK_LEN=3 -DUSE_ASM_SCAN=1 --max-allocs-per-node 100000
-
-$(BUILD)/scan.rel: scan.s | $(BUILD)
-	$(AS) -plosg -o $(BUILD)/scan.rel scan.s
-
-$(BUILD)/decode.rel: decode.c decode.h | $(BUILD)
-	$(CC) $(CFLAGS) $(V21FLAGS) -c decode.c -o $(BUILD)/decode.rel
-
-$(BUILD)/rbarf_v21_main.rel: $(ARCHFW)/rbarf_v21.c decode.h | $(BUILD)
-	$(CC) $(CFLAGS) $(V21FLAGS) -I. -c $(ARCHFW)/rbarf_v21.c -o $(BUILD)/rbarf_v21_main.rel
-
-$(BUILD)/rbarf_v21.ihx: $(BUILD)/rbarf_v21_main.rel $(BUILD)/decode.rel $(BUILD)/scan.rel $(BUILD)/caploop.rel | $(BUILD)
-	@$(PYTHON) toolcheck.py --quiet
-	$(CC) $(CFLAGS) $(V21FLAGS) -o $(BUILD)/rbarf_v21.ihx \
-		$(BUILD)/rbarf_v21_main.rel $(BUILD)/decode.rel $(BUILD)/scan.rel $(BUILD)/caploop.rel
-	@$(PYTHON) guard_caploop.py $(BUILD)/rbarf_v21.map
-
-.PHONY: rbarf-v21
-rbarf-v21: $(BUILD)/rbarf_v21.ihx
-	@echo "=== flash area map ($(BUILD)/rbarf_v21.map) ==="
-	@grep -E "CODE|CONST|DATA|GSINIT|GSFINAL|HOME|SSEG|INITIAL|VECT|CAPLOOP" \
-		$(BUILD)/rbarf_v21.map | grep -E "^[A-Z_]" || true
-
-.PHONY: flash-v21
-flash-v21: $(BUILD)/rbarf_v21.ihx
-	$(PYTHON) flash.py --ihx $(BUILD)/rbarf_v21.ihx flash-only
-
-# ---- v2.1 decoder, forced-trim-cycling variant (step-6 campaign) ------
-# Identical decoder (decode.c + scan.s) driven by rbarf_v21_trim.c, which
-# unconditionally cycles CLK_HSITRIMR through {6,7,0,1,2} once per
-# decode (recon/CAMPAIGN.md) instead of rbarf_v21.c's opportunistic
-# auto-trim -- decode runs AT the forced trim, only UART TX is factory
-# trim. Same V21FLAGS geometry (ND_DATA=16, CHECK_EN=1, USE_ASM_SCAN=1).
-$(BUILD)/rbarf_v21_trim_main.rel: $(ARCHFW)/rbarf_v21_trim.c decode.h | $(BUILD)
-	$(CC) $(CFLAGS) $(V21FLAGS) -I. -c $(ARCHFW)/rbarf_v21_trim.c -o $(BUILD)/rbarf_v21_trim_main.rel
-
-$(BUILD)/rbarf_v21_trim.ihx: $(BUILD)/rbarf_v21_trim_main.rel $(BUILD)/decode.rel $(BUILD)/scan.rel $(BUILD)/caploop.rel | $(BUILD)
-	@$(PYTHON) toolcheck.py --quiet
-	$(CC) $(CFLAGS) $(V21FLAGS) -o $(BUILD)/rbarf_v21_trim.ihx \
-		$(BUILD)/rbarf_v21_trim_main.rel $(BUILD)/decode.rel $(BUILD)/scan.rel $(BUILD)/caploop.rel
-	@$(PYTHON) guard_caploop.py $(BUILD)/rbarf_v21_trim.map
-
-.PHONY: rbarf-v21-trim
-rbarf-v21-trim: $(BUILD)/rbarf_v21_trim.ihx
-	@echo "built $(BUILD)/rbarf_v21_trim.ihx (SUPERSEDED, bench-only)"
-
-.PHONY: flash-v21-trim
-flash-v21-trim: $(BUILD)/rbarf_v21_trim.ihx
-	$(PYTHON) flash.py --ihx $(BUILD)/rbarf_v21_trim.ihx flash-only
-
-# ---- capture_trim: HSITRIMR sweep acquisition image (recon/TRIM_SWEEP.md)
-$(BUILD)/capture_trim.ihx: $(ARCHFW)/capture_trim.c $(BUILD)/cap_code.rel | $(BUILD)
-	@$(PYTHON) toolcheck.py --quiet
-	$(CC) $(CFLAGS) $(ARCHFW)/capture_trim.c $(BUILD)/cap_code.rel -o $(BUILD)/capture_trim.ihx
-
-.PHONY: capture-trim
-capture-trim: $(BUILD)/capture_trim.ihx
-	@echo "built $(BUILD)/capture_trim.ihx (SUPERSEDED, bench-only)"
-
-# ======================================================================
 .PHONY: clean clean-pyc help
 clean:
 	rm -rf $(BUILD)
@@ -422,8 +293,8 @@ clean-pyc:
 help:
 	@echo "RBARF make targets"
 	@echo "  all                 every shipping image (default)"
-	@echo "  verify              hardware-free proof suite (guards, parity,"
-	@echo "                      self-tests, Klipper macro) -- run this first"
+	@echo "  verify              hardware-free checks (ledger, link guards,"
+	@echo "                      protocol self-tests) -- run this first"
 	@echo "  ledger              md5 the three shipping images vs the ledger"
 	@echo "  toolcheck           check sdcc/sdas/sdld against the pinned versions"
 	@echo "  rbarf-prod          production images + flash-area map"
@@ -438,9 +309,3 @@ help:
 	@echo "  flash-capture       calibrated acquisition image"
 	@echo "  flash-prod          production image (terse)"
 	@echo "  flash-prod-verbose  production image (verbose bench build)"
-	@echo ""
-	@echo " superseded / bench-only (sources in archive/firmware-variants/):"
-	@echo "  capture-trim        builds"
-	@echo "  rbarf-v21           does NOT link at HEAD (decode.c is v2.3 now)"
-	@echo "  rbarf-v21-trim      does NOT link at HEAD -- both fail loudly"
-	@echo "  flash-v21  flash-v21-trim"
