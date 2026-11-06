@@ -1,0 +1,16 @@
+# Regenerable build output (see README.md)
+build/
+chase_cfg.inc
+recon/approaches/dev_prod/chase_A*_T*/
+
+# Host-side shims and demo binaries rebuilt on demand by the harnesses ...
+*.so
+*.o
+a.out
+reference/rbarf_decode
+# ... except the ones no script rebuilds and that evidence tables cite.
+!recon/approaches/dev_prod/decode_host_prod.so
+!recon/approaches/dev_arm/dec48_v23.so
+
+__pycache__/
+*.py[cod]
