@@ -9,6 +9,13 @@ a single side of the board, which makes assembly easier.
 
 ![](images/rbarf-v0.2-components.png)
 
+![](images/rbarf-v0.2-wlcsp-tweezers.png)
+
+The STM32C011D6 in tweezers, ball side up. The whole chip is 1.7 × 1.42 mm,
+with 12 solder balls on a 0.35 mm pitch. It is a wafer-level package: the
+balls sit directly on the silicon die, and the silicon layers are visible on
+the ball side.
+
 Programming and debug pads: `SWDIO`, `SWCLK` and `UART`.
 
 **Known issue:** the Q1 footprint is wrong. It is fixed in
