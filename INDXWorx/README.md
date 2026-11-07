@@ -41,11 +41,7 @@ The board plugs into the Octopus WiFi socket. It uses these Octopus pins:
 
 ### Head
 
-- **RS485** (JST-PH, 2-pin): pin 1 `+`, pin 2 `-`.
-- **5V_SW** (JST-PH, 2-pin): pin 1 switched 5V, pin 2 GND.
-
-Pin 1 is on the left with the connectors at the top of the board, and the
-tab side faces the board edge (see the second gallery photo).
+![](images/indxworx-gallery-connectors.png)
 
 ## RS485 line swapper
 
