@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TPSM63603") (type "KiCad") (uri "${KIPRJMOD}/libraries/TPSM63603.kicad_sym") (options "") (descr "TPSM63603 symbol"))
+)

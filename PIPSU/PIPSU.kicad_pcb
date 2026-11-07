@@ -1246,7 +1246,7 @@
 			(uuid "6671d0f9-8573-4610-876d-40c5c89ff186")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/B0QFN30.pretty/RDH0030A.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/RDH0030A.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2848,7 +2848,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KIPRJMOD}/1054440001.stp"
+		(model "${KIPRJMOD}/libraries/3dmodels/1054440001.stp"
 			(offset
 				(xyz 0 11 -0.4)
 			)
