@@ -9,6 +9,16 @@ Programming and debug pads: `SWDIO`, `SWCLK` and `UART`.
 **Known issue:** the Q1 footprint is wrong. It is fixed in
 [RBARF V0.3](../RBARF-V0.3).
 
+## Q1 repair
+
+The MOSFET does not fit its footprint: its pads end up outside the part. We
+repaired the boards by extending the pads with short sections of wire, glued
+down to the board with UV-curable solder mask, then soldering the MOSFET onto
+the extended pads.
+
+| ![](images/rbarf-v0.2-mosfet-angle.png) | ![](images/rbarf-v0.2-pad-repair.png) |
+| -- | -- |
+
 ## Firmware
 
 Rust + Embassy, in `firmware/`. See [firmware/README.md](firmware/README.md).
