@@ -44,13 +44,20 @@ The board plugs into the Octopus WiFi socket. It uses these Octopus pins:
 - **RS485** (JST-PH, 2-pin): pin 1 `+`, pin 2 `-`.
 - **5V_SW** (JST-PH, 2-pin): pin 1 switched 5V, pin 2 GND.
 
+Pin 1 is on the left with the connectors at the top of the board, and the
+tab side faces the board edge (see the second gallery photo).
+
 ## RS485 line swapper
 
 The silkscreen next to the DIP switch shows the two settings:
 
-- **Straight (`| |`):** switches 3 and 4 ON, 1 and 2 OFF.
-- **Swapped (`X`):** switches 1 and 2 ON, 3 and 4 OFF. The head's two RS485
-  lines are crossed.
+- **Straight (`| |`):** the two switches next to `| |` ON, the two next to
+  `X` OFF.
+- **Swapped (`X`):** the two switches next to `X` ON, the two next to `| |`
+  OFF. The head's two RS485 lines are crossed.
+
+Go by the silkscreen marks, not the numbers on the switch: the switch can be
+fitted either way round.
 
 Use one pair at a time: turning on all four switches shorts the RS485 lines.
 
