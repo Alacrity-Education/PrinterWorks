@@ -41,7 +41,7 @@ The board plugs into the Octopus WiFi socket. It uses these Octopus pins:
 
 ### Head
 
-![](images/indxworx-gallery-connectors.png)
+![](images/indxworx-connectors.png)
 
 ## RS485 line swapper
 
