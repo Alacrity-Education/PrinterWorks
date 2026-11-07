@@ -16,9 +16,9 @@ around it. Two kinds of input are handled:
   are half-transparent. Alpha is clipped so they disappear.
 
 Usage:
-    python3 remove_render_bg.py IN.png [IN2.png ...]            # in place
-    python3 remove_render_bg.py IN.png -o OUT.png
-    python3 remove_render_bg.py IN.png -o OUT.png --fit 900x600 # trim, fit, centre
+    python3 images/remove_render_bg.py IN.png [IN2.png ...]            # in place
+    python3 images/remove_render_bg.py IN.png -o OUT.png
+    python3 images/remove_render_bg.py IN.png -o OUT.png --fit 900x600 # trim, fit, centre
 
 Output is always PNG with transparency. Needs numpy and Pillow.
 """

@@ -8,7 +8,7 @@ For this purpose, the LED signal coming from klipper is intercepted by a tiny mi
 
 The board includes a single pad for `SWIM` programming.
 
-| ![](images/rbarf_v0.2_top.JPG) | ![](images/rbarf_v0.2_bottom.JPG) | ![](images/rbarf_v0.2_many.JPG) |
+| ![](images/rbarf_v0.2_top.png) | ![](images/rbarf_v0.2_bottom.png) | ![](images/rbarf_v0.2_many.png) |
 | -- | -- | -- |
 
 # Firmware

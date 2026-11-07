@@ -8,7 +8,7 @@ JST-XH connector for CAN, placed one above the other.
 The board has no active parts: every CAN connector is on the same bus, and
 every power terminal is on the same 24V rail.
 
-| ![](images/candu-render.png) | ![](images/candu-operation.jpeg) |
+| ![](images/candu-render.png) | ![](images/candu-operation.png) |
 | -- | -- |
 
 
@@ -16,7 +16,7 @@ every power terminal is on the same 24V rail.
 
 **RJ45**: CAN bus input. The two RJ45 LEDs light up when the board has 24V.
 
-![](images/candu-rj45-pinout.jpg)
+![](images/candu-rj45-pinout.png)
 
 ## Device ports
 
