@@ -4,7 +4,7 @@
 Built on the wonderful [Rainbow Barf Logo LED](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/VinnyCordeiro/RGB_LED_grid_for_SB) by VinnyCordeiro, we have added a tiny microcontroller to the back of the board. 
 
 Klipper can control Neopixels just fine, but animations can be demanding to klipper's resources. We implemented a way to create animations locally on the LED board.
-For this purpose, the LED signal coming from klipper is intercepted by a tiny microcontroller (STM8S001J3). This microcontroller presents itself to the host as a 10-led group, where the first 8 leds are the 8 real on the board, and the next 2 virtual leds (6 bytes) are metadata for creating simple animations (blink, fade, wave, etc) on top of the given color data.
+For this purpose, the LED signal coming from klipper is intercepted by a tiny microcontroller (STM8S001J3). This microcontroller presents itself to the host as a 16-led group, where the first 8 leds are the 8 real on the board, and the next 8 virtual leds (24 bytes) are metadata for creating simple animations (blink, fade, wave, etc) on top of the given color data.
 
 The board includes a single pad for `SWIM` programming.
 
