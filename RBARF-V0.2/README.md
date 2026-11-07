@@ -2,7 +2,12 @@
 
 The second revision of [RBARF](../RBARF-V0.1). The STM8 is replaced by an
 STM32C011D6 (WLCSP-12), powered by a TI TPS7A02 3.3V LDO, with an N-MOSFET
-(Q1).
+(Q1) as a level shifter.
+
+We used these very small wafer-level components so that all the parts fit on
+a single side of the board, which makes assembly easier.
+
+![](images/rbarf-v0.2-components.png)
 
 Programming and debug pads: `SWDIO`, `SWCLK` and `UART`.
 
@@ -22,13 +27,4 @@ the extended pads.
 
 ## Firmware
 
-Rust + Embassy, in `firmware/`. See [firmware/README.md](firmware/README.md).
-
-```sh
-cd firmware
-cargo build --release
-cargo run --release    # flash with probe-rs
-```
-
-The C parity test (`cargo test-anim`) compiles the V0.1 animation engine from
-`RBARF-V0.1/firmware/app/`.
+V0.2 runs the [V0.3 firmware](../RBARF-V0.3/firmware).
