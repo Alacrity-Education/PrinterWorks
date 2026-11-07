@@ -1,0 +1,115 @@
+{
+  "part_name": "PTPS7A0233PYCHR",
+  "library_name": "Components",
+  "symbol_library_name": "Components",
+  "footprint_library_name": "Components",
+  "project_root": "/home/alex.lucaci/Projects/PrinterWorks/RBARF",
+  "source_zip": "/home/alex.lucaci/Downloads/ul_PTPS7A0233PYCHR (1).zip",
+  "imported_at": "2026-09-07T18:51:27",
+  "imported_assets": {
+    "selected_symbol_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym",
+    "selected_footprint_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty",
+    "selected_model_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/3dmodels",
+    "symbol_libraries": [
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym"
+    ],
+    "source_symbol_libraries": [
+      "KiCADv6/2026-09-07_15-38-41.kicad_sym"
+    ],
+    "merged_symbols": [
+      {
+        "target_symbol_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym",
+        "merged_symbol_names": [
+          "PTPS7A0233PYCHR"
+        ],
+        "replaced_existing_symbols": [],
+        "updated": true,
+        "message": "Merged 1 symbol(s)."
+      }
+    ],
+    "footprints": [
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_A.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_B.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_C.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-MFG.kicad_mod"
+    ],
+    "models_3d": [],
+    "datasheets": [],
+    "source_zip": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/source_zips/PTPS7A0233PYCHR_ul_PTPS7A0233PYCHR (1).zip",
+    "metadata": null,
+    "3d_path_fix": {
+      "updated_footprints": [],
+      "skipped_footprints": [
+        "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_A.kicad_mod",
+        "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_B.kicad_mod",
+        "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-IPC_C.kicad_mod",
+        "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.pretty/YCH0004A-MFG.kicad_mod"
+      ],
+      "available_models": [],
+      "model_matches": []
+    },
+    "library_table_update": {
+      "footprint_table_updated": true,
+      "symbol_tables_updated": [
+        "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym"
+      ],
+      "symbol_tables_skipped": []
+    },
+    "symbol_footprint_link": [
+      {
+        "symbol_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym",
+        "updated": true,
+        "symbol_name": "PTPS7A0233PYCHR",
+        "default_footprint": "Components:YCH0004A-MFG",
+        "footprint_filters": [
+          "Components:YCH0004A-IPC_A",
+          "Components:YCH0004A-IPC_B",
+          "Components:YCH0004A-IPC_C",
+          "Components:YCH0004A-MFG"
+        ],
+        "ki_fp_filters_value": "Components:YCH0004A-IPC_A Components:YCH0004A-IPC_B Components:YCH0004A-IPC_C Components:YCH0004A-MFG",
+        "filter_mode": "exact",
+        "include_default_in_filters": true,
+        "available_footprints": [
+          "Components:YCH0004A-IPC_A",
+          "Components:YCH0004A-IPC_B",
+          "Components:YCH0004A-IPC_C",
+          "Components:YCH0004A-MFG"
+        ]
+      }
+    ],
+    "symbol_style_update": {
+      "symbol_library": "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/Components.kicad_sym",
+      "updated": true,
+      "styled_symbol_names": [
+        "PTPS7A0233PYCHR"
+      ],
+      "style": {
+        "line_width_mm": 0.254,
+        "line_color": "#840000",
+        "fill_mode": "kicad_default",
+        "fill_color": "#FFFFC2",
+        "font_size_mm": 1.27,
+        "pin_length_mm": 2.54,
+        "use_default_colors": true
+      }
+    },
+    "backups": [
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.kicad_sym",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.kicad_sym",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.kicad_sym",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.pretty/YCH0004A-IPC_A.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.pretty/YCH0004A-IPC_B.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.pretty/YCH0004A-IPC_C.kicad_mod",
+      "/home/alex.lucaci/Projects/PrinterWorks/RBARF/libraries/backups/2026-09-07_18-51-27/libraries/Components.pretty/YCH0004A-MFG.kicad_mod"
+    ],
+    "skipped_existing": false,
+    "existing_assets": {
+      "already_exists": false,
+      "source_symbol_names": [
+        "PTPS7A0233PYCHR"
+      ],
+      "existing_footprints": []
+    }
+  }
+}

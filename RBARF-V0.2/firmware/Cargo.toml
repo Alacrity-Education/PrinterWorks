@@ -1,0 +1,20 @@
+[workspace]
+resolver = "3"
+members = ["rbarf-anim", "rbarf-proto", "rbarf-fw"]
+
+[profile.release]
+opt-level = "s"
+lto = "fat"
+codegen-units = 1
+debug = 2
+panic = "abort"
+incremental = false
+
+[profile.dev]
+# A debug build of embassy does not fit 32 KB comfortably; keep it lean.
+opt-level = "s"
+panic = "abort"
+
+[profile.test]
+# The parity test runs ~1M renders on both sides; optimise it.
+opt-level = 3

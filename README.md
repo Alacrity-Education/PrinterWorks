@@ -2,7 +2,7 @@
 
 Our 3D printer mods and PCB's
 
-| [CANDU](CANDU) | [INDXWorx](INDXWorx) | [RBARF](RBARF) |
+| [CANDU](CANDU) | [INDXWorx](INDXWorx) | [RBARF](RBARF-V0.1) |
 | :--: | :--: | :--: |
 | ![](images/candu.png) | ![](images/indxworx.png) | ![](images/rbarf.png) |
 

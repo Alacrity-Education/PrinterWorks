@@ -1,0 +1,16 @@
+[package]
+name = "rbarf-proto"
+version = "0.2.0"
+edition = "2024"
+description = "RBARF v2.3 wire frame: threshold/pack of measured WS2812 high times, markers, CRC16 x3 majority (no_std, host-tested)"
+publish = false
+
+[lib]
+test = true
+bench = false
+
+[features]
+defmt = ["dep:defmt"]
+
+[dependencies]
+defmt = { version = "1.1.1", optional = true }

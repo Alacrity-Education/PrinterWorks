@@ -1,0 +1,15 @@
+[package]
+name = "rbarf-anim"
+version = "0.2.0"
+edition = "2024"
+description = "RBARF animation engine: byte-exact no_std port of src/app/anim.c"
+publish = false
+
+[lib]
+test = true
+bench = false
+
+[build-dependencies]
+# Host-only: build.rs compiles the original C engine for the parity test.
+# Never invoked for the firmware target (target_os = "none").
+cc = "1.2"

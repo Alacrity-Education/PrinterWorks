@@ -1,0 +1,16 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+# `cargo run --release -p rbarf-fw`: flash over ST-LINK (SWD only, no NRST)
+# and stream defmt logs over RTT.
+runner = "probe-rs run --chip STM32C011D6"
+
+[env]
+DEFMT_LOG = "info"
+
+[alias]
+# Host-side tests of the animation engine (incl. the C parity test).
+test-anim = "test -p rbarf-anim --target host-tuple"
+# Host-side tests of the v2.3 frame decoder used by the receiver.
+test-proto = "test -p rbarf-proto --target host-tuple"
