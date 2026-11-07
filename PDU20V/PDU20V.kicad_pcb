@@ -696,6 +696,17 @@
 			(uuid "e75e6352-3a67-49c6-94dd-0f986153bbef")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Components:XT90 AMASS"
 		(layer "F.Cu")
@@ -1089,6 +1100,17 @@
 			(uuid "466a315c-4f2c-484a-bab7-3d548bb8fcb7")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Components:XT90 AMASS"
 		(layer "F.Cu")
@@ -1482,6 +1504,17 @@
 			(uuid "dcdc1ecf-b911-4173-9d37-95f066ab30a6")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
@@ -2092,6 +2125,17 @@
 			(uuid "718b5c33-b46c-4a3e-8279-7a7842f61077")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
@@ -2919,6 +2963,17 @@
 			(uuid "ba8484b7-4bd7-4787-b0ea-fb4e28c6f6c2")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Components:XT90 AMASS"
 		(layer "F.Cu")
@@ -3312,6 +3367,17 @@
 			(uuid "07f81bad-0bda-47fa-9d35-84911234c76d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
@@ -4139,6 +4205,17 @@
 			(uuid "47e7de9a-cf16-47be-bc12-bc3781372959")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Components:XT90 AMASS"
 		(layer "F.Cu")
@@ -4532,6 +4609,17 @@
 			(uuid "f521a266-f9d2-4be8-9675-fd9d1ebe8a6f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
@@ -5793,6 +5881,17 @@
 			(uuid "7a040552-38a2-40a2-81dd-968c6dd440a4")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_4.0x4.0mm"
 		(layer "B.Cu")
@@ -6364,6 +6463,17 @@
 			(uuid "188cf2c9-07a2-4607-9622-e25f395744df")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-F_1x02_P11.0mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_4.0x4.0mm"
 		(layer "B.Cu")

@@ -315,4 +315,15 @@
 		(uuid "c97fcb3b-9e04-4863-98f6-46db15ca3314")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/3dmodels/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
