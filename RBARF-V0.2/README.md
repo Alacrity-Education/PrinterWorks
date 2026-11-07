@@ -16,8 +16,9 @@ repaired the boards by extending the pads with short sections of wire, glued
 down to the board with UV-curable solder mask, then soldering the MOSFET onto
 the extended pads.
 
-| ![](images/rbarf-v0.2-mosfet-angle.png) | ![](images/rbarf-v0.2-pad-repair.png) |
-| -- | -- |
+| ![](images/rbarf-v0.2-mosfet-before.png) | ![](images/rbarf-v0.2-pad-repair.png) | ![](images/rbarf-v0.2-mosfet-after.png) |
+| -- | -- | -- |
+| Before: the pads end up outside the MOSFET | Pads extended with wire, UV solder mask | After: the repaired board |
 
 ## Firmware
 
