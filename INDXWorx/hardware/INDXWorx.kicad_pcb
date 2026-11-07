@@ -207,7 +207,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/4ce77f0c-7b29-4f31-a07d-a46b61c51c19")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -366,7 +366,7 @@
 		(property ki_fp_filters "SW?DIP?x4*")
 		(path "/babb76b3-bb02-4304-80a6-d8a7134687d5")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -813,7 +813,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/a97b66f5-7609-4ec1-9e61-d61cc4663692")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -972,7 +972,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f12133a2-81a6-4d66-b2d6-f66b8e81a7d8")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1357,7 +1357,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/e6b5cc88-66cb-42cf-a25f-19666caa6f74")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1529,7 +1529,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/4fc6d0ac-f2f0-4ef0-bc03-ed4cce3024c5")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1739,7 +1739,7 @@
 		(property ki_fp_filters "SOT* SG-*")
 		(path "/b1e74af1-7a09-4c9c-b102-baaac0752037")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2139,7 +2139,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bba7322a-508f-48ed-b34a-0c6944f9ac6e")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2311,7 +2311,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c9588480-e39d-45b9-9a8d-7352f539c45f")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2483,7 +2483,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/6da64b86-bdd9-40e3-b5db-d2b9997b5d47")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2642,7 +2642,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/8f1acf00-9adc-4a59-bed8-c62018d186b9")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2814,7 +2814,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/7d8828eb-399d-4a9b-b319-176b3dc87df1")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3024,7 +3024,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/6e3ef971-c1fe-4b03-bd35-0c142f90dc39")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3183,7 +3183,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/caf0ed9e-ef71-4d52-8b48-72d44e86413c")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3335,7 +3335,7 @@
 		(property ki_fp_filters "Net*Tie*")
 		(path "/8d4a3225-7024-4aa1-9461-d8475f543d82")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3443,7 +3443,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/9c5f842a-b2f2-4b37-8658-0631f1b971c8")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3641,7 +3641,7 @@
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/68c2a49d-dbb5-4a5b-8be6-37be2b503984")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3944,7 +3944,7 @@
 		(property ki_fp_filters "*DFN*3x3mm?P0.5mm?EP1.646x3.1mm*")
 		(path "/ddccd037-b435-460c-99dd-0ba83afb5285")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4484,7 +4484,7 @@
 		(property ki_fp_filters "WSON*1EP*2x2mm*P0.65mm*")
 		(path "/125a5122-f983-4e10-acf3-5b9bad05eaed")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4880,7 +4880,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f9af7994-ed22-44d6-9c42-9aedbecd518b")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5039,7 +5039,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6a42f139-1df8-4cfc-a478-72b17595a403")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5424,7 +5424,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/58379950-abd8-4954-b1bb-7d477380c1a6")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5583,7 +5583,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/baf32280-4de7-4ce6-96f9-b04b98202b52")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5966,7 +5966,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c9c935da-76ee-44ac-8b4e-50ac1f226ed1")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6125,7 +6125,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/760c203b-cc90-4def-84a5-55f8d0d0e5e4")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6284,7 +6284,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c4164d56-8532-4d92-9b1b-dffa3f7f598e")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6456,7 +6456,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/d438d77c-6ff3-487e-9cde-0fda6f8404df")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6671,7 +6671,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f23bc475-19a7-4d90-8f05-9ac821e4647c")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6828,7 +6828,7 @@
 		(property ki_fp_filters "Net*Tie*")
 		(path "/629557a5-f5f1-4746-ab73-5b8caa601bec")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6941,7 +6941,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/77d4d851-b16e-493e-952f-e0d12ee952d4")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7330,7 +7330,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/3ddbcd94-e23a-48a4-9926-f2216f0e0e86")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7636,7 +7636,7 @@
 		(property ki_fp_filters "Net*Tie*")
 		(path "/6c898b31-7699-4907-b13a-d9b186d02420")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7740,7 +7740,7 @@
 		(property ki_fp_filters "SOT?223*TabPin2* TO?220* TO?263*")
 		(path "/cc200aa5-996d-4562-be43-25836d997e1b")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8027,7 +8027,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/420b89b1-af85-45a8-aa98-eb4dd686aad3")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8192,7 +8192,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bcf3403e-fa85-4250-9472-ed773a04a5e7")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8349,7 +8349,7 @@
 		(property ki_fp_filters "Net*Tie*")
 		(path "/855627b3-5aab-4a70-8757-ed532a685079")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8476,7 +8476,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f56755d1-14aa-43c1-a853-13a4c39210e3")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8632,7 +8632,7 @@
 		(property ki_fp_filters "SolderJumper*Open*")
 		(path "/30e5d08f-4ece-4eba-aff4-a0722127b217")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8846,7 +8846,7 @@
 		(property ki_fp_filters "Net*Tie*")
 		(path "/e506de42-0518-4b8e-8435-9421969fbebf")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8958,7 +8958,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/49784091-cbf8-44e1-9d5f-b5c148927dc5")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9272,7 +9272,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bd5421ce-ef2f-4f50-aef2-f935c20f80a4")
 		(sheetname "/")
-		(sheetfile "indxworks.kicad_sch")
+		(sheetfile "INDXWorx.kicad_sch")
 		(units
 			(unit
 				(name "A")

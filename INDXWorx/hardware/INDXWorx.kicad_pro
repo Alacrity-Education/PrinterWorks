@@ -491,7 +491,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "indxworks.kicad_pro",
+    "filename": "INDXWorx.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -701,7 +701,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "indxworks.kicad_sch",
+        "filename": "INDXWorx.kicad_sch",
         "name": "Root",
         "uuid": "2d469407-49b3-4c75-b9ce-dd38a3f950a7"
       }

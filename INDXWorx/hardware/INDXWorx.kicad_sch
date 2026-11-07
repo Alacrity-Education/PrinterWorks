@@ -11865,7 +11865,7 @@
 			(uuid "ad1c03b6-b389-456f-adb2-e2cb33c37400")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "Y1")
 					(unit 1)
@@ -11977,7 +11977,7 @@
 			(uuid "100bcd01-3f65-4630-b674-26b5f6b92ab6")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U2")
 					(unit 1)
@@ -12094,7 +12094,7 @@
 			(uuid "b2cbf27d-cf2e-4d38-96df-859f8a23ad38")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U5")
 					(unit 1)
@@ -12172,7 +12172,7 @@
 			(uuid "6f9429bc-04fe-49fb-9abd-2e2880602a12")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR014")
 					(unit 1)
@@ -12251,7 +12251,7 @@
 			(uuid "9b86fec9-1e5e-4d37-892b-fd4393bce762")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR022")
 					(unit 1)
@@ -12341,7 +12341,7 @@
 			(uuid "2b5ed218-851c-45bd-8bb0-8a8c9194ca20")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R5")
 					(unit 1)
@@ -12420,7 +12420,7 @@
 			(uuid "f2ef1b14-9f48-4bfd-a38b-7187187d814c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR024")
 					(unit 1)
@@ -12511,7 +12511,7 @@
 			(uuid "0a041184-3dd9-471d-a5a3-d4e4c06a6fb7")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C2")
 					(unit 1)
@@ -12589,7 +12589,7 @@
 			(uuid "9b841619-6afe-4371-adb1-dd7c5173c3cb")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR025")
 					(unit 1)
@@ -12680,7 +12680,7 @@
 			(uuid "8f80fe66-bb17-40d3-8b5c-58a0a2b1b882")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "JP4")
 					(unit 1)
@@ -12759,7 +12759,7 @@
 			(uuid "e0d259d7-baf0-4482-b13f-e4635bfd311e")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR026")
 					(unit 1)
@@ -12850,7 +12850,7 @@
 			(uuid "c8a4dd0c-4af5-4934-854b-f635275c0de9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R4")
 					(unit 1)
@@ -12974,7 +12974,7 @@
 			(uuid "24d84301-01b8-4b74-bf1c-1bec926dd78a")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J2")
 					(unit 1)
@@ -13067,7 +13067,7 @@
 			(uuid "d3b6bd38-f67f-491d-bf91-b908bae8a79a")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J7")
 					(unit 1)
@@ -13145,7 +13145,7 @@
 			(uuid "064befa2-d56a-4344-a74e-5d6de4b4ca0a")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR01")
 					(unit 1)
@@ -13265,7 +13265,7 @@
 			(uuid "7d3eab37-b74b-4a72-bb52-5b7a56bcb153")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J4")
 					(unit 1)
@@ -13366,7 +13366,7 @@
 			(uuid "13679e1c-cbef-4397-a071-4f082b4f8c5c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R6")
 					(unit 1)
@@ -13456,7 +13456,7 @@
 			(uuid "019c590c-646b-4a73-bfb4-e7943ae2cb39")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R3")
 					(unit 1)
@@ -13535,7 +13535,7 @@
 			(uuid "800fc7f4-4f41-499b-8422-6d87ac38fd99")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR09")
 					(unit 1)
@@ -13655,7 +13655,7 @@
 			(uuid "e38627fd-cf75-47bc-8b1f-03542189cec5")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J3")
 					(unit 1)
@@ -13767,7 +13767,7 @@
 			(uuid "1bb96fb4-aa63-4787-b8fc-702ab0f7b5d1")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C10")
 					(unit 1)
@@ -13882,7 +13882,7 @@
 			(uuid "024d8bf3-f494-4a17-8267-14dfb0745c6b")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "D5")
 					(unit 1)
@@ -13982,7 +13982,7 @@
 			(uuid "914ce572-a10b-4342-8a7c-aaca75bf011f")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C4")
 					(unit 1)
@@ -14060,7 +14060,7 @@
 			(uuid "3408208e-128a-4389-85ae-43abe09820b9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR035")
 					(unit 1)
@@ -14138,7 +14138,7 @@
 			(uuid "6d668b82-f6e1-482c-a2f1-75ffdef5ceb2")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR07")
 					(unit 1)
@@ -14229,7 +14229,7 @@
 			(uuid "24ff4337-b867-48c5-a14d-ea3c0208ff33")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "SW1")
 					(unit 1)
@@ -14331,7 +14331,7 @@
 			(uuid "b604c427-184a-4b78-860f-752d68e27129")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R12")
 					(unit 1)
@@ -14410,7 +14410,7 @@
 			(uuid "d148d3e4-0c4c-4a45-ada2-20e67a77cf83")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR028")
 					(unit 1)
@@ -14487,7 +14487,7 @@
 			(uuid "5770f4e0-cbd2-4867-8b0a-617f895fe494")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR05")
 					(unit 1)
@@ -14566,7 +14566,7 @@
 			(uuid "8cac161e-c47b-430f-b5b2-332e366875bc")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR011")
 					(unit 1)
@@ -14657,7 +14657,7 @@
 			(uuid "504023a3-08ec-44d6-a6a9-4655af8868c5")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "JP2")
 					(unit 1)
@@ -14748,7 +14748,7 @@
 			(uuid "384a875b-8952-496c-91bf-b8b6db8614c7")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "NT4")
 					(unit 1)
@@ -14839,7 +14839,7 @@
 			(uuid "b7128439-6dfb-4f1d-8aab-77ae608b0ebe")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R2")
 					(unit 1)
@@ -14969,7 +14969,7 @@
 			(uuid "ae6c9297-1660-45d9-abc2-a1345a3f2c10")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "L2")
 					(unit 1)
@@ -15073,7 +15073,7 @@
 			(uuid "99ba1bd4-56a4-447a-8075-9b1eb7310b0e")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J9")
 					(unit 1)
@@ -15166,7 +15166,7 @@
 			(uuid "40179c75-a97f-443e-b8b2-3e4c4897de21")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R1")
 					(unit 1)
@@ -15257,7 +15257,7 @@
 			(uuid "a09e26e7-a442-4a62-b322-2adf10d030a6")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "NT2")
 					(unit 1)
@@ -15348,7 +15348,7 @@
 			(uuid "a527ec4d-1191-4e72-9c5e-51eb8b7cafae")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "SW2")
 					(unit 1)
@@ -15460,7 +15460,7 @@
 			(uuid "7f18c46c-a629-41c6-9e0f-fb3adfe799de")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C8")
 					(unit 1)
@@ -15553,7 +15553,7 @@
 			(uuid "909e53ff-3314-44e5-8444-04dd61d2a207")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C1")
 					(unit 1)
@@ -15655,7 +15655,7 @@
 			(uuid "2ed77282-901e-4ec5-b9cb-055f3ded8538")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R11")
 					(unit 1)
@@ -15734,7 +15734,7 @@
 			(uuid "26f7ceae-d24e-42bd-a5e2-5f4338a5b268")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR029")
 					(unit 1)
@@ -15813,7 +15813,7 @@
 			(uuid "9625dd49-c14a-4fb4-89bc-83d8fa5d96b9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR030")
 					(unit 1)
@@ -15892,7 +15892,7 @@
 			(uuid "56c6ca67-4ff8-44a0-a18f-d2653773b262")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR020")
 					(unit 1)
@@ -15969,7 +15969,7 @@
 			(uuid "168edccc-21a6-48ef-9840-d68b7c471838")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR015")
 					(unit 1)
@@ -16073,7 +16073,7 @@
 			(uuid "c4eb74f9-47ff-48a0-8924-d7a960246ee8")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C18")
 					(unit 1)
@@ -16181,7 +16181,7 @@
 			(uuid "340a6ffb-8821-4442-b9ba-b2ba0c0be9e5")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "D2")
 					(unit 1)
@@ -16296,7 +16296,7 @@
 			(uuid "2d94d951-39f5-4a57-997b-df5c2d0f134b")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "D4")
 					(unit 1)
@@ -16387,7 +16387,7 @@
 			(uuid "6c7c0309-3b16-422e-8f22-6e68188c9e8e")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "NT3")
 					(unit 1)
@@ -16465,7 +16465,7 @@
 			(uuid "6eb6be0d-ee30-4d0c-89f8-6b3620b5e10c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR08")
 					(unit 1)
@@ -16544,7 +16544,7 @@
 			(uuid "42d8554d-e0c8-4ac4-9674-932f2ce679f2")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR019")
 					(unit 1)
@@ -16622,7 +16622,7 @@
 			(uuid "baa91058-9f6a-4132-809e-b453e7227fd9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR02")
 					(unit 1)
@@ -16701,7 +16701,7 @@
 			(uuid "7914e09d-86f4-4c0e-b670-96758dbc8160")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR033")
 					(unit 1)
@@ -16792,7 +16792,7 @@
 			(uuid "0b057957-8483-43c3-9555-e79dc6ab08a6")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "NT1")
 					(unit 1)
@@ -16894,7 +16894,7 @@
 			(uuid "bc740294-36bd-4b1a-82f9-9895d8df6a75")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R9")
 					(unit 1)
@@ -16973,7 +16973,7 @@
 			(uuid "640f1ed2-3de2-49d2-a72d-79fb3fa7fcca")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR018")
 					(unit 1)
@@ -17051,7 +17051,7 @@
 			(uuid "a85ff456-8c1c-48c3-a430-a3ebccf5310f")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR013")
 					(unit 1)
@@ -17153,7 +17153,7 @@
 			(uuid "999480e8-fd41-491a-8d27-618063d12e3b")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R10")
 					(unit 1)
@@ -17246,7 +17246,7 @@
 			(uuid "9be1b1fa-fbe7-49c8-aabc-8a54cf5b41ac")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J5")
 					(unit 1)
@@ -17433,7 +17433,7 @@
 			(uuid "18f2d2d6-3830-4bc4-b742-a82eee07828a")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U1")
 					(unit 1)
@@ -17537,7 +17537,7 @@
 			(uuid "9d5e89aa-c7be-48ac-ae3f-e0a4cfaeca96")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C20")
 					(unit 1)
@@ -17615,7 +17615,7 @@
 			(uuid "84056146-a0a2-4215-867b-cdc62b6518f1")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR027")
 					(unit 1)
@@ -17726,7 +17726,7 @@
 			(uuid "c57c94b2-15a1-4bb0-aa35-e156a4268d54")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U7")
 					(unit 1)
@@ -17823,7 +17823,7 @@
 			(uuid "8354a431-ad67-41c3-b0c1-29c1c0375dda")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "D1")
 					(unit 1)
@@ -17914,7 +17914,7 @@
 			(uuid "7be708bc-f120-40c2-88d7-93bcaa828ca9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "JP1")
 					(unit 1)
@@ -18034,7 +18034,7 @@
 			(uuid "8e68dd25-6be1-44e4-8ea2-5125790276ea")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "SW3")
 					(unit 1)
@@ -18113,7 +18113,7 @@
 			(uuid "c3db03f1-08a7-4a86-81d9-7e20dc163010")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR031")
 					(unit 1)
@@ -18222,7 +18222,7 @@
 			(uuid "f0ebdc77-19bf-4232-a39b-8cac826e2e16")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "Q1")
 					(unit 1)
@@ -18326,7 +18326,7 @@
 			(uuid "40492792-16a6-497c-9060-2a896d47e62d")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C14")
 					(unit 1)
@@ -18430,7 +18430,7 @@
 			(uuid "4739ec29-0af2-4126-b948-ca58a9c62307")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C19")
 					(unit 1)
@@ -18534,7 +18534,7 @@
 			(uuid "c536e8eb-0077-41fb-8d78-2a8477dc2f5c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C16")
 					(unit 1)
@@ -18636,7 +18636,7 @@
 			(uuid "40711edc-24a6-4c30-aa2d-40408fa83f1a")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R8")
 					(unit 1)
@@ -18747,7 +18747,7 @@
 			(uuid "fa46efbb-6cc2-484f-b144-2d9d81df9e8b")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C7")
 					(unit 1)
@@ -18851,7 +18851,7 @@
 			(uuid "6c128c51-dca2-4725-982a-815ce5cd2b31")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C15")
 					(unit 1)
@@ -18953,7 +18953,7 @@
 			(uuid "d0a60c08-6c98-4bae-9063-ce5bc4b00b35")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "R7")
 					(unit 1)
@@ -19047,7 +19047,7 @@
 			(uuid "93c1d712-8921-429e-937a-d40ad6ff66c9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U4")
 					(unit 1)
@@ -19137,7 +19137,7 @@
 			(uuid "94153242-44f5-40e2-8d85-dfc6546e9b90")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "JP3")
 					(unit 1)
@@ -19215,7 +19215,7 @@
 			(uuid "8ef393a3-31b8-47e6-bc29-34d227ce342f")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR04")
 					(unit 1)
@@ -19330,7 +19330,7 @@
 			(uuid "7857a83b-82c4-4af7-b35e-97d525caa44b")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "D3")
 					(unit 1)
@@ -19409,7 +19409,7 @@
 			(uuid "7f2fc4ef-08f3-4684-b9fb-abcdf1006cab")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR034")
 					(unit 1)
@@ -19488,7 +19488,7 @@
 			(uuid "7fbebac1-9951-43f8-81f8-afe738cf3f86")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR036")
 					(unit 1)
@@ -19619,7 +19619,7 @@
 			(uuid "c7b1a558-177a-4f36-9339-168161329112")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "U3")
 					(unit 1)
@@ -19755,7 +19755,7 @@
 			(uuid "23c46c8e-9e0e-42cf-b447-261906418c61")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J1")
 					(unit 1)
@@ -19833,7 +19833,7 @@
 			(uuid "7a5334f3-6a08-429c-919b-adac500e9f78")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR03")
 					(unit 1)
@@ -19924,7 +19924,7 @@
 			(uuid "19a0638c-5248-49de-b1f9-ce5d52134c89")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "NT5")
 					(unit 1)
@@ -20015,7 +20015,7 @@
 			(uuid "863b1cd4-1b11-46d4-93c6-21d5f79535c9")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C3")
 					(unit 1)
@@ -20119,7 +20119,7 @@
 			(uuid "3ceb4f0b-67a4-4c2d-b91a-4ede7b9ecd47")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C13")
 					(unit 1)
@@ -20197,7 +20197,7 @@
 			(uuid "cb69111b-1376-43d1-b0e8-dabd1c8aa4f2")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR017")
 					(unit 1)
@@ -20275,7 +20275,7 @@
 			(uuid "a4254ff4-cc13-4cff-ae37-a29796ccea12")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR016")
 					(unit 1)
@@ -20354,7 +20354,7 @@
 			(uuid "05ca4e56-7442-4aff-8d62-4fd35af69f35")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR021")
 					(unit 1)
@@ -20432,7 +20432,7 @@
 			(uuid "f995a9de-4c09-47e8-bf90-003e708313d1")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR032")
 					(unit 1)
@@ -20525,7 +20525,7 @@
 			(uuid "9ace11e8-811f-4462-8e14-8947b1366d77")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J6")
 					(unit 1)
@@ -20604,7 +20604,7 @@
 			(uuid "b7711dc4-400c-4a05-9c36-24a16508c5fb")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR023")
 					(unit 1)
@@ -20683,7 +20683,7 @@
 			(uuid "f16e59cf-3968-4fce-928b-753513808b8c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR012")
 					(unit 1)
@@ -20800,7 +20800,7 @@
 			(uuid "a41ec1dc-b4c0-45d7-90d6-40207353b3cb")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "L1")
 					(unit 1)
@@ -20904,7 +20904,7 @@
 			(uuid "9a74c1b5-7e98-479f-b29b-67620905a13c")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "J8")
 					(unit 1)
@@ -21008,7 +21008,7 @@
 			(uuid "11beaab8-00e7-4fa5-b2ac-5708cf377e4f")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C17")
 					(unit 1)
@@ -21120,7 +21120,7 @@
 			(uuid "185af381-66e0-41c9-b10d-f466fca95c7d")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C11")
 					(unit 1)
@@ -21231,7 +21231,7 @@
 			(uuid "7981ae4a-3517-4641-9be9-6d988f9ae6f1")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "C9")
 					(unit 1)
@@ -21309,7 +21309,7 @@
 			(uuid "e50ac2dc-4ff3-46d6-b799-539106b43748")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR010")
 					(unit 1)
@@ -21386,7 +21386,7 @@
 			(uuid "b253e921-fb55-453a-bd46-ff501589c4aa")
 		)
 		(instances
-			(project "indxworks"
+			(project "INDXWorx"
 				(path "/2d469407-49b3-4c75-b9ce-dd38a3f950a7"
 					(reference "#PWR06")
 					(unit 1)
