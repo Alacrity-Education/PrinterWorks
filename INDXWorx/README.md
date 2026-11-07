@@ -56,6 +56,16 @@ Use one pair at a time: turning on all four switches shorts the RS485 lines.
 
 ![](images/indxworx-rs485-swap.png)
 
+## LEDs
+
+The silkscreen `T/H/P` names the three LEDs:
+
+- **T** (blue): traffic, RS485 activity.
+- **H** (red): head power, the switched 5V to the head is on.
+- **P** (orange): board power.
+
+![](images/indxworx-leds.png)
+
 ## Options
 
 - `JP4` (`SLR`, on the back) is a solder jumper, open by default. Closing it
