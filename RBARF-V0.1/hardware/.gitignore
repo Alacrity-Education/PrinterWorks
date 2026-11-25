@@ -3,3 +3,6 @@
 .history/
 .kicad_importer
 libraries/backups/
+
+# JLCPCB plugin output (gerbers, BOM/CPL, project.db)
+jlcpcb/
