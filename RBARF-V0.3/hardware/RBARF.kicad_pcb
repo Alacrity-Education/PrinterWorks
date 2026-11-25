@@ -5236,7 +5236,7 @@
 		(uuid "789915b4-1d61-46e5-b8f0-b797f431cecd")
 	)
 	(via
-		(at 154.94 97.79)
+		(at 154.8 97.8)
 		(size 0.4)
 		(drill 0.2)
 		(layers "F.Cu" "B.Cu")
@@ -5457,15 +5457,6 @@
 		(free yes)
 		(net "GND")
 		(uuid "e44f8576-c355-442b-a6a2-6b55468c6fb8")
-	)
-	(via
-		(at 153.67 100.076)
-		(size 0.4)
-		(drill 0.2)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net "GND")
-		(uuid "ea5f95c7-e14a-4bab-be28-3f93ce531929")
 	)
 	(via
 		(at 152.2 94)
